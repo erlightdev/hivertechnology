@@ -1,7 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import Section from '@/components/common/Section.astro';
-import { techStack } from '@/data/company';
+import { extraTools, techStack } from '@/data/company';
+
+const tools = [...techStack, ...extraTools];
 ---
 
 <Section
@@ -11,9 +13,9 @@ import { techStack } from '@/data/company';
   titleMuted="easy to keep running."
   intro="We choose popular, well-supported tools so your software is easy to maintain and improve later."
 >
-  <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+  <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7">
     {
-      techStack.map((t) => (
+      tools.map((t) => (
         <li class="reveal group flex flex-col items-center gap-3 rounded-[6px] bg-base-default px-3 py-6 text-center ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary">
           <span class="grid size-12 place-items-center rounded-[6px] bg-background-secondary ring-1 ring-border-primary ring-inset transition-transform duration-200 ease-out-soft group-hover:-translate-y-0.5 dark:bg-background-primary">
             <Image src={t.logo} alt="" width={26} height={26} class:list={['size-[26px] object-contain', t.logoDark && 'dark:hidden']} />
