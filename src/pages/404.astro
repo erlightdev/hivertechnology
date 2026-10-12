@@ -1,6 +1,14 @@
 ---
+import { ArrowUpRight, Briefcase, Building2, Layers, Mail } from 'lucide-react';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { NotFoundSpotlight } from '@/components/motion/not-found/spotlight';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+
+const links = [
+  { href: '/services/', name: 'Services', note: 'What we can build for you', icon: Layers },
+  { href: '/industries/', name: 'Industries', note: 'Sectors we work with', icon: Building2 },
+  { href: '/products/', name: 'Products', note: 'School, clinic and HR software', icon: Briefcase },
+  { href: '/contact/', name: 'Contact', note: 'Talk to a developer', icon: Mail },
+];
 ---
 
 <BaseLayout
@@ -9,15 +17,52 @@ import { NotFoundSpotlight } from '@/components/motion/not-found/spotlight';
   path="/404/"
   indexable={false}
 >
-  <div class="container-page py-16">
-    <NotFoundSpotlight
-      client:idle
-      title="This page does not exist"
-      description="It may have moved during our site rebuild. Try the home page or browse our services."
-      homeHref="/"
-      homeLabel="Back home"
-      browseHref="/services/"
-      browseLabel="Browse services"
-    />
-  </div>
+  <section data-line class="relative overflow-hidden">
+    <div
+      class="bg-dots pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_30%,#000_20%,transparent_75%)]"
+      aria-hidden="true"
+    >
+    </div>
+    <div class="container-page relative z-[1] flex flex-col items-center py-20 text-center lg:py-28">
+      <p class="bg-honey bg-clip-text font-medium tracking-[-4px] text-transparent text-[7rem]/[1] lg:text-[9rem]/[1]" aria-hidden="true">
+        404
+      </p>
+      <h1 class="mt-6 text-[2rem]/[2.375rem] font-medium tracking-[-1px] lg:text-[2.5rem]/[2.75rem]">
+        This page doesn’t exist
+        <span class="block text-foreground-tertiary">or has moved.</span>
+      </h1>
+      <p class="mt-4 max-w-md text-base/7 text-foreground-secondary">
+        We recently rebuilt our website, so some old links no longer work. Try one of these instead.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <ButtonLink href="/" arrow>Back to home</ButtonLink>
+        <ButtonLink href="/contact/" variant="secondary">Contact us</ButtonLink>
+      </div>
+
+      <ul class="mt-14 grid w-full max-w-3xl gap-3 text-left sm:grid-cols-2">
+        {
+          links.map((l) => {
+            const Icon = l.icon;
+            return (
+              <li>
+                <a
+                  href={l.href}
+                  class="group flex items-center gap-4 rounded-[6px] bg-base-default p-4 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary"
+                >
+                  <span class="grid size-9 shrink-0 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+                    <Icon className="size-4" aria-hidden="true" />
+                  </span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block text-[15px] font-medium tracking-[-0.2px]">{l.name}</span>
+                    <span class="block text-[13px] text-foreground-tertiary">{l.note}</span>
+                  </span>
+                  <ArrowUpRight className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </section>
 </BaseLayout>

@@ -9,7 +9,9 @@ const SITE_URL = 'https://hiver.com.np';
 export default defineConfig({
   site: SITE_URL,
   // URL policy from the v3 SEO spec: lowercase, hyphenated, trailing slash.
-  trailingSlash: 'always',
+  // Canonical URLs end in a slash; .htaccess adds it in production. 'ignore' lets unknown
+  // slash-less URLs fall through to the custom 404 page instead of the dev-only warning.
+  trailingSlash: 'ignore',
   build: {
     format: 'directory',
     inlineStylesheets: 'auto',
