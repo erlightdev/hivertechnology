@@ -1,4 +1,8 @@
 ---
+/**
+ * <head> metadata for search and link previews. Open Graph covers Facebook, Messenger,
+ * WhatsApp, LinkedIn, Slack, Telegram, Discord and iMessage; Twitter tags cover X.
+ */
 import { absoluteUrl, site } from '@/config/site';
 
 export interface Props {
@@ -8,21 +12,25 @@ export interface Props {
   indexable: boolean;
   ogType: 'website' | 'article';
   jsonLd?: Record<string, unknown>;
+  published?: Date;
+  modified?: Date;
+  author?: string;
 }
 
-const { title, description, path, indexable, ogType, jsonLd } = Astro.props;
+const { title, description, path, indexable, ogType, jsonLd, published, modified, author } = Astro.props;
 const canonical = absoluteUrl(path);
 const image = absoluteUrl(site.ogImage);
-const robots = indexable
-  ? 'index, follow, max-image-preview:large, max-snippet:-1'
-  : 'noindex, follow';
+const imageAlt = `${site.name} — software, websites and apps from Lalitpur, Nepal`;
+const robots = indexable ? 'index, follow, max-image-preview:large, max-snippet:-1' : 'noindex, follow';
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
 <meta name="robots" content={robots} />
+<meta name="author" content={author ?? site.name} />
 
+<!-- Open Graph -->
 <meta property="og:type" content={ogType} />
 <meta property="og:site_name" content={site.name} />
 <meta property="og:locale" content={site.ogLocale} />
@@ -30,14 +38,21 @@ const robots = indexable
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
+<meta property="og:image:secure_url" content={image} />
+<meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content={`${site.name} — ${site.tagline}`} />
+<meta property="og:image:alt" content={imageAlt} />
+{published && <meta property="article:published_time" content={published.toISOString()} />}
+{(modified ?? published) && <meta property="article:modified_time" content={(modified ?? published)!.toISOString()} />}
+{ogType === 'article' && <meta property="article:author" content={author ?? site.name} />}
 
+<!-- X / Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={image} />
+<meta name="twitter:image:alt" content={imageAlt} />
 
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 

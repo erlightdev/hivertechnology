@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumbs from '@/components/common/Breadcrumbs.astro';
 import CtaBand from '@/components/common/CtaBand.astro';
 import InsightCard from './InsightCard.astro';
+import ShareBar from './ShareBar.astro';
 import { formatDate, getInsights, insightPath, readingMinutes, type Insight } from '@/lib/insights';
 import { article, breadcrumbs, graph } from '@/lib/schema';
 
@@ -34,7 +35,7 @@ const jsonLd = graph(
 );
 ---
 
-<BaseLayout title={data.title} description={data.description} {path} indexable={data.indexable} ogType="article" {jsonLd}>
+<BaseLayout title={data.title} description={data.description} {path} indexable={data.indexable} ogType="article" {jsonLd} published={data.publishDate} modified={data.updatedDate} author={data.author}>
   <article>
     <header class="relative overflow-hidden border-b">
       <div class="bg-dots pointer-events-none absolute inset-0 opacity-60" aria-hidden="true"></div>
@@ -60,6 +61,7 @@ const jsonLd = graph(
         class="prose prose-neutral max-w-none dark:prose-invert prose-headings:font-medium prose-headings:tracking-tight prose-h2:mt-12 prose-a:underline-offset-4 prose-table:text-sm lg:max-w-3xl"
       >
         <Content />
+        <div class="not-prose"><ShareBar {path} title={data.h1} /></div>
       </div>
       {
         toc.length > 2 && (
