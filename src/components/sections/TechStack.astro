@@ -1,17 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import Section from '@/components/common/Section.astro';
-import TechMarquee from './TechMarquee';
 import { techStack } from '@/data/company';
-
-const items = techStack.map((t) => ({ name: t.name, role: t.role, logo: t.logo.src }));
 ---
 
 <Section
   id="stack"
-  eyebrow="Engineering foundations"
-  title="Tools we use —"
-  titleMuted="proven and widely supported."
-  intro="We choose popular, well-supported technology so your software is easy to keep running and improve later."
+  eyebrow="Tools we use"
+  title="Proven technology,"
+  titleMuted="easy to keep running."
+  intro="We choose popular, well-supported tools so your software is easy to maintain and improve later."
 >
-  <TechMarquee {items} />
+  <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+    {
+      techStack.map((t) => (
+        <li class="reveal group flex flex-col items-center gap-3 rounded-[6px] bg-base-default px-3 py-6 text-center ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary">
+          <span class="grid size-12 place-items-center rounded-[6px] bg-background-secondary ring-1 ring-border-primary ring-inset transition-transform duration-200 ease-out-soft group-hover:-translate-y-0.5 dark:bg-background-primary">
+            <Image src={t.logo} alt="" width={26} height={26} class:list={['size-[26px] object-contain', t.logoDark && 'dark:hidden']} />
+            {t.logoDark && <Image src={t.logoDark} alt="" width={26} height={26} class="hidden size-[26px] object-contain dark:block" />}
+          </span>
+          <span>
+            <span class="block text-[15px] font-medium tracking-[-0.2px]">{t.name}</span>
+            <span class="mt-0.5 block text-xs text-foreground-tertiary">{t.role}</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
 </Section>

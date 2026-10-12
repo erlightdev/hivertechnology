@@ -12,6 +12,7 @@ import python from '@/assets/tech/python.svg';
 import docker from '@/assets/tech/docker.svg';
 import figma from '@/assets/tech/figma.svg';
 import aws from '@/assets/tech/amazon-web-services.svg';
+import awsDark from '@/assets/tech/amazon-web-services-dark.svg';
 import git from '@/assets/tech/git.svg';
 
 export const problems = [
@@ -101,7 +102,7 @@ export const homeFaqs: Faq[] = [
 ];
 
 /** Logos vendored from thesvg.org — see src/assets/tech/README.md. */
-export type Tech = { name: string; role: string; logo: ImageMetadata };
+export type Tech = { name: string; role: string; logo: ImageMetadata; logoDark?: ImageMetadata };
 
 export const techStack: Tech[] = [
   { name: 'React', role: 'Web interfaces', logo: react },
@@ -114,6 +115,9 @@ export const techStack: Tech[] = [
   { name: 'Python', role: 'Data & automation', logo: python },
   { name: 'Docker', role: 'Reliable deployment', logo: docker },
   { name: 'Figma', role: 'Design', logo: figma },
-  { name: 'AWS', role: 'Cloud hosting', logo: aws },
+  { name: 'AWS', role: 'Cloud hosting', logo: aws, logoDark: awsDark },
   { name: 'Git', role: 'Version history', logo: git },
 ];
+
+/** Look up a stack logo by technology name (as used in service `stack` lists). */
+export const techByName = (name: string) => techStack.find((t) => t.name === name);
