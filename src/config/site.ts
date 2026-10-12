@@ -12,7 +12,7 @@ export const site = {
     'Nepal-based software and digital delivery for organizations with a defined product, workflow or website need. Review our confirmed capabilities and discuss your project.',
   locale: 'en',
   ogLocale: 'en_US',
-  ogImage: '/og-image.png',
+  ogImage: '/og-hiver-logo.png',
   email: 'admin@hiver.com.np',
   altEmail: 'hivertechnology@gmail.com',
   phone: '+977-9714584255',
