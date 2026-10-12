@@ -1,0 +1,12 @@
+# Hiver Technology v3 — ACTIVE RULES ONLY AFTER GSC/analytics review
+# These are path rules on the existing Hiver host. Nexly reference routes are deliberately excluded.
+RewriteEngine On
+
+# Conditional archive consolidation; enable only after approving the route decision.
+# RewriteRule ^category/blog/?$ /insights/ [R=301,L,NE]
+
+# Domain migration template — keep disabled until the new brand/domain is approved.
+# RewriteCond %{HTTP_HOST} ^hiver\.com\.np$ [NC]
+# RewriteRule ^(.*)$ https://APPROVED-NEW-DOMAIN/$1 [R=301,L,NE]
+
+# Do not add /about/, /blog/, /book-a-call/ or /project-enquiry/ rules from the Nexly workbook unless Hiver actually owned those paths.

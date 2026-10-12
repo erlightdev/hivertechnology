@@ -1,0 +1,45 @@
+---
+import LegalLayout from '@/layouts/LegalLayout.astro';
+import { site } from '@/config/site';
+---
+
+<LegalLayout path="/cookie-policy/" heading="Cookie Policy" updated={new Date('2026-10-12')}>
+  <p>
+    This policy explains how <a href="/">hiver.com.np</a> uses cookies and similar browser storage.
+  </p>
+
+  <h2>What we use</h2>
+  <p>The site currently sets <strong>no advertising or analytics cookies</strong>. We use:</p>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>theme</code></td>
+        <td>Local storage (strictly necessary)</td>
+        <td>Remembers whether you chose the light or dark theme.</td>
+        <td>Until you clear it</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Our hosting provider may record technical request data, such as IP address, in server logs to keep
+    the site secure. These logs are not used to track you across websites.
+  </p>
+
+  <h2>Analytics</h2>
+  <p>
+    If we add analytics in future, we will update this page before doing so and ask for your consent
+    where required.
+  </p>
+
+  <h2>Managing storage</h2>
+  <p>
+    You can clear or block cookies and local storage in your browser settings. The site will continue to
+    work; it will simply follow your system’s colour theme.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+</LegalLayout>

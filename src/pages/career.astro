@@ -1,0 +1,77 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import { pageMeta } from '@/config/pages';
+import { site } from '@/config/site';
+import { breadcrumbs, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/career/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About us', path: '/about-us/' },
+  { name: 'Careers', path: '/career/' },
+];
+const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs));
+
+/** Add open roles here. The page stays noindex (see config/pages.ts) while this list is empty. */
+const roles: { title: string; type: string; summary: string }[] = [];
+
+const values = [
+  { title: 'Real products', body: 'Work on software that clients use daily, not throwaway prototypes.' },
+  { title: 'Engineering standards', body: 'Code review, tests and documentation are part of the job, not extras.' },
+  { title: 'Direct client contact', body: 'Engineers talk to the people they build for and own their decisions.' },
+];
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="Careers"
+    title="Work with Hiver Technology."
+    intro="We hire engineers and designers in Lalitpur who care about building maintainable software and explaining their decisions clearly."
+  />
+
+  <Section id="roles" eyebrow="Open roles" title="Current opportunities.">
+    {
+      roles.length > 0 ? (
+        <ul class="divide-y divide-border-line border-y border-border-line">
+          {roles.map((r) => (
+            <li class="flex flex-col gap-2 py-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-lg font-medium">{r.title}</h3>
+                <p class="text-sm text-foreground-tertiary">{r.summary}</p>
+              </div>
+              <span class="eyebrow">{r.type}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="reveal rounded-[6px] border border-dashed border-border-tertiary p-8 sm:p-10">
+          <p class="text-lg font-medium">No open roles right now.</p>
+          <p class="mt-2 max-w-xl text-sm leading-relaxed text-foreground-tertiary">
+            We still read speculative applications. Send your CV, portfolio or GitHub profile and a short
+            note on the work you want to do.
+          </p>
+          <ButtonLink href={`mailto:${site.email}?subject=Career%20enquiry`} class="mt-6" arrow>
+            Email {site.email}
+          </ButtonLink>
+        </div>
+      )
+    }
+  </Section>
+
+  <Section eyebrow="Working here" title="What to expect.">
+    <ul class="grid gap-4 md:grid-cols-3">
+      {
+        values.map((v) => (
+          <li class="reveal rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary p-7">
+            <h3 class="font-medium">{v.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-foreground-tertiary">{v.body}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+</BaseLayout>

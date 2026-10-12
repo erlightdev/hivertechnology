@@ -1,0 +1,70 @@
+---
+import Logo from './Logo.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import MobileNav from './MobileNav';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import { mainNav, site } from '@/config/site';
+
+export interface Props {
+  currentPath: string;
+}
+const { currentPath } = Astro.props;
+const isActive = (href: string) => currentPath.startsWith(href);
+---
+
+<!--
+  Full-width bar at the top of the page; once scrolled it detaches into a floating,
+  rounded pill (data-scrolled is set by the script below).
+-->
+<header data-site-header class="group/nav sticky top-0 z-50 px-0 transition-[padding] duration-250 ease-out-soft data-[scrolled=true]:px-3 data-[scrolled=true]:pt-3">
+  <div
+    class="mx-auto flex h-14 w-full max-w-[var(--grid-max-width)] items-center justify-between gap-6 border border-transparent bg-background-primary/80 px-[var(--grid-margin)] backdrop-blur-xl backdrop-saturate-150 transition-[max-width,border-radius,box-shadow,border-color,padding] duration-250 ease-out-soft group-data-[scrolled=true]/nav:max-w-[880px] group-data-[scrolled=true]/nav:rounded-md group-data-[scrolled=true]/nav:border-border-secondary group-data-[scrolled=true]/nav:px-3 group-data-[scrolled=true]/nav:shadow-drop-md lg:group-data-[scrolled=true]/nav:px-4"
+  >
+    <Logo />
+
+    <nav aria-label="Main" class="hidden md:block">
+      <ul class="flex items-center gap-0.5">
+        {
+          mainNav.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                class:list={[
+                  'rounded-[4px] px-3 py-1.5 text-sm transition-colors duration-150 ease-out-soft hover:text-foreground-primary',
+                  isActive(item.href) ? 'text-foreground-primary' : 'text-foreground-secondary',
+                ]}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-1.5">
+      <ThemeToggle />
+      <div class="hidden md:block">
+        <ButtonLink href="/contact/" size="sm" variant="invert">Discuss a project</ButtonLink>
+      </div>
+      <MobileNav
+        client:load
+        items={mainNav}
+        currentPath={currentPath}
+        email={site.email}
+        phone={site.phone}
+        phoneHref={site.phoneHref}
+      />
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  if (header) {
+    const update = () => header.setAttribute('data-scrolled', String(window.scrollY > 24));
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+  }
+</script>

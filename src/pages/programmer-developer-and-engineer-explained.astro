@@ -1,0 +1,10 @@
+---
+// Legacy WordPress article URL, preserved 1:1 per the v3 URL policy.
+import { getEntry } from 'astro:content';
+import Article from '@/components/insights/Article.astro';
+
+const entry = await getEntry('insights', 'programmer-developer-and-engineer-explained');
+if (!entry) throw new Error('Missing legacy insight entry');
+---
+
+<Article {entry} />

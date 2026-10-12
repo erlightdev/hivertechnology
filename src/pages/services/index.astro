@@ -1,0 +1,109 @@
+---
+import { ArrowUpRight, Check } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import Faq from '@/components/common/Faq.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { pageMeta } from '@/config/pages';
+import { ctaLabel, deckPage } from '@/data/deck';
+import { serviceGroups } from '@/data/services';
+import { breadcrumbs, faqPage, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/services/');
+const deck = deckPage('/services/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services/' },
+];
+const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs), faqPage(deck.faqs));
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero {crumbs} eyebrow={deck.eyebrow} title={deck.h1} intro={deck.intro}>
+    <ButtonLink href="/contact/" arrow data-cta-location="hero">{ctaLabel(deck.primaryCta)}</ButtonLink>
+    <ButtonLink href="#paths" variant="secondary" data-cta-location="hero">Browse service paths</ButtonLink>
+  </PageHero>
+
+  <Section id="problem" eyebrow="The problem" title={deck.problem!.heading} intro={deck.problem!.body}>
+    <ul class="grid gap-3 md:grid-cols-2">
+      {
+        deck.included.map((item) => (
+          <li class="reveal flex gap-3 rounded-[6px] bg-base-default p-5 text-sm/6 shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary">
+            <Check className="mt-0.5 size-4 shrink-0 text-brand-base" aria-hidden="true" />
+            {item}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <Section
+    id="paths"
+    eyebrow="Service paths"
+    title={`Start with one of ${serviceGroups.length} clear service paths`}
+    intro="Software applications, websites, ecommerce, SEO, and growth marketing and automation each have a defined role. We connect them where a project needs more than one capability."
+  >
+    <nav aria-label="Service paths" class="mb-12 flex flex-wrap gap-2">
+      {
+        serviceGroups.map((g) => (
+          <a href={`#${g.id}`} class="rounded-full bg-background-secondary px-3.5 py-1.5 text-[13px] text-foreground-secondary ring-1 ring-border-secondary ring-inset transition-colors duration-150 hover:text-foreground-primary">
+            {g.name}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="space-y-16">
+      {
+        serviceGroups.map((g, gi) => (
+          <section id={g.id} aria-labelledby={`${g.id}-title`} class="scroll-mt-24">
+            <div class="reveal mb-6 grid gap-3 border-t border-border-line pt-8 lg:grid-cols-[1fr_1.4fr] lg:gap-12">
+              <div>
+                <p class="eyebrow">0{gi + 1} · {g.eyebrow}</p>
+                <h3 id={`${g.id}-title`} class="mt-3 text-2xl font-medium tracking-[-0.6px]">{g.name}</h3>
+              </div>
+              <p class="text-[15px]/7 text-foreground-secondary">{g.intro}</p>
+            </div>
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {g.services.map((s) => {
+                const Icon = s.icon;
+                return (
+                  <article class="reveal group relative flex flex-col rounded-[6px] bg-base-default p-5 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary">
+                    <div class="flex items-center justify-between">
+                      <span class="grid size-9 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+                        <Icon className="size-4" aria-hidden="true" />
+                      </span>
+                      <ArrowUpRight className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+                    </div>
+                    <h4 class="mt-6 text-[15px] font-medium tracking-[-0.2px]">
+                      <a href={s.path} class="after:absolute after:inset-0 after:rounded-[6px]">{s.name}</a>
+                    </h4>
+                    <p class="mt-2 flex-1 text-[13px]/6 text-foreground-secondary">{s.summary}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="process" tone="secondary" eyebrow="How Hiver works" title="Start with the problem," titleMuted="then choose the service.">
+    <ol class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      {
+        deck.steps.map((step, i) => (
+          <li class="reveal flex items-start gap-4 rounded-[6px] bg-base-default p-5 shadow-drop-sm ring-1 ring-border-secondary ring-inset lg:flex-col dark:bg-background-primary">
+            <span class="grid size-7 shrink-0 place-items-center rounded-full bg-brand-8 font-paper text-xs text-brand-base ring-1 ring-brand-20 ring-inset">{i + 1}</span>
+            <span class="text-[15px] font-medium tracking-[-0.2px]">{step}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </Section>
+
+  <Faq faqs={deck.faqs} />
+  <CtaBand title={ctaLabel(deck.finalCta!.heading)} body={deck.finalCta!.body} />
+</BaseLayout>

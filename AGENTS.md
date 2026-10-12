@@ -20,3 +20,10 @@ Consult these guides before working on related tasks:
 - [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Project notes
+
+- Company facts live in `src/config/site.ts`; per-route SEO and `indexable` flags in `src/config/pages.ts` and `src/data/`. Do not publish unverified claims (clients, results, awards, offices) — see `docs/research/v3`.
+- Production runs `server.mjs` (Hostinger Node.js Web App). Only `src/pages/api/contact.ts` is on-demand; keep everything else prerendered.
+- shadcn/ui components go in `src/components/ui`, beUI in `src/components/motion`.
+- Run `npm run check` and `npm run build` before finishing a change.

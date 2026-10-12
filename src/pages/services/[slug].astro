@@ -1,0 +1,41 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DeckPageView from '@/components/templates/DeckPageView.astro';
+import { services, serviceGroups, type Service } from '@/data/services';
+import { breadcrumbs, faqPage, graph, service as serviceSchema, webPage } from '@/lib/schema';
+
+export const getStaticPaths = (() =>
+  services.map((service) => ({ params: { slug: service.slug }, props: { service } }))) satisfies GetStaticPaths;
+
+interface Props {
+  service: Service;
+}
+const { service } = Astro.props;
+const group = serviceGroups.find((g) => g.id === service.group)!;
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services/' },
+  { name: service.name, path: service.path },
+];
+// Siblings in the same service path come first in the related list.
+const siblings = group.services.filter((s) => s.slug !== service.slug).map((s) => s.path);
+const jsonLd = graph(
+  webPage(service.path, service.title, service.description),
+  serviceSchema(service.path, service.name, service.description),
+  breadcrumbs(crumbs),
+  faqPage(service.faqs),
+);
+---
+
+<BaseLayout title={service.title} description={service.description} path={service.path} indexable={service.indexable} {jsonLd}>
+  <DeckPageView
+    page={service}
+    {crumbs}
+    problems={service.problems}
+    goodFit={service.goodFit}
+    notFit={service.notFit}
+    stack={service.stack}
+    extraRelated={siblings}
+  />
+</BaseLayout>

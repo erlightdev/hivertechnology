@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Problems from '@/components/sections/Problems.astro';
+import Capabilities from '@/components/sections/Capabilities.astro';
+import Process from '@/components/sections/Process.astro';
+import Testimonials from '@/components/sections/Testimonials.astro';
+import TechStack from '@/components/sections/TechStack.astro';
+import ProductsPreview from '@/components/sections/ProductsPreview.astro';
+import IndustriesPreview from '@/components/sections/IndustriesPreview.astro';
+import Faq from '@/components/common/Faq.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { pageMeta } from '@/config/pages';
+import { homeFaqs } from '@/data/company';
+import { faqPage, graph, organization, webPage, website } from '@/lib/schema';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const meta = pageMeta('/');
+const jsonLd = graph(organization(), website(), webPage(meta.path, meta.title, meta.description), faqPage(homeFaqs));
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout {...meta} {jsonLd}>
+  <Hero />
+  <Problems />
+  <Capabilities />
+  <Process />
+  <Testimonials />
+  <IndustriesPreview />
+  <TechStack />
+  <ProductsPreview />
+  <Faq
+    faqs={homeFaqs}
+    titleMuted="Answered plainly."
+    intro="Clear answers on our location, team, IP ownership and working model."
+  />
+  <CtaBand />
+</BaseLayout>

@@ -1,0 +1,201 @@
+---
+import { ArrowUpRight, Check, Clock, FileLock2, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/common/Breadcrumbs.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import Faq from '@/components/common/Faq.astro';
+import { deckPage } from '@/data/deck';
+import { pageMeta } from '@/config/pages';
+import { site } from '@/config/site';
+import { breadcrumbs, faqPage, graph, organization, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/contact/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Contact', path: '/contact/' },
+];
+const deck = deckPage('/contact/');
+
+// Pre-filled email brief, mirroring the enquiry fields from the copy deck.
+const briefTemplate = [
+  'Hi Hiver Technology team,',
+  '',
+  'Organization:',
+  'Current website or system:',
+  'Country:',
+  'Service or problem area:',
+  'What we need to build, fix or improve:',
+  'Timeline:',
+  'Budget range:',
+  '',
+  'Thanks,',
+].join('\n');
+const briefHref = `mailto:${site.email}?subject=${encodeURIComponent('Project enquiry')}&body=${encodeURIComponent(briefTemplate)}`;
+const mapHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address.display)}`;
+
+const include = [
+  'Your name, role and organization',
+  'Current website, product or system',
+  'Country and preferred contact method',
+  'The service or problem area',
+  'What you need to build, fix or improve — and why now',
+  'Budget range and desired timeline',
+];
+
+const faqs = [
+  deck.faqs.find((f) => f.q.startsWith('What should I include'))!,
+  {
+    q: 'Does contacting you commit us to a project?',
+    a: 'No. The first conversation clarifies fit, scope and the next useful step before either side commits to anything.',
+  },
+  {
+    q: 'What happens to the details I send?',
+    a: 'They go to our team’s inbox and are used only to reply to you and discuss the project. Our privacy policy explains retention and how to ask for access or deletion.',
+  },
+];
+
+const jsonLd = graph(
+  { ...webPage(meta.path, meta.title, meta.description), '@type': 'ContactPage' },
+  organization(),
+  breadcrumbs(crumbs),
+  faqPage(faqs),
+);
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <section data-line class="relative overflow-hidden">
+    <div
+      class="bg-dots pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_60%_70%_at_30%_0%,#000_20%,transparent_75%)]"
+      aria-hidden="true"
+    >
+    </div>
+    <div class="container-page relative z-[1] grid gap-12 pt-8 pb-20 lg:grid-cols-[1fr_1.15fr] lg:gap-16 lg:pt-10 lg:pb-24">
+      <div>
+        <Breadcrumbs items={crumbs} />
+        <div class="mt-8 space-y-4 lg:mt-10">
+          <p class="eyebrow">Contact</p>
+          <h1 class="text-[2rem]/[2.375rem] font-medium tracking-[-1px] lg:text-[2.75rem]/[3rem] lg:tracking-[-1.4px]">{deck.h1}</h1>
+          <p class="text-base/7 text-foreground-secondary">
+            Email, call or message us with the business problem, current system, goal, timeline and budget
+            range. An engineering lead replies within {site.responseTime} — including when we are not the
+            right fit.
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <ButtonLink href={briefHref} data-cta-location="contact-hero">
+              <Mail className="size-4" aria-hidden="true" /> Email a project brief
+            </ButtonLink>
+            <ButtonLink href={site.phoneHref} variant="secondary" data-cta-location="contact-hero">
+              <Phone className="size-4" aria-hidden="true" /> Call us
+            </ButtonLink>
+          </div>
+        </div>
+
+        <ul class="mt-10 flex flex-wrap gap-2 text-[13px] text-foreground-secondary">
+          <li class="inline-flex items-center gap-2 rounded-full bg-background-secondary px-3 py-1.5 ring-1 ring-border-secondary ring-inset">
+            <Clock className="size-3.5 text-brand-base" aria-hidden="true" /> Reply within {site.responseTime}
+          </li>
+          <li class="inline-flex items-center gap-2 rounded-full bg-background-secondary px-3 py-1.5 ring-1 ring-border-secondary ring-inset">
+            <FileLock2 className="size-3.5 text-brand-base" aria-hidden="true" /> Mutual NDA on request
+          </li>
+          <li class="inline-flex items-center gap-2 rounded-full bg-background-secondary px-3 py-1.5 ring-1 ring-border-secondary ring-inset">
+            <span class="size-1.5 rounded-full bg-brand-base" aria-hidden="true"></span> Nepal time (UTC+5:45)
+          </li>
+        </ul>
+      </div>
+
+      <!-- Channel bento -->
+      <div class="grid content-start gap-3 sm:grid-cols-2">
+        <a
+          href={briefHref}
+          class="group relative flex flex-col justify-between gap-10 overflow-hidden rounded-[10px] bg-honey p-6 text-base-black shadow-feature-card sm:col-span-2 sm:p-7"
+        >
+          <div class="flex items-start justify-between">
+            <span class="grid size-10 place-items-center rounded-full bg-base-white/40 ring-1 ring-base-black/10 ring-inset">
+              <Mail className="size-[18px]" aria-hidden="true" />
+            </span>
+            <ArrowUpRight className="size-5 transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+          </div>
+          <div>
+            <p class="font-paper text-xs tracking-[0.08em] uppercase opacity-70">Email · best for project briefs</p>
+            <p class="mt-2 text-2xl font-medium tracking-[-0.6px] sm:text-[1.75rem]">{site.email}</p>
+            <p class="mt-2 text-sm/6 opacity-80">Opens your email app with a short brief template to fill in.</p>
+          </div>
+        </a>
+
+        <a
+          href={site.phoneHref}
+          class="group flex flex-col gap-8 rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary"
+        >
+          <div class="flex items-start justify-between">
+            <span class="grid size-9 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+              <Phone className="size-4" aria-hidden="true" />
+            </span>
+            <ArrowUpRight className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+          </div>
+          <div>
+            <p class="eyebrow">Phone</p>
+            <p class="mt-1.5 text-[17px] font-medium tracking-[-0.3px]">{site.phone}</p>
+          </div>
+        </a>
+
+        <a
+          href={site.whatsappHref}
+          rel="noopener"
+          class="group flex flex-col gap-8 rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary"
+        >
+          <div class="flex items-start justify-between">
+            <span class="grid size-9 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+              <MessageCircle className="size-4" aria-hidden="true" />
+            </span>
+            <ArrowUpRight className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+          </div>
+          <div>
+            <p class="eyebrow">WhatsApp</p>
+            <p class="mt-1.5 text-[17px] font-medium tracking-[-0.3px]">Message us</p>
+          </div>
+        </a>
+
+        <a
+          href={mapHref}
+          rel="noopener"
+          target="_blank"
+          class="group relative flex items-center gap-4 overflow-hidden rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md sm:col-span-2 dark:bg-background-secondary"
+        >
+          <div class="bg-dots pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-80 [mask-image:linear-gradient(to_left,#000,transparent)]" aria-hidden="true"></div>
+          <span class="relative grid size-9 shrink-0 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+            <MapPin className="size-4" aria-hidden="true" />
+          </span>
+          <div class="relative min-w-0 flex-1">
+            <p class="eyebrow">Office</p>
+            <p class="mt-1 text-[15px] font-medium tracking-[-0.2px]">{site.address.display}</p>
+          </div>
+          <span class="relative text-[13px] text-foreground-tertiary transition-colors group-hover:text-foreground-primary">
+            Open in Maps <span class="sr-only">(opens in a new tab)</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Section
+    id="brief"
+    eyebrow="Before you write"
+    title="What to include"
+    titleMuted="in your message."
+    intro="A few lines on each point is enough for a useful first reply. If you are not sure about budget or timeline yet, say so — that is useful context too."
+  >
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        include.map((item) => (
+          <li class="reveal flex gap-3 rounded-[6px] bg-base-default p-5 text-sm/6 shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary">
+            <Check className="mt-0.5 size-4 shrink-0 text-brand-base" aria-hidden="true" />
+            {item}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <Faq {faqs} title="Before you get in touch" titleMuted="a few answers." />
+</BaseLayout>

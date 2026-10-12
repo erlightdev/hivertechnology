@@ -1,0 +1,21 @@
+market,geo,term,relative_interest_mean,relative_interest_peak,observations,timeframe,source,status,note
+United States,US,shopify development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United States,US,web application development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United States,US,ecommerce seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United States,US,technical seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United States,US,marketing automation,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Australia,AU,shopify development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Australia,AU,web application development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Australia,AU,ecommerce seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Australia,AU,technical seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Australia,AU,marketing automation,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United Kingdom,GB,shopify development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United Kingdom,GB,web application development,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United Kingdom,GB,ecommerce seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United Kingdom,GB,technical seo,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+United Kingdom,GB,marketing automation,,,,today 12-m,Google Trends public relative interest index,Unavailable,The request failed: Google returned a response with code 429
+Global,Global,shopify development,12.17,23,53,today 12-m,Google Trends public relative interest index (0-100 within comparison set),Retrieved,"Relative index only; not monthly search volume, CPC, difficulty, traffic, or rankings."
+Global,Global,web application development,5.68,9,53,today 12-m,Google Trends public relative interest index (0-100 within comparison set),Retrieved,"Relative index only; not monthly search volume, CPC, difficulty, traffic, or rankings."
+Global,Global,ecommerce seo,12.17,21,53,today 12-m,Google Trends public relative interest index (0-100 within comparison set),Retrieved,"Relative index only; not monthly search volume, CPC, difficulty, traffic, or rankings."
+Global,Global,technical seo,11.72,19,53,today 12-m,Google Trends public relative interest index (0-100 within comparison set),Retrieved,"Relative index only; not monthly search volume, CPC, difficulty, traffic, or rankings."
+Global,Global,marketing automation,49.42,100,53,today 12-m,Google Trends public relative interest index (0-100 within comparison set),Retrieved,"Relative index only; not monthly search volume, CPC, difficulty, traffic, or rankings."

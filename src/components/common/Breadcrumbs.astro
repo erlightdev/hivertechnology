@@ -1,0 +1,26 @@
+---
+import { ChevronRight } from 'lucide-react';
+import type { Crumb } from '@/lib/schema';
+
+export interface Props {
+  items: Crumb[];
+}
+const { items } = Astro.props;
+---
+
+<nav aria-label="Breadcrumb">
+  <ol class="flex flex-wrap items-center gap-1.5 font-paper text-xs text-foreground-tertiary">
+    {
+      items.map((item, i) => (
+        <li class="flex items-center gap-1.5">
+          {i > 0 && <ChevronRight className="size-3 text-foreground-muted" aria-hidden="true" />}
+          {i === items.length - 1 ? (
+            <span aria-current="page" class="text-foreground-primary">{item.name}</span>
+          ) : (
+            <a href={item.path} class="transition-colors duration-150 hover:text-foreground-primary">{item.name}</a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

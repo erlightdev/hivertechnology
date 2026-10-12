@@ -1,0 +1,66 @@
+{
+  "version": "v3",
+  "rules": [
+    {
+      "page_group": "All canonical indexable pages",
+      "schema": "WebPage + BreadcrumbList where depth warrants",
+      "rule": "Use approved canonical URL, visible title and accurate description; no placeholder fields."
+    },
+    {
+      "page_group": "Home / About / Contact",
+      "schema": "Organization; WebSite; LocalBusiness only if Nepal details are verified",
+      "rule": "No fake overseas offices, sameAs profiles or aggregate ratings."
+    },
+    {
+      "page_group": "Confirmed service page",
+      "schema": "Service + BreadcrumbList + visible FAQPage only if FAQs are real",
+      "rule": "Only after capability gate; provider must be the real approved entity."
+    },
+    {
+      "page_group": "Confirmed product page",
+      "schema": "SoftwareApplication/Product + BreadcrumbList + Offer only if current pricing exists",
+      "rule": "Only after product gate; no invented reviews, ratings, pricing or availability."
+    },
+    {
+      "page_group": "Insight / decision guide",
+      "schema": "Article/BlogPosting + BreadcrumbList",
+      "rule": "Named real author and reviewer; publish date and modified date accurate; content visible."
+    },
+    {
+      "page_group": "FAQ",
+      "schema": "FAQPage only when visible and genuinely useful",
+      "rule": "Do not generate FAQ blocks solely for search markup."
+    },
+    {
+      "page_group": "Legal",
+      "schema": "WebPage + BreadcrumbList",
+      "rule": "Legal text reviewed and version-dated by qualified counsel."
+    }
+  ],
+  "provenance": [
+    {
+      "label": "[VERIFIED-TOOL]",
+      "meaning": "Direct Hiver verification, current Hiver crawl or uploaded route/SEO workbook field."
+    },
+    {
+      "label": "[REFERENCE-ONLY]",
+      "meaning": "Evidence from supplied Nexly reference crawl; not Hiver ownership or Hiver ranking data."
+    },
+    {
+      "label": "[DATA REQUIRED]",
+      "meaning": "Must be supplied by Hiver or qualified counsel before publication/decision."
+    },
+    {
+      "label": "[DATA REQUIRED — PAID TOOL]",
+      "meaning": "Requires GSC or a licensed keyword/rank/SERP platform; not invented."
+    },
+    {
+      "label": "[MODELLED]",
+      "meaning": "Transparent grouping, formula or operational model."
+    },
+    {
+      "label": "[STRATEGIC-JUDGEMENT]",
+      "meaning": "Strategic recommendation based on the evidence; not a measured ranking claim."
+    }
+  ]
+}

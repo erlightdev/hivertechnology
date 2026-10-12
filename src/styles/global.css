@@ -1,0 +1,389 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./shadcn.css";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/newsreader";
+@import "@fontsource-variable/geist-mono";
+@plugin "@tailwindcss/typography";
+@plugin "tailwind-scrollbar" {
+  nocompatible: true;
+  preferredStrategy: "pseudoelements";
+}
+
+@custom-variant dark (&:is(.dark *));
+
+/* -------------------------------------------------------------------------- */
+/* Design tokens. Light is the default; dark is class-based (.dark).          */
+/* Reference tokens in components — never raw hex/oklch literals.             */
+/* -------------------------------------------------------------------------- */
+
+:root {
+  --base-default: #ffffff;
+  --base-invert: #0a0b0f;
+  --base-white: #ffffff;
+  --base-black: #0a0b0f;
+
+  --background-primary: #fefdfb;
+  --background-secondary: #faf8f5;
+  --background-tertiary: #ebe9e6;
+  --background-tertiary-invert: #485450;
+  --background-transparent: #ffffff00;
+  --background-transparent-invert: #00000000;
+
+  --foreground-primary: #121715;
+  --foreground-invert: #faf8f5;
+  --foreground-secondary: #485450;
+  --foreground-tertiary: #717d79;
+  --foreground-muted: #969e9b;
+
+  --border-line: #f1f0ee;
+  --border-primary: #0000000a;
+  --border-secondary: #0000000f;
+  --border-tertiary: #00000014;
+  --border-muted: #00000080;
+  --border-transparent: #00000000;
+
+  /* Honey: deep amber for text/links, amber → orange for fills and gradients. */
+  --brand-base: #b45309;
+  --brand-vivid: #f59e0b;
+  --brand-orange: #f97316;
+  --brand-8: #b4530914;
+  --brand-10: #b453091a;
+  --brand-20: #b4530933;
+
+  --error: oklch(0.637 0.237 25.331);
+
+  /* Layout grid */
+  --grid-columns: 4;
+  --grid-gap: 16px;
+  --grid-margin: 16px;
+  --grid-max-width: 1088px;
+
+  /* shadcn/ui semantic aliases (consumed by components/ui and components/motion) */
+  --background: var(--background-primary);
+  --foreground: var(--foreground-primary);
+  --card: var(--base-default);
+  --card-foreground: var(--foreground-primary);
+  --popover: var(--base-default);
+  --popover-foreground: var(--foreground-primary);
+  --primary: var(--base-invert);
+  --primary-foreground: var(--foreground-invert);
+  --secondary: var(--background-secondary);
+  --secondary-foreground: var(--foreground-primary);
+  --muted: var(--background-secondary);
+  --muted-foreground: var(--foreground-tertiary);
+  --accent: var(--background-tertiary);
+  --accent-foreground: var(--foreground-primary);
+  --destructive: var(--error);
+  --border: var(--border-secondary);
+  --input: var(--border-tertiary);
+  --ring: var(--brand-base);
+  --radius: 6px;
+
+  color-scheme: light;
+}
+
+.dark {
+  --base-default: #0a0b0f;
+  --base-invert: #ffffff;
+
+  --background-primary: #0a0b0f;
+  --background-secondary: #121715;
+  --background-tertiary: #485450;
+  --background-tertiary-invert: #ebe9e6;
+  --background-transparent: #00000000;
+  --background-transparent-invert: #ffffff00;
+
+  --foreground-primary: #faf8f5;
+  --foreground-invert: #121715;
+  --foreground-secondary: #d9d7d4;
+  --foreground-tertiary: #cfcdca;
+
+  --border-line: #1e1f21;
+  --border-primary: #ffffff14;
+  --border-secondary: #ffffff1a;
+  --border-tertiary: #ffffff59;
+  --border-muted: #ffffffb3;
+  --border-transparent: #ffffff00;
+
+  --brand-base: #fbbf24;
+  --brand-8: #fbbf2414;
+  --brand-10: #fbbf241a;
+  --brand-20: #fbbf2433;
+
+  --error: oklch(0.704 0.191 22.216);
+
+  --card: var(--background-secondary);
+  --popover: var(--background-secondary);
+  --accent: var(--border-secondary);
+
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root { --grid-columns: 12; }
+}
+@media (min-width: 1024px) {
+  :root { --grid-columns: 24; --grid-margin: 32px; }
+}
+
+@theme inline {
+  /* Typography */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: var(--font-sans);
+  --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: "Newsreader Variable", ui-serif, Georgia, serif;
+  --font-paper: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* System tokens */
+  --color-base-default: var(--base-default);
+  --color-base-invert: var(--base-invert);
+  --color-base-white: var(--base-white);
+  --color-base-black: var(--base-black);
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-background-tertiary-invert: var(--background-tertiary-invert);
+  --color-background-transparent: var(--background-transparent);
+  --color-background-transparent-invert: var(--background-transparent-invert);
+  --color-foreground-primary: var(--foreground-primary);
+  --color-foreground-invert: var(--foreground-invert);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-tertiary: var(--foreground-tertiary);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border-line: var(--border-line);
+  --color-border-primary: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-border-tertiary: var(--border-tertiary);
+  --color-border-muted: var(--border-muted);
+  --color-border-transparent: var(--border-transparent);
+  --color-brand-base: var(--brand-base);
+  --color-brand-vivid: var(--brand-vivid);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-8: var(--brand-8);
+  --color-brand-10: var(--brand-10);
+  --color-brand-20: var(--brand-20);
+  --color-error: var(--error);
+
+  /* shadcn/ui aliases */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Elevation: layered, low-opacity, diffuse */
+  --shadow-button-sm: 0 1px 1px 0 rgb(0 0 0 / 0.04), 0 1px 2px 0 rgb(0 0 0 / 0.06);
+  --shadow-drop-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04), 0 2px 6px -1px rgb(0 0 0 / 0.05);
+  --shadow-drop-md: 0 2px 4px -1px rgb(0 0 0 / 0.04), 0 8px 20px -4px rgb(0 0 0 / 0.08);
+  --shadow-feature-card: 0 8px 16px -8px rgb(0 0 0 / 0.06), 0 32px 72px -24px rgb(0 0 0 / 0.14);
+  --shadow-navbar-bg: 0 1px 0 0 var(--border-line), 0 8px 24px -16px rgb(0 0 0 / 0.08);
+  --shadow-editor-tooltip: 4px 8px 24px -6px rgb(0 0 0 / 0.16), 1px 2px 4px 0 rgb(0 0 0 / 0.06);
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+
+  --animate-marquee: marquee linear infinite;
+  --animate-marquee-vertical: marquee-vertical linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Base                                                                        */
+/* -------------------------------------------------------------------------- */
+
+@layer base {
+  * {
+    @apply border-border-secondary;
+  }
+  /* Thin, token-coloured scrollbars everywhere (tailwind-scrollbar). */
+  html,
+  * {
+    @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground-muted/50 scrollbar-thumb-rounded-full hover:scrollbar-thumb-brand-vivid;
+  }
+  html {
+    @apply bg-background-primary font-sans;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-background-primary text-foreground-primary antialiased;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+  }
+  :where(h1, h2, h3, h4) {
+    text-wrap: balance;
+  }
+  :where(p) {
+    text-wrap: pretty;
+  }
+  ::selection {
+    @apply bg-brand-20;
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand-base);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Layout utilities                                                            */
+/* -------------------------------------------------------------------------- */
+
+/* Centered content column bounded by --grid-max-width. */
+@utility container-page {
+  width: 100%;
+  max-width: var(--grid-max-width);
+  margin-inline: auto;
+  padding-inline: var(--grid-margin);
+}
+
+/* Token-driven column grid: 4 / 12 / 24 columns. */
+@utility grid-layout {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  width: 100%;
+  max-width: var(--grid-max-width);
+  margin-inline: auto;
+  padding-inline: var(--grid-margin);
+}
+@utility grid-layout-inner {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
+/* Break out to the full viewport width. */
+@utility bleed {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+
+/* Section headings: the source of truth for new sections. */
+@utility section-heading {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.72px;
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-paper);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--foreground-tertiary);
+}
+
+/* Honey fill: amber into orange. Pair with text-base-black (≥ 7:1 contrast). */
+@utility bg-honey {
+  background-image: linear-gradient(180deg, var(--brand-vivid), var(--brand-orange));
+}
+
+/* Faint dot pattern for hero backdrops. */
+@utility bg-dots {
+  background-image: radial-gradient(var(--border-tertiary) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Vertical edge rails at the content column (md+). */
+[data-rail] {
+  position: relative;
+}
+@media (min-width: 768px) {
+  [data-rail]::before,
+  [data-rail]::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    width: 1px;
+    background: var(--border-line);
+    pointer-events: none;
+    z-index: 0;
+  }
+  [data-rail]::before { left: max(0px, calc(50% - var(--grid-max-width) / 2)); }
+  [data-rail]::after { right: max(0px, calc(50% - var(--grid-max-width) / 2)); }
+}
+[data-line] { border-bottom: 1px solid var(--border-line); }
+@media (min-width: 1024px) {
+  [data-line-lg] { border-bottom: 1px solid var(--border-line); }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Motion — every keyframe animation is disabled under reduced motion.         */
+/* -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }

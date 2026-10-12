@@ -1,0 +1,40 @@
+# Hiver Technology — v3 Technical SEO & Developer Runbook
+
+**Version date:** 14 August 2026
+
+> This runbook is for the current WordPress/Elementor site and a future domain decision. It preserves URLs first and treats SEO as a release-quality system.
+
+## Release gates
+
+| id | priority | area | requirement | acceptance |
+| --- | --- | --- | --- | --- |
+| T01 | P0 | URL stability | Keep all current Hiver human-facing routes unless a content audit approves a closer canonical destination. Keep trailing slash, lowercase and hyphen convention stable. | Hiver legacy route inventory has a decision for every row; no route is silently dropped. |
+| T02 | P0 | Reference-route separation | Do not treat the 253 Nexly routes as Hiver legacy URLs. Store them as reference-only and never publish/redirect them without evidence Hiver owned them. | Every Nexly reference row has DO_NOT_REDIRECT_ON_HIVER status. |
+| T03 | P0 | Redirects | Use server-side 301/308 only for a real moved/merged Hiver URL, direct to the closest final target, avoid chains, and retain redirects at least one year after a move. | Redirect CSV, Apache/Nginx rules and curl test log agree; no mass home redirect. |
+| T04 | P0 | Canonicals | Each canonical page has one absolute self-referencing canonical; internal links and sitemap use the same canonical; no robots.txt canonicalization. | Rendered source and crawl agree with page SEO inventory. |
+| T05 | P0 | Sitemaps | Only final canonical indexable URLs appear in XML sitemap. Exclude noindex pages, redirects, 404/410, query parameters, media not intended for Search and reference-only URLs. | Sitemap row count equals approved canonical indexable count after QA. |
+| T06 | P0 | WordPress/Elementor | Audit theme/plugins/templates/widgets/fonts/scripts; remove construction/demos, placeholder content and unnecessary assets; use cache/CDN/image optimization and keep one builder system. | Plugin/asset register and staging crawl approved. |
+| T07 | P0 | Performance | Measure real-user LCP ≤2.5s, INP ≤200ms and CLS ≤0.1 at the 75th percentile as Google’s good thresholds; do not promise scores before field data. | Mobile/desktop field baseline and post-launch report exist. |
+| T08 | P0 | Accessibility | Semantic headings, keyboard navigation, visible focus, form labels/errors, contrast, reduced motion, accessible menus and meaningful alt text; use qualified WCAG 2.2 AA review. | Manual keyboard and automated accessibility logs exist; no unsupported compliance claim. |
+| T09 | P0 | Forms/measurement | Track form_start, form_submit, generate_lead, book_call only when real, CTA clicks, phone/email/WhatsApp and CRM lifecycle from lead to win. | Test events and CRM IDs are linked; consent settings are documented. |
+| T10 | P0 | Security/legal | Backups, updates, WAF/spam controls, least-privilege accounts, privacy/cookie consent, retention and security owner. Replace public superadmin authorship. | Security and privacy checklist signed by owner/counsel. |
+| T11 | P1 | International SEO | No country doorway pages or hreflang until distinct localized variants and real local evidence exist. Use one factual international-delivery page. | No duplicate geo pages; hreflang omitted until eligible. |
+| T12 | P1 | Content governance | Named author/reviewer, update dates, evidence register, version control and a rule that unverified claims remain blocked. | Every indexable page has an owner, source/proof status and next review date. |
+
+## Sitemap rule
+
+Generate sitemap from the approved canonical page inventory only. Gated noindex pages, redirects, 404/410 URLs, Nexly reference URLs, query variants and non-search media do not belong in the canonical sitemap.
+
+## Crawl QA
+
+Check status, final URL, title, meta description, H1, headings, canonical, robots, schema, internal link count, broken links, image alt, word count, response time, rendering, accessibility and form events. Compare the result to `hiver_v3_canonical_pages.csv` and `hiver_v3_page_seo.csv`.
+
+## WordPress/Elementor implementation
+
+Remove construction/demo content, unused plugins and unnecessary widgets; enforce one builder system; configure server/page cache and CDN; optimize LCP media, font loading, CSS/JS and image formats; replace the public superadmin identity; use least-privilege accounts, backups, WAF/spam protection and update ownership.
+
+## References
+
+[1]: https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes "Google Search Central: How to move a site"
+[2]: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls "Google Search Central: Specify canonical URLs"
+[3]: https://developers.google.com/search/docs/appearance/core-web-vitals "Google Search Central: Core Web Vitals"

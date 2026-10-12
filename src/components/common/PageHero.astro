@@ -1,0 +1,33 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Crumb } from '@/lib/schema';
+
+export interface Props {
+  eyebrow?: string;
+  title: string;
+  titleMuted?: string;
+  intro?: string;
+  crumbs?: Crumb[];
+}
+const { eyebrow, title, titleMuted, intro, crumbs } = Astro.props;
+---
+
+<section data-line class="relative overflow-hidden">
+  <div
+    class="bg-dots pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_60%_70%_at_50%_0%,#000_20%,transparent_75%)]"
+    aria-hidden="true"
+  >
+  </div>
+  <div class="container-page relative z-[1] pt-6 pb-12 lg:pt-8 lg:pb-16">
+    {crumbs && crumbs.length > 1 && <Breadcrumbs items={crumbs} />}
+    <div class="mt-8 max-w-3xl space-y-4 lg:mt-10">
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1 class="text-[2rem]/[2.375rem] font-medium tracking-[-1px] lg:text-[2.75rem]/[3rem] lg:tracking-[-1.4px]">
+        {title}
+        {titleMuted && <span class="block text-foreground-tertiary">{titleMuted}</span>}
+      </h1>
+      {intro && <p class="max-w-2xl text-base/7 text-foreground-secondary">{intro}</p>}
+      {Astro.slots.has('default') && <div class="flex flex-wrap gap-3 pt-1"><slot /></div>}
+    </div>
+  </div>
+</section>

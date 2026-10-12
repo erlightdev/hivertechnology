@@ -1,0 +1,51 @@
+---
+import { Mail, MapPin, Phone } from 'lucide-react';
+import Logo from './Logo.astro';
+import { footerNav, legalNav, site } from '@/config/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer data-rail class="bg-background-primary">
+  <div class="container-page relative z-[1] grid gap-12 py-16 lg:grid-cols-[1fr_2.4fr]">
+    <div class="max-w-xs space-y-5">
+      <Logo />
+      <p class="text-sm/6 text-foreground-tertiary">
+        Software, websites and apps built in Lalitpur, Nepal — with clear plans and code you own.
+      </p>
+      <address class="space-y-2.5 text-sm not-italic text-foreground-secondary">
+        <p class="flex items-center gap-2.5"><MapPin className="size-4 shrink-0 text-foreground-muted" aria-hidden="true" />{site.address.display}</p>
+        <a href={site.phoneHref} class="flex items-center gap-2.5 hover:text-foreground-primary"><Phone className="size-4 shrink-0 text-foreground-muted" aria-hidden="true" />{site.phone}</a>
+        <a href={`mailto:${site.email}`} class="flex items-center gap-2.5 hover:text-foreground-primary"><Mail className="size-4 shrink-0 text-foreground-muted" aria-hidden="true" />{site.email}</a>
+      </address>
+    </div>
+
+    <nav aria-label="Footer" class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+      {
+        footerNav.map((group) => (
+          <div>
+            <h2 class="eyebrow">{group.title}</h2>
+            <ul class="mt-4 space-y-2.5">
+              {group.items.map((item) => (
+                <li>
+                  <a href={item.href} class="text-sm text-foreground-secondary transition-colors duration-150 hover:text-foreground-primary">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </nav>
+  </div>
+
+  <div class="border-t border-border-line">
+    <div class="container-page relative z-[1] flex flex-col gap-3 py-6 font-paper text-xs text-foreground-tertiary sm:flex-row sm:items-center sm:justify-between">
+      <p>© {year} {site.name}. Registered in Nepal.</p>
+      <ul class="flex gap-5">
+        {legalNav.map((item) => <li><a href={item.href} class="hover:text-foreground-primary">{item.label}</a></li>)}
+      </ul>
+    </div>
+  </div>
+</footer>

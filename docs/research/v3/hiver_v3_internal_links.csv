@@ -1,0 +1,20 @@
+source,target,anchor,type,status,rule
+/,/services/,Explore confirmed services,primary navigation,BUILD,Link only to confirmed service pages.
+/,/products/,Explore products,primary navigation,GATED,Show only when product evidence exists.
+/,/portfolio/,See selected work,trust route,GATED,Show only with approved cases.
+/,/about-us/,About Hiver Technology,entity route,BUILD,Use full brand phrase.
+/,/contact/,Discuss a project,conversion,BUILD,Primary enquiry route.
+/services/,/services/web-application-development/,custom web application development,service child,GATED,Noindex until capability gate passes.
+/services/,/services/crm-web-applications/,CRM web applications,service child,GATED,Noindex until capability gate passes.
+/services/,/services/website-design-development/,business website design and development,service child,GATED,Noindex until capability gate passes.
+/services/,/services/mobile-app-development/,mobile app development,service child,GATED,Noindex until capability gate passes.
+/services/,/services/ui-ux-design/,UX design for products,service child,GATED,Noindex until capability gate passes.
+/products/,/products/school-management-software/,school management software,product child,GATED,Noindex until product gate passes.
+/about-us/,/team/,Meet the team,trust route,GATED,Show only with real team profiles.
+/about-us/,/international-delivery/,How international delivery works,trust route,GATED,Show only with real operating commitments.
+/insights/,/insights/custom-crm-vs-off-the-shelf/,custom CRM decision guide,content route,GATED,Publish after authorship/capability gate.
+/insights/,/insights/web-application-development-cost/,web application cost drivers,content route,GATED,No invented prices.
+/insights/,/insights/website-redesign-brief/,website redesign brief,content route,GATED,Publish after authorship/capability gate.
+/contact/,/privacy-policy/,Privacy Policy,legal,BUILD,Visible in form/footer.
+/contact/,/terms-of-service/,Terms of Service,legal,BUILD,Visible in footer.
+/contact/,/cookie-policy/,Cookie Policy,legal,BUILD,Visible in footer and consent tool.

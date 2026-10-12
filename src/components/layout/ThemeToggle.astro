@@ -1,0 +1,26 @@
+---
+import { Moon, Sun } from 'lucide-react';
+---
+
+<button
+  type="button"
+  data-theme-toggle
+  class="inline-flex size-8 items-center justify-center rounded-[4px] text-foreground-tertiary transition-colors duration-150 ease-out-soft hover:bg-background-secondary hover:text-foreground-primary"
+  aria-label="Toggle colour theme"
+>
+  <Sun className="size-4 dark:hidden" aria-hidden="true" />
+  <Moon className="hidden size-4 dark:block" aria-hidden="true" />
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      try {
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      } catch {
+        // Storage can be unavailable (private mode); the toggle still works for this page.
+      }
+    });
+  });
+</script>

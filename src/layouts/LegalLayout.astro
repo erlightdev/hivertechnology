@@ -1,0 +1,36 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '@/components/common/Breadcrumbs.astro';
+import { pageMeta, type StaticPath } from '@/config/pages';
+import { breadcrumbs, graph, webPage } from '@/lib/schema';
+import { formatDate } from '@/lib/insights';
+
+export interface Props {
+  path: StaticPath;
+  heading: string;
+  updated: Date;
+}
+const { path, heading, updated } = Astro.props;
+const meta = pageMeta(path);
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: heading, path },
+];
+const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs));
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <div class="container-page py-10 sm:py-14">
+    <Breadcrumbs items={crumbs} />
+    <header class="mt-8 max-w-3xl border-b pb-8 lg:mt-10">
+      <p class="eyebrow">Legal</p>
+      <h1 class="mt-3 text-[2rem]/[2.375rem] font-medium tracking-[-1px] lg:text-[2.75rem]/[3rem]">{heading}</h1>
+      <p class="mt-4 text-sm text-foreground-tertiary">
+        Last updated <time datetime={updated.toISOString().slice(0, 10)}>{formatDate(updated)}</time>
+      </p>
+    </header>
+    <div class="prose prose-neutral mt-10 max-w-3xl dark:prose-invert prose-headings:font-medium prose-headings:tracking-tight prose-a:underline-offset-4">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>

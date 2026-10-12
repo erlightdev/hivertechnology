@@ -1,0 +1,1922 @@
+{
+  "source": "docs/research/v2/Hiver Technology - Page Copy Deck.md",
+  "pages": [
+    {
+      "name": "Home",
+      "deckPath": "/",
+      "path": "/",
+      "priority": "P0",
+      "primaryKeyword": "technology solutions company",
+      "secondaryKeywords": [
+        "web development company",
+        "shopify development agency",
+        "marketing automation agency"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Hiver Technology | Software, Ecommerce & Growth Systems",
+      "description": "Hiver Technology designs and builds websites, web applications, Shopify stores and growth systems for businesses ready to improve how they sell and operate.",
+      "eyebrow": "Software, ecommerce and growth systems",
+      "h1": "Digital systems built for growth, not just launch.",
+      "intro": "Hiver Technology designs and improves websites, web applications, Shopify stores and customer-growth systems for businesses that need clearer journeys, better operations and work that can keep evolving after launch.",
+      "primaryCta": "Discuss Your Project",
+      "secondaryCta": "Explore Our Services",
+      "problem": {
+        "heading": "When your website, workflow and marketing systems work in isolation",
+        "body": "A slow website, disconnected customer data, manual follow-up and unclear reporting make growth harder than it should be. Hiver brings product, commerce and growth work into a practical delivery plan."
+      },
+      "approach": {
+        "heading": "One partner across the systems customers and teams rely on",
+        "body": "Start with the problem to solve, then choose the right mix of design, development, ecommerce, search and automation. The goal is not more technology. It is a system your customers can use and your team can run."
+      },
+      "included": [
+        "Websites and web applications designed around real workflows",
+        "Shopify stores and ecommerce improvements that support conversion",
+        "SEO and growth foundations that make work easier to discover",
+        "Marketing automation and lifecycle journeys that reduce manual follow-up"
+      ],
+      "steps": [
+        "Discover the business goal",
+        "Map the customer and team workflow",
+        "Design the right experience",
+        "Build and test the system",
+        "Launch with measurement in place",
+        "Improve from real usage"
+      ],
+      "faqs": [
+        {
+          "q": "What does Hiver Technology do?",
+          "a": "Hiver plans, designs and delivers websites, web applications, Shopify ecommerce work, SEO foundations and growth automation. The right scope depends on the problem, systems and outcome you need."
+        },
+        {
+          "q": "Can Hiver work with international clients?",
+          "a": "Hiver can support remote delivery for international clients. Confirm working hours, communication cadence, data-access requirements and contract terms during discovery."
+        },
+        {
+          "q": "How do we start a project?",
+          "a": "Share the business goal, existing website or product, timeline, budget range and stakeholders. Hiver can then recommend a focused discovery step or project scope."
+        }
+      ],
+      "related": [
+        "/services/",
+        "/services/web-application-development/",
+        "/services/shopify-development/",
+        "/services/seo/",
+        "/services/marketing-automation/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Your Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Services",
+      "deckPath": "/services/",
+      "path": "/services/",
+      "priority": "P0",
+      "primaryKeyword": "technology services company",
+      "secondaryKeywords": [
+        "web development services",
+        "shopify development services",
+        "seo services",
+        "marketing automation services"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Technology Services for Websites, Ecommerce & Growth | Hiver Technology",
+      "description": "Explore Hiver Technology services across web applications, websites, Shopify ecommerce, SEO and growth automation. Start with the business problem you need to solve.",
+      "eyebrow": "Choose the outcome, then the service",
+      "h1": "Technology services built around your next business problem.",
+      "intro": "Whether you need to launch a product, rebuild a website, improve a Shopify store, increase search visibility or reduce manual follow-up, start with the business outcome.",
+      "primaryCta": "Discuss Your Project",
+      "secondaryCta": "View Our Work",
+      "problem": {
+        "heading": "A long list of disconnected services creates a confusing buying process",
+        "body": "Services are grouped around the systems that customers use and teams operate, not around every individual task an agency can sell."
+      },
+      "approach": {
+        "heading": "Start with one of four clear service paths",
+        "body": "Software applications, ecommerce, SEO, and growth marketing and automation each have a defined role. Hiver can connect them where a project needs more than one capability."
+      },
+      "included": [
+        "Software applications for products, portals and internal workflows",
+        "Websites and ecommerce experiences for acquisition and conversion",
+        "SEO foundations and technical improvements for sustainable visibility",
+        "Automation and lifecycle programs for faster, more consistent follow-up"
+      ],
+      "steps": [
+        "Choose the business problem",
+        "Confirm user and revenue impact",
+        "Prioritize the delivery scope",
+        "Create the delivery plan",
+        "Build, launch and learn"
+      ],
+      "faqs": [
+        {
+          "q": "Which service should we start with?",
+          "a": "Start with the bottleneck that limits growth or efficiency today. Hiver can help distinguish whether the answer is a website, application, Shopify improvement, SEO foundation or automation workflow."
+        },
+        {
+          "q": "Can Hiver combine multiple services?",
+          "a": "Yes. A project can combine strategy, design, development and growth work, provided the scope remains clear and the delivery sequence is practical."
+        },
+        {
+          "q": "Do you offer ongoing support?",
+          "a": "Support arrangements should be defined based on the systems Hiver delivers and the level of ongoing improvement required."
+        }
+      ],
+      "related": [
+        "group:software",
+        "/services/ecommerce-development/",
+        "/services/seo/",
+        "/services/growth-marketing/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Your Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Software Applications",
+      "deckPath": "/services/software-applications/",
+      "path": "group:software",
+      "priority": "P1",
+      "primaryKeyword": "custom software development services",
+      "secondaryKeywords": [
+        "web application development",
+        "business application development",
+        "crm development"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Software & Web Application Development Services | Hiver Technology",
+      "description": "Hiver Technology plans and builds web applications, CRM systems, customer portals and digital products around real business workflows.",
+      "eyebrow": "Software for customers and teams",
+      "h1": "Software applications designed around real work.",
+      "intro": "Build the product, portal or business system your team needs without forcing critical workflows into a generic template. Hiver starts with users, process and data before deciding what to build.",
+      "primaryCta": "Plan Your Application",
+      "secondaryCta": "View Web Application Services",
+      "problem": {
+        "heading": "When a spreadsheet, inbox or off-the-shelf tool is no longer enough",
+        "body": "Growth often exposes gaps between the way a business needs to operate and the tools it has. Repeated handoffs, duplicate data and unclear ownership create avoidable friction."
+      },
+      "approach": {
+        "heading": "Map the workflow before building the feature list",
+        "body": "Hiver turns the current process into a clearer product scope, with user roles, journeys, integrations, reporting needs and delivery priorities made visible early."
+      },
+      "included": [
+        "Product discovery and workflow mapping",
+        "UX/UI design for web-based products",
+        "Web application and portal development",
+        "CRM, data and integration planning",
+        "Testing, rollout and improvement planning"
+      ],
+      "steps": [
+        "Discovery and user mapping",
+        "Scope the first release",
+        "Design workflows and interfaces",
+        "Develop and test",
+        "Launch and measure",
+        "Iterate from use"
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between a website and a web application?",
+          "a": "A website primarily presents information or helps users take a simple action. A web application usually supports logged-in workflows, data, roles, processes or recurring tasks."
+        },
+        {
+          "q": "Can Hiver modernize an existing business system?",
+          "a": "Hiver can assess the current workflow and recommend whether to improve, integrate, rebuild or replace it. The decision should follow a discovery review."
+        },
+        {
+          "q": "Can a project begin with an MVP?",
+          "a": "Yes. A smaller first release can focus on the most important workflow, validate adoption and create a foundation for future improvement."
+        }
+      ],
+      "related": [
+        "/services/web-application-development/",
+        "/services/crm-web-applications/",
+        "/services/mobile-app-development/",
+        "/services/ui-ux-design/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Application",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Web Application Development",
+      "deckPath": "/services/software-applications/web-application-development/",
+      "path": "/services/web-application-development/",
+      "priority": "P0",
+      "primaryKeyword": "web application development company",
+      "secondaryKeywords": [
+        "custom web application development",
+        "web app development services",
+        "business web application development"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Web Application Development Company | Hiver Technology",
+      "description": "Hiver Technology designs and develops web applications for products, customer portals and internal workflows. Start with a practical discovery and delivery plan.",
+      "eyebrow": "Custom web application development",
+      "h1": "Web applications that make complex work easier to run.",
+      "intro": "Hiver Technology designs and develops web applications for customer portals, internal systems and digital products. We turn unclear workflows into usable software that supports the way your business needs to operate.",
+      "primaryCta": "Plan Your Web Application",
+      "secondaryCta": "See How We Work",
+      "problem": {
+        "heading": "Your team has outgrown manual, disconnected ways of working",
+        "body": "Information sits across inboxes, spreadsheets and separate tools. Customers wait for updates. Teams repeat the same steps. Leaders lack a clear view of the work. These are workflow problems before they are technology problems."
+      },
+      "approach": {
+        "heading": "Build the system around the workflow that matters most",
+        "body": "Hiver begins by understanding users, decisions, data and constraints. Then we define a focused application scope, design the experience, build the first release and create a practical path for improvement."
+      },
+      "included": [
+        "Discovery workshops and workflow mapping",
+        "Product requirements and release planning",
+        "UX/UI design for core user journeys",
+        "Web application development and integration planning",
+        "Quality assurance, launch support and measurement"
+      ],
+      "steps": [
+        "Understand the process and users",
+        "Prioritize the first release",
+        "Design the critical journeys",
+        "Build, test and refine",
+        "Launch with ownership and measurement",
+        "Plan the next improvement cycle"
+      ],
+      "faqs": [
+        {
+          "q": "What kinds of web applications can Hiver develop?",
+          "a": "Typical applications include customer portals, internal operations tools, workflow systems, booking or request platforms, dashboards and early-stage digital products. Scope should be confirmed through discovery."
+        },
+        {
+          "q": "How do you decide whether to build custom software?",
+          "a": "Hiver compares the business value of a tailored workflow with existing tools, integrations and process changes. A custom build should solve a specific problem better than the alternatives."
+        },
+        {
+          "q": "Will we own the application?",
+          "a": "Project ownership, code access, hosting and support responsibilities should be set out clearly in the agreed proposal and contract."
+        }
+      ],
+      "related": [
+        "group:software",
+        "/services/crm-web-applications/",
+        "/services/ui-ux-design/",
+        "/portfolio/",
+        "/industries/logistics/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Web Application",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "CRM Development",
+      "deckPath": "/services/software-applications/crm-development/",
+      "path": "/services/crm-web-applications/",
+      "priority": "P1",
+      "primaryKeyword": "crm development company",
+      "secondaryKeywords": [
+        "custom crm development",
+        "crm web application development",
+        "business process automation"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Custom CRM Development Services | Hiver Technology",
+      "description": "Hiver Technology plans and develops CRM systems that centralize customer information, clarify follow-up and support the workflow your business actually uses.",
+      "eyebrow": "CRM and business workflow systems",
+      "h1": "A CRM designed around your customer process.",
+      "intro": "When customer information is scattered and follow-up depends on memory, Hiver can help design a CRM workflow that gives teams a clearer place to manage relationships, activity and next actions.",
+      "primaryCta": "Discuss Your CRM",
+      "secondaryCta": "Explore Web Applications",
+      "problem": {
+        "heading": "Customer data is available, but not usable when it matters",
+        "body": "Teams lose context when lead history, conversations, tasks and reporting sit in different places. The result is slower follow-up and less confidence in the pipeline."
+      },
+      "approach": {
+        "heading": "Make customer context and next actions easier to see",
+        "body": "Hiver maps the lifecycle from enquiry to ongoing customer management, then designs the data structure, permissions, journeys and automation opportunities that match the business."
+      },
+      "included": [
+        "CRM workflow discovery",
+        "Data and role definition",
+        "Pipeline, task and dashboard design",
+        "Integration and migration planning",
+        "User acceptance testing and rollout support"
+      ],
+      "steps": [
+        "Audit the current customer journey",
+        "Define the data and roles",
+        "Design the daily workflow",
+        "Build or configure the solution",
+        "Test with real scenarios",
+        "Train, launch and improve"
+      ],
+      "faqs": [
+        {
+          "q": "Should we use an existing CRM or build a custom one?",
+          "a": "The answer depends on workflow complexity, data needs, integrations and budget. Hiver can assess the options before recommending a build or configuration path."
+        },
+        {
+          "q": "Can a CRM connect with our website?",
+          "a": "A CRM can be planned to receive qualified enquiries, track customer activity and support follow-up. Specific integration options depend on the systems in use."
+        },
+        {
+          "q": "Can we start with one team or process?",
+          "a": "Yes. A focused first phase often starts with the highest-value workflow and expands after the team has validated the process."
+        }
+      ],
+      "related": [
+        "group:software",
+        "/services/web-application-development/",
+        "/services/marketing-automation/",
+        "/industries/education/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Your CRM",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Mobile App Development",
+      "deckPath": "/services/software-applications/mobile-app-development/",
+      "path": "/services/mobile-app-development/",
+      "priority": "P1",
+      "primaryKeyword": "mobile app development company",
+      "secondaryKeywords": [
+        "ios and android app development",
+        "business mobile app development",
+        "mobile app development services"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Mobile App Development Services | Hiver Technology",
+      "description": "Hiver Technology plans mobile app projects around the customer or operational journey that needs to work clearly on the move.",
+      "eyebrow": "Mobile product delivery",
+      "h1": "Mobile experiences built around the moments that matter.",
+      "intro": "Hiver helps businesses plan mobile app experiences for customers, field teams and operational users. The starting point is a useful, repeatable mobile workflow—not a list of features.",
+      "primaryCta": "Plan Your Mobile App",
+      "secondaryCta": "Explore Web Applications",
+      "problem": {
+        "heading": "The work happens away from a desk, but the system does not",
+        "body": "A mobile project is valuable when users need to complete a meaningful task on the move: access information, submit a request, manage a booking, update a record or receive an important prompt."
+      },
+      "approach": {
+        "heading": "Define the high-value mobile journey first",
+        "body": "Hiver identifies the moments where mobile reduces friction, then scopes a first release that makes those moments simple, fast and measurable."
+      },
+      "included": [
+        "Mobile discovery and journey mapping",
+        "Wireframes and interface design",
+        "Platform and release planning",
+        "Development, QA and device testing",
+        "Launch and iteration roadmap"
+      ],
+      "steps": [
+        "Identify the mobile use case",
+        "Scope the smallest useful release",
+        "Design accessible mobile flows",
+        "Build and test on real devices",
+        "Prepare launch materials",
+        "Measure adoption and improve"
+      ],
+      "faqs": [
+        {
+          "q": "Do we need a mobile app or a responsive web application?",
+          "a": "Choose based on the user need, device capability, frequency of use and operational context. Hiver can assess the right approach during discovery."
+        },
+        {
+          "q": "Can an app connect with existing systems?",
+          "a": "Integration requirements should be identified early so that the app, data and operational workflows are planned together."
+        },
+        {
+          "q": "How do we define the first version?",
+          "a": "Start with the user action that creates the most value, then prioritize supporting features after the first experience has been tested."
+        }
+      ],
+      "related": [
+        "group:software",
+        "/services/web-application-development/",
+        "/services/ui-ux-design/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Mobile App",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "UI/UX Design",
+      "deckPath": "/services/software-applications/ui-ux-design/",
+      "path": "/services/ui-ux-design/",
+      "priority": "P1",
+      "primaryKeyword": "ui ux design agency",
+      "secondaryKeywords": [
+        "user experience design services",
+        "product design agency",
+        "website ux design"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "UI/UX Design Services for Digital Products | Hiver Technology",
+      "description": "Hiver Technology designs clearer user journeys, interfaces and prototypes for websites, web applications and ecommerce experiences.",
+      "eyebrow": "UX and interface design",
+      "h1": "Design decisions grounded in the journey your users need to complete.",
+      "intro": "Hiver designs digital experiences by making the user goal, business goal and information hierarchy visible before development begins. The result is a clearer path from first screen to meaningful action.",
+      "primaryCta": "Improve Your User Experience",
+      "secondaryCta": "Explore Our Services",
+      "problem": {
+        "heading": "Users hesitate when the path, language or priority is unclear",
+        "body": "Poor experience is not always a visual problem. It is often a problem of unclear decisions, crowded interfaces, inconsistent patterns or missing information at the point of action."
+      },
+      "approach": {
+        "heading": "Make the important next step easier to understand",
+        "body": "Hiver maps user journeys, prioritizes information and designs screens that help users decide, act and recover from mistakes with less effort."
+      },
+      "included": [
+        "User journey and task-flow mapping",
+        "Information architecture",
+        "Wireframes and prototype design",
+        "Interface systems and handover",
+        "Usability review and design refinement"
+      ],
+      "steps": [
+        "Understand the user task",
+        "Map the current journey",
+        "Prototype the critical flow",
+        "Review and refine",
+        "Prepare for development",
+        "Test after launch"
+      ],
+      "faqs": [
+        {
+          "q": "Can UX design be delivered before development?",
+          "a": "Yes. A focused UX phase can reduce uncertainty, align stakeholders and give development a clearer implementation plan."
+        },
+        {
+          "q": "Do you redesign existing products?",
+          "a": "Hiver can review an existing website, application or store to identify friction in key user journeys and recommend a staged improvement plan."
+        },
+        {
+          "q": "What will we receive?",
+          "a": "Deliverables should be agreed to match the project, but may include journey maps, wireframes, prototypes, interface specifications and a handover plan."
+        }
+      ],
+      "related": [
+        "/services/web-application-development/",
+        "/services/website-design-development/",
+        "/services/shopify-development/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Improve Your User Experience",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Website Design & Development",
+      "deckPath": "/services/web-development/website-design-development/",
+      "path": "/services/website-design-development/",
+      "priority": "P0",
+      "primaryKeyword": "website development company",
+      "secondaryKeywords": [
+        "business website design and development",
+        "custom website development",
+        "responsive website development"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Website Design & Development Company | Hiver Technology",
+      "description": "Hiver Technology designs and develops clear, fast, conversion-ready websites that help businesses explain their value and turn interest into qualified action.",
+      "eyebrow": "Business websites built for clear decisions",
+      "h1": "A website that helps the right customer understand why they should act.",
+      "intro": "Hiver designs and develops websites that make your offer clearer, guide visitors through the right information and give your team a practical platform to keep improving.",
+      "primaryCta": "Plan Your Website",
+      "secondaryCta": "See Our Work",
+      "problem": {
+        "heading": "Your website is live, but it is not doing enough of the selling",
+        "body": "When the message is generic, the path is unclear or the site is difficult to maintain, potential customers leave without understanding the value of the business."
+      },
+      "approach": {
+        "heading": "Create a website around buyer questions and business goals",
+        "body": "Hiver combines message hierarchy, UX, content structure and development planning so that the website supports the way people evaluate your service and the way your team qualifies enquiries."
+      },
+      "included": [
+        "Website strategy and content structure",
+        "UX/UI design and responsive page design",
+        "Development and CMS planning",
+        "Technical SEO foundation and measurement setup",
+        "Testing, launch and improvement support"
+      ],
+      "steps": [
+        "Clarify the audience and objective",
+        "Structure the content and conversion path",
+        "Design the experience",
+        "Develop and test the website",
+        "Launch with analytics",
+        "Improve from user and search data"
+      ],
+      "faqs": [
+        {
+          "q": "What is included in a website development project?",
+          "a": "The scope can include strategy, content structure, UX/UI design, development, technical SEO, analytics and launch support. The final scope depends on the website purpose and existing assets."
+        },
+        {
+          "q": "Can Hiver improve our current website instead of rebuilding it?",
+          "a": "Yes. Hiver can assess the current site to identify whether a focused optimization, redesign or rebuild provides the best value."
+        },
+        {
+          "q": "Will the website be search-ready?",
+          "a": "A search-ready foundation includes clear site architecture, unique page titles, descriptions, headings, internal linking, crawlable content and measurement. Ranking results depend on competition, authority and ongoing work."
+        }
+      ],
+      "related": [
+        "/services/wordpress-development/",
+        "/services/ui-ux-design/",
+        "/services/seo/",
+        "/portfolio/",
+        "/insights/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Website",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "WordPress Development",
+      "deckPath": "/services/web-development/wordpress-development/",
+      "path": "/services/wordpress-development/",
+      "priority": "P1",
+      "primaryKeyword": "wordpress development company",
+      "secondaryKeywords": [
+        "custom wordpress development",
+        "wordpress website development services",
+        "wordpress website redesign"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "WordPress Development Services | Hiver Technology",
+      "description": "Hiver Technology designs, develops and improves WordPress websites with a focus on clear content management, responsive experience and an SEO-ready foundation.",
+      "eyebrow": "WordPress website development",
+      "h1": "A WordPress website your team can run with confidence.",
+      "intro": "Hiver develops WordPress websites for businesses that need a flexible content platform, clear page structure and a practical path for updates after launch.",
+      "primaryCta": "Plan Your WordPress Website",
+      "secondaryCta": "Explore Website Services",
+      "problem": {
+        "heading": "A CMS should make updates easier, not create another dependency",
+        "body": "A WordPress site needs clear content roles, sensible templates and maintainable components so that routine marketing changes do not require a rebuild."
+      },
+      "approach": {
+        "heading": "Build an editable site without compromising the essential experience",
+        "body": "Hiver defines the pages and components the team truly needs, then designs a publishing workflow that keeps content quality and site structure under control."
+      },
+      "included": [
+        "Content model and page template planning",
+        "WordPress design and development",
+        "Migration and content setup planning",
+        "Technical SEO and measurement foundation",
+        "Documentation and support options"
+      ],
+      "steps": [
+        "Audit the current content",
+        "Plan the content model",
+        "Design reusable page components",
+        "Develop and test",
+        "Migrate and launch",
+        "Train the content owners"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver redesign an existing WordPress site?",
+          "a": "Yes. Hiver can review the current content, platform constraints and conversion gaps before recommending a redesign or targeted improvement."
+        },
+        {
+          "q": "Can our team update the site?",
+          "a": "The editing experience should be planned around the updates your team needs to make. Hiver can provide documentation as part of the project scope."
+        },
+        {
+          "q": "Can WordPress support SEO?",
+          "a": "WordPress can support a solid SEO foundation when content, templates, speed, crawlability, metadata and measurement are planned correctly. It does not guarantee rankings."
+        }
+      ],
+      "related": [
+        "/services/website-design-development/",
+        "/services/seo/",
+        "/services/ui-ux-design/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your WordPress Website",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Ecommerce Development",
+      "deckPath": "/services/ecommerce/",
+      "path": "/services/ecommerce-development/",
+      "priority": "P1",
+      "primaryKeyword": "ecommerce development agency",
+      "secondaryKeywords": [
+        "ecommerce website development",
+        "shopify development agency",
+        "ecommerce growth services"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Ecommerce Development & Growth Services | Hiver Technology",
+      "description": "Hiver Technology helps ecommerce businesses plan, build, improve and market stores with Shopify development, migration, SEO and lifecycle foundations.",
+      "eyebrow": "Ecommerce design, development and growth",
+      "h1": "Ecommerce systems built to help customers find, understand and buy.",
+      "intro": "Hiver connects storefront experience, product information, search visibility and lifecycle follow-up so that ecommerce work supports the customer journey beyond the moment a store goes live.",
+      "primaryCta": "Plan Your Ecommerce Project",
+      "secondaryCta": "Explore Shopify Development",
+      "problem": {
+        "heading": "A store can be technically live and still difficult to buy from",
+        "body": "Ecommerce growth slows when shoppers cannot quickly understand a product, compare options, trust the checkout journey or return after their first visit."
+      },
+      "approach": {
+        "heading": "Improve the storefront and the systems around it",
+        "body": "Hiver plans ecommerce work around the product discovery, buying and post-purchase journey. Services can include Shopify development, migration, SEO, website UX and lifecycle automation."
+      },
+      "included": [
+        "Store and customer-journey discovery",
+        "Shopify design and development",
+        "Migration and operational planning",
+        "Ecommerce SEO foundation",
+        "Lifecycle and automation opportunities"
+      ],
+      "steps": [
+        "Review the store and goals",
+        "Prioritize the buyer journey",
+        "Design the right pages and flows",
+        "Build and test",
+        "Launch with tracking",
+        "Improve from real customer behavior"
+      ],
+      "faqs": [
+        {
+          "q": "Does Hiver only work with Shopify?",
+          "a": "Shopify is a core ecommerce focus in this architecture. Discuss your current platform and project goals with Hiver to determine the most suitable scope."
+        },
+        {
+          "q": "Can ecommerce SEO and development be planned together?",
+          "a": "Yes. Content structure, product discovery, page speed, metadata, internal linking and analytics are easier to plan when development and search requirements are considered together."
+        },
+        {
+          "q": "Can we start with a store audit?",
+          "a": "A focused discovery or audit can identify the highest-value next step before committing to a larger ecommerce project."
+        }
+      ],
+      "related": [
+        "/services/shopify-development/",
+        "/services/shopify-migration/",
+        "/services/shopify-seo/",
+        "/services/marketing-automation/",
+        "/industries/ecommerce/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Ecommerce Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Shopify Development",
+      "deckPath": "/services/ecommerce/shopify-development/",
+      "path": "/services/shopify-development/",
+      "priority": "P0",
+      "primaryKeyword": "shopify development agency",
+      "secondaryKeywords": [
+        "shopify website development",
+        "shopify developer",
+        "shopify store development"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Shopify Development Agency | Hiver Technology",
+      "description": "Hiver Technology plans and develops Shopify stores around product discovery, customer confidence and a practical path for ongoing improvement.",
+      "eyebrow": "Shopify ecommerce development",
+      "h1": "Shopify stores designed for clear product journeys and confident buying decisions.",
+      "intro": "Hiver Technology designs and develops Shopify storefronts for businesses that need a clearer path from product discovery to purchase. We focus on the information, experience and systems shoppers rely on before they buy.",
+      "primaryCta": "Plan Your Shopify Store",
+      "secondaryCta": "Explore Ecommerce Services",
+      "problem": {
+        "heading": "Shoppers leave when the store makes the decision harder than it needs to be",
+        "body": "Unclear value, weak product pages, confusing collections, slow pages and disconnected post-purchase journeys make it harder for visitors to become customers."
+      },
+      "approach": {
+        "heading": "Build the store around the way people evaluate and buy your products",
+        "body": "Hiver plans the storefront from the customer journey backward: how people find a product, compare it, understand delivery and returns, take action, and come back again."
+      },
+      "included": [
+        "Shopify discovery and store planning",
+        "UX/UI design for home, collection and product journeys",
+        "Theme and storefront development",
+        "Product, content and integration planning",
+        "Quality assurance, launch and optimization roadmap"
+      ],
+      "steps": [
+        "Understand the product and audience",
+        "Map key shopping journeys",
+        "Design the storefront system",
+        "Develop and test the store",
+        "Launch with measurement",
+        "Prioritize the next improvements"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver build a new Shopify store?",
+          "a": "Yes. A new-store project can include journey planning, design, development, content structure, product setup planning, technical SEO foundation and launch support."
+        },
+        {
+          "q": "Can Hiver improve an existing Shopify store?",
+          "a": "Yes. Hiver can review the storefront, product experience, content and conversion path to recommend targeted improvements or a larger redevelopment."
+        },
+        {
+          "q": "Can Shopify development include SEO and automation?",
+          "a": "Yes. Shopify work can be planned alongside Shopify SEO, lifecycle email and customer follow-up when those services match the business objective."
+        }
+      ],
+      "related": [
+        "/services/ecommerce-development/",
+        "/services/shopify-migration/",
+        "/services/shopify-seo/",
+        "/services/ui-ux-design/",
+        "/industries/ecommerce/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Shopify Store",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Shopify Migration",
+      "deckPath": "/services/ecommerce/shopify-migration/",
+      "path": "/services/shopify-migration/",
+      "priority": "P1",
+      "primaryKeyword": "shopify migration services",
+      "secondaryKeywords": [
+        "migrate to shopify",
+        "ecommerce platform migration",
+        "shopify replatforming"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Shopify Migration Services | Hiver Technology",
+      "description": "Hiver Technology plans Shopify migrations around product data, customer experience, search visibility and an organized launch process.",
+      "eyebrow": "Ecommerce replatforming",
+      "h1": "Move to Shopify with the customer journey and search foundation in view.",
+      "intro": "A migration is more than moving products and pages. Hiver plans the storefront, data, redirect, content and launch sequence so that the new store is ready for customers and internal teams.",
+      "primaryCta": "Plan Your Shopify Migration",
+      "secondaryCta": "Explore Shopify Development",
+      "problem": {
+        "heading": "Replatforming can create avoidable risk when data, URLs and customer journeys are treated as afterthoughts",
+        "body": "A store move touches content, products, collections, search equity, tracking, integrations and internal processes. A rushed cutover can create customer confusion and operational stress."
+      },
+      "approach": {
+        "heading": "Plan the move as a business change, not a content transfer",
+        "body": "Hiver documents the existing store, prioritizes critical flows, identifies migration dependencies and builds a launch checklist that makes responsibilities and testing clear."
+      },
+      "included": [
+        "Migration discovery and platform assessment",
+        "Content, product and URL inventory",
+        "Storefront design and build plan",
+        "Redirect, SEO and analytics requirements",
+        "Pre-launch testing and post-launch monitoring"
+      ],
+      "steps": [
+        "Audit the current store",
+        "Define data and content scope",
+        "Design the new storefront",
+        "Prepare migration and redirects",
+        "Test critical journeys",
+        "Launch and monitor"
+      ],
+      "faqs": [
+        {
+          "q": "Can a Shopify migration preserve SEO value?",
+          "a": "Hiver can plan redirects, content mapping, metadata and launch checks to reduce avoidable search disruption. No migration can guarantee ranking preservation because rankings depend on many external factors."
+        },
+        {
+          "q": "What needs to be migrated?",
+          "a": "The project should identify products, collections, content, customers, order history where appropriate, URLs, assets, analytics, integrations and operational workflows."
+        },
+        {
+          "q": "How do we reduce migration risk?",
+          "a": "Use an inventory, clear ownership, staging tests, redirect mapping, customer-journey testing and monitored launch plan."
+        }
+      ],
+      "related": [
+        "/services/shopify-development/",
+        "/services/shopify-seo/",
+        "/services/technical-seo/",
+        "/insights/shopify-migration-checklist/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Shopify Migration",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Shopify SEO",
+      "deckPath": "/services/ecommerce/shopify-seo/",
+      "path": "/services/shopify-seo/",
+      "priority": "P1",
+      "primaryKeyword": "shopify seo services",
+      "secondaryKeywords": [
+        "shopify seo agency",
+        "shopify technical seo",
+        "shopify seo audit"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Shopify SEO Services | Hiver Technology",
+      "description": "Hiver Technology improves Shopify search foundations across site structure, product and collection content, technical checks and measurement.",
+      "eyebrow": "Search visibility for Shopify stores",
+      "h1": "Shopify SEO built around how shoppers search and evaluate products.",
+      "intro": "Hiver helps Shopify stores improve the foundations that support discoverability: logical architecture, useful collection and product content, technical hygiene, internal linking and measurement.",
+      "primaryCta": "Discuss Shopify SEO",
+      "secondaryCta": "Explore SEO Services",
+      "problem": {
+        "heading": "Product and collection pages cannot perform if shoppers and search engines cannot understand the store",
+        "body": "Duplicate or thin content, weak collections, unclear internal links, inaccessible product information and missing measurement make it harder to build sustainable search visibility."
+      },
+      "approach": {
+        "heading": "Connect store structure, shopper questions and technical hygiene",
+        "body": "Hiver prioritizes the pages and information most useful to customers, then addresses the technical and content factors that help search engines discover and understand those pages."
+      },
+      "included": [
+        "Shopify SEO audit and priority plan",
+        "Collection, product and information architecture review",
+        "On-page and internal-linking recommendations",
+        "Technical SEO checks and implementation guidance",
+        "Search Console and reporting foundation"
+      ],
+      "steps": [
+        "Assess the current search foundation",
+        "Map priority category and product journeys",
+        "Fix the highest-impact technical issues",
+        "Improve content and internal links",
+        "Measure visibility and behavior",
+        "Refresh based on evidence"
+      ],
+      "faqs": [
+        {
+          "q": "Can Shopify SEO guarantee rankings?",
+          "a": "No. SEO can improve technical and content foundations, but rankings depend on competition, relevance, authority, search behavior and other factors outside any agency’s control."
+        },
+        {
+          "q": "How is Shopify SEO different from general SEO?",
+          "a": "Shopify SEO includes platform-specific considerations for themes, collections, products, filters, internal linking, apps and ecommerce information architecture."
+        },
+        {
+          "q": "Should we start with a Shopify SEO audit?",
+          "a": "An audit can identify the biggest technical, content and structural opportunities before Hiver proposes a focused implementation plan."
+        }
+      ],
+      "related": [
+        "/services/shopify-development/",
+        "/services/seo/",
+        "/services/technical-seo/",
+        "/insights/shopify-seo-guide/",
+        "/industries/ecommerce/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Shopify SEO",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "SEO Services",
+      "deckPath": "/services/seo/",
+      "path": "/services/seo/",
+      "priority": "P0",
+      "primaryKeyword": "seo services",
+      "secondaryKeywords": [
+        "seo agency",
+        "search engine optimization services",
+        "seo strategy"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "SEO Services for Websites & Ecommerce | Hiver Technology",
+      "description": "Hiver Technology improves the technical, content and measurement foundations that help businesses become easier to discover in search.",
+      "eyebrow": "Search engine optimization",
+      "h1": "SEO foundations built for discoverability, usefulness and measurable learning.",
+      "intro": "Hiver helps businesses create a more useful, crawlable and measurable web presence through technical SEO, content structure, on-page improvement and clear reporting.",
+      "primaryCta": "Discuss Your SEO Foundation",
+      "secondaryCta": "Explore Technical SEO",
+      "problem": {
+        "heading": "Search performance usually fails because the foundation is fragmented",
+        "body": "Technical issues, unclear page purpose, weak internal linking, duplicate content, missing measurement and low-value publishing can all limit visibility before backlink work is even considered."
+      },
+      "approach": {
+        "heading": "Prioritize the issues that make the website harder to understand and use",
+        "body": "Hiver reviews the site through the lens of crawlability, indexability, information architecture, page purpose, content usefulness and conversion. Work is prioritized by impact and feasibility."
+      },
+      "included": [
+        "SEO audit and prioritized roadmap",
+        "Technical SEO checks and implementation support",
+        "On-page content and metadata improvements",
+        "Information architecture and internal linking",
+        "Search Console and reporting configuration"
+      ],
+      "steps": [
+        "Establish the search baseline",
+        "Audit technical and content issues",
+        "Map pages to real user intent",
+        "Implement high-impact improvements",
+        "Measure results",
+        "Refresh and expand based on evidence"
+      ],
+      "faqs": [
+        {
+          "q": "How long does SEO take?",
+          "a": "Search impact can take weeks or months and varies by competition, website history, authority, implementation quality and content. Hiver should report progress through clear leading and lagging indicators."
+        },
+        {
+          "q": "Can Hiver guarantee first-page rankings?",
+          "a": "No. Reputable SEO work does not guarantee positions. Hiver can commit to a transparent process, prioritized work and measurement."
+        },
+        {
+          "q": "What should be measured?",
+          "a": "Measure index coverage, technical health, impressions, clicks, CTR, queries, landing pages, qualified leads and assisted conversions—not rankings alone."
+        }
+      ],
+      "related": [
+        "/services/technical-seo/",
+        "/services/shopify-seo/",
+        "/services/website-design-development/",
+        "/insights/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Your SEO Foundation",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Technical SEO",
+      "deckPath": "/services/seo/technical-seo/",
+      "path": "/services/technical-seo/",
+      "priority": "P1",
+      "primaryKeyword": "technical seo services",
+      "secondaryKeywords": [
+        "technical seo agency",
+        "technical seo audit",
+        "website technical seo"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Technical SEO Services & Audits | Hiver Technology",
+      "description": "Hiver Technology audits and improves the technical foundations that help search engines crawl, understand and index important website pages.",
+      "eyebrow": "Technical SEO foundation",
+      "h1": "Make the website easier for search engines and people to use.",
+      "intro": "Hiver reviews the technical conditions that affect discovery and understanding: crawlability, indexation, page experience, structured data, metadata, internal links, redirects and measurement.",
+      "primaryCta": "Request a Technical SEO Review",
+      "secondaryCta": "Explore SEO Services",
+      "problem": {
+        "heading": "Important pages cannot compete if they are difficult to crawl, understand or navigate",
+        "body": "Technical problems often hide in page templates, redirects, sitemap coverage, noindex controls, duplicate URLs, JavaScript rendering and weak internal-link relationships."
+      },
+      "approach": {
+        "heading": "Create a prioritized technical plan, not a long list of warnings",
+        "body": "Hiver identifies the technical issues most likely to affect important pages, explains the reason for each item and gives developers a practical implementation order."
+      },
+      "included": [
+        "Crawlability and indexability review",
+        "Sitemap, robots and canonical review",
+        "Redirect and duplicate-content assessment",
+        "Metadata, structured data and internal-link checks",
+        "Measurement and validation plan"
+      ],
+      "steps": [
+        "Collect site evidence",
+        "Prioritize indexation and crawl issues",
+        "Map fixes to templates and URLs",
+        "Implement and validate",
+        "Monitor Search Console",
+        "Repeat after releases"
+      ],
+      "faqs": [
+        {
+          "q": "What is included in a technical SEO audit?",
+          "a": "A technical review can cover crawlability, indexation, canonicals, sitemap, robots, redirects, rendering, page templates, metadata, schema, internal linking and measurement."
+        },
+        {
+          "q": "Will technical SEO alone increase rankings?",
+          "a": "Technical SEO removes barriers and improves understanding, but rankings also depend on relevance, content quality, authority and search competition."
+        },
+        {
+          "q": "Can Hiver work with our developers?",
+          "a": "Hiver can provide developer-ready requirements and validation support. Ownership, access and release process should be agreed in the project scope."
+        }
+      ],
+      "related": [
+        "/services/seo/",
+        "/services/website-design-development/",
+        "/services/shopify-migration/",
+        "/insights/technical-seo-checklist/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Request a Technical SEO Review",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Growth Marketing & Automation",
+      "deckPath": "/services/growth-marketing/",
+      "path": "/services/growth-marketing/",
+      "priority": "P1",
+      "primaryKeyword": "digital marketing and automation services",
+      "secondaryKeywords": [
+        "marketing automation services",
+        "email marketing services",
+        "digital marketing strategy"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Growth Marketing & Automation Services | Hiver Technology",
+      "description": "Hiver Technology helps businesses connect acquisition, follow-up and retention systems through digital marketing, email lifecycle work and automation planning.",
+      "eyebrow": "Acquisition, follow-up and retention",
+      "h1": "Make customer follow-up more consistent without making it more manual.",
+      "intro": "Hiver brings marketing strategy, lifecycle communication and automation planning together so that campaigns create a clearer next step for both customers and internal teams.",
+      "primaryCta": "Plan Your Growth System",
+      "secondaryCta": "Explore Marketing Automation",
+      "problem": {
+        "heading": "Interest gets lost when campaigns, website forms and follow-up are disconnected",
+        "body": "A lead can be generated but never nurtured. A buyer can purchase but never hear from the brand again. Teams lose time when customer journeys are not designed around the next useful action."
+      },
+      "approach": {
+        "heading": "Design the customer journey before automating it",
+        "body": "Hiver maps the moments that matter—from first enquiry to re-engagement—then defines the messages, data, triggers, owner and measurement needed to make the journey useful."
+      },
+      "included": [
+        "Digital marketing and campaign planning",
+        "Lead journey and lifecycle mapping",
+        "Email and nurture sequence design",
+        "Marketing automation and CRM handoff planning",
+        "Reporting and optimization framework"
+      ],
+      "steps": [
+        "Map the current journey",
+        "Choose the highest-value conversion path",
+        "Design messages and triggers",
+        "Build and test the flow",
+        "Measure customer response",
+        "Optimize with evidence"
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between email marketing and marketing automation?",
+          "a": "Email marketing can include campaigns and newsletters. Marketing automation coordinates triggered or data-led journeys across the customer lifecycle, often including email and CRM handoffs."
+        },
+        {
+          "q": "Should we start with paid ads or automation?",
+          "a": "Start with the constraint. If qualified interest is the problem, acquisition may matter first. If leads are not followed up effectively, automation and lifecycle work may create greater value."
+        },
+        {
+          "q": "Can Hiver connect website enquiries with follow-up?",
+          "a": "Hiver can map the form, data, routing and follow-up workflow. The available integrations should be confirmed during discovery."
+        }
+      ],
+      "related": [
+        "/services/marketing-automation/",
+        "/services/email-lifecycle-marketing/",
+        "/services/digital-marketing/",
+        "/services/crm-web-applications/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Growth System",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Marketing Automation",
+      "deckPath": "/services/growth-marketing/marketing-automation/",
+      "path": "/services/marketing-automation/",
+      "priority": "P0",
+      "primaryKeyword": "marketing automation agency",
+      "secondaryKeywords": [
+        "marketing automation services",
+        "lead nurturing automation",
+        "crm follow up automation"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Marketing Automation Services | Hiver Technology",
+      "description": "Hiver Technology designs marketing automation around real customer journeys, lead handoffs and the follow-up work that should not rely on manual memory.",
+      "eyebrow": "Marketing and CRM automation",
+      "h1": "Turn valuable customer moments into consistent, well-timed follow-up.",
+      "intro": "Hiver designs automation around the actions that signal intent: an enquiry, a form completion, a purchase, an abandoned step, a renewal date or a period of inactivity. The focus is useful follow-up—not more messages.",
+      "primaryCta": "Plan Your Automation",
+      "secondaryCta": "Explore Growth Marketing",
+      "problem": {
+        "heading": "Important follow-up depends on someone remembering the next step",
+        "body": "When data is fragmented and ownership is unclear, prospects wait too long, customers receive irrelevant messages and teams repeat the same administrative work."
+      },
+      "approach": {
+        "heading": "Automate a clear journey, not a collection of disconnected triggers",
+        "body": "Hiver defines the audience, intent signal, message, decision rule, system handoff and success measure for each journey before building the automation."
+      },
+      "included": [
+        "Journey mapping and automation discovery",
+        "Lead routing and CRM handoff design",
+        "Nurture, welcome and re-engagement sequence planning",
+        "Trigger, data and consent requirement mapping",
+        "Testing, monitoring and optimization plan"
+      ],
+      "steps": [
+        "Identify the high-value moment",
+        "Map customer and team actions",
+        "Define data, triggers and messages",
+        "Build and test the workflow",
+        "Monitor delivery and response",
+        "Improve the journey"
+      ],
+      "faqs": [
+        {
+          "q": "What can marketing automation improve?",
+          "a": "Automation can support lead routing, enquiry follow-up, welcome journeys, abandoned-path reminders, customer education, re-engagement and internal notifications when the data and process are clear."
+        },
+        {
+          "q": "Can automation replace sales or support teams?",
+          "a": "Automation should make routine follow-up more consistent and give people better context. It should not replace the judgment needed for complex, sensitive or high-value conversations."
+        },
+        {
+          "q": "How do we avoid sending too many messages?",
+          "a": "Use clear audience rules, timing, suppression logic, consent requirements and reporting. Every workflow should have a customer value reason, not just a business trigger."
+        }
+      ],
+      "related": [
+        "/services/growth-marketing/",
+        "/services/email-lifecycle-marketing/",
+        "/services/crm-web-applications/",
+        "/services/ecommerce-development/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Automation",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Email & Lifecycle Marketing",
+      "deckPath": "/services/growth-marketing/email-lifecycle-marketing/",
+      "path": "/services/email-lifecycle-marketing/",
+      "priority": "P1",
+      "primaryKeyword": "email marketing services",
+      "secondaryKeywords": [
+        "email marketing agency",
+        "email automation services",
+        "customer lifecycle email marketing"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Email & Lifecycle Marketing Services | Hiver Technology",
+      "description": "Hiver Technology designs email and lifecycle journeys that help businesses welcome, educate, retain and re-engage customers with more relevance.",
+      "eyebrow": "Lifecycle email and customer communication",
+      "h1": "Email journeys that give customers a useful reason to continue.",
+      "intro": "Hiver plans email lifecycle work around the questions, decisions and moments customers actually experience—from first interest to post-purchase, renewal or re-engagement.",
+      "primaryCta": "Plan Your Email Journey",
+      "secondaryCta": "Explore Marketing Automation",
+      "problem": {
+        "heading": "A mailing list is not a customer journey",
+        "body": "One-off newsletters do not solve for the different reasons someone subscribes, enquires, buys, stops using a product or needs help making the next decision."
+      },
+      "approach": {
+        "heading": "Create a useful sequence for each important customer moment",
+        "body": "Hiver defines audiences, intent, content, message timing and success criteria so that email supports a coherent experience rather than a calendar of promotions."
+      },
+      "included": [
+        "Lifecycle and segmentation review",
+        "Welcome, nurture and post-purchase journey planning",
+        "Content and message architecture",
+        "Automation and CRM handoff requirements",
+        "Measurement and optimization plan"
+      ],
+      "steps": [
+        "Define key audiences",
+        "Map their questions and next actions",
+        "Write the message sequence",
+        "Configure and test",
+        "Monitor engagement and conversions",
+        "Refresh based on customer behavior"
+      ],
+      "faqs": [
+        {
+          "q": "Which email journeys should we build first?",
+          "a": "Start with the journey linked to the highest-value customer action: new lead follow-up, onboarding, post-purchase education, renewal, or re-engagement."
+        },
+        {
+          "q": "Can email marketing support ecommerce?",
+          "a": "Yes. Lifecycle email can support product education, post-purchase care, replenishment, customer retention and relevant re-engagement when consent and data are handled correctly."
+        },
+        {
+          "q": "How will success be measured?",
+          "a": "Measure delivery, engagement, conversion actions, unsubscribe patterns, lead progression and revenue attribution where the data model supports it."
+        }
+      ],
+      "related": [
+        "/services/marketing-automation/",
+        "/services/ecommerce-development/",
+        "/services/crm-web-applications/",
+        "/insights/email-lifecycle-marketing-guide/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Email Journey",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Digital Marketing",
+      "deckPath": "/services/growth-marketing/digital-marketing/",
+      "path": "/services/digital-marketing/",
+      "priority": "P1",
+      "primaryKeyword": "digital marketing agency",
+      "secondaryKeywords": [
+        "digital marketing strategy",
+        "performance marketing services",
+        "lead generation marketing strategy"
+      ],
+      "intent": "Transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Digital Marketing Strategy Services | Hiver Technology",
+      "description": "Hiver Technology plans digital marketing around audience, offer, landing experience, follow-up and measurement—not isolated channel activity.",
+      "eyebrow": "Digital marketing strategy",
+      "h1": "Digital marketing that connects attention to a meaningful next step.",
+      "intro": "Hiver helps businesses connect the campaign, the landing experience, the offer and the follow-up path. The objective is a more measurable route from attention to qualified action.",
+      "primaryCta": "Plan Your Digital Marketing",
+      "secondaryCta": "Explore Growth Marketing",
+      "problem": {
+        "heading": "Channel activity does not automatically create a customer journey",
+        "body": "Campaigns struggle when the offer is unclear, the landing page does not answer buyer questions, lead data disappears or results are measured only by clicks."
+      },
+      "approach": {
+        "heading": "Plan the system from customer intent to qualified action",
+        "body": "Hiver aligns the audience, message, channel, landing page, form, follow-up and measurement so that every campaign has a defined purpose and learning loop."
+      },
+      "included": [
+        "Audience and offer planning",
+        "Landing page and conversion-path review",
+        "Channel and campaign hypothesis",
+        "Lead capture and follow-up design",
+        "Measurement and reporting framework"
+      ],
+      "steps": [
+        "Clarify audience and objective",
+        "Review the landing experience",
+        "Choose channel hypotheses",
+        "Build campaign and tracking plan",
+        "Launch and validate",
+        "Optimize from lead quality"
+      ],
+      "faqs": [
+        {
+          "q": "Do you manage every digital channel?",
+          "a": "Channel scope should be confirmed by Hiver based on its current capabilities, the client’s audience and the project goal."
+        },
+        {
+          "q": "Can Hiver build the landing page as well?",
+          "a": "Hiver can plan and deliver the landing experience where it is part of the conversion path. Scope should include content, design, development and measurement needs."
+        },
+        {
+          "q": "How do you measure lead quality?",
+          "a": "Track beyond clicks: form completion, qualification status, booked meetings, sales feedback, conversion rate and source-to-outcome performance."
+        }
+      ],
+      "related": [
+        "/services/growth-marketing/",
+        "/services/website-design-development/",
+        "/services/marketing-automation/",
+        "/services/seo/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Plan Your Digital Marketing",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Works",
+      "deckPath": "/works/",
+      "path": "/portfolio/",
+      "priority": "P0",
+      "primaryKeyword": "web development portfolio",
+      "secondaryKeywords": [
+        "shopify development case studies",
+        "software development case studies",
+        "seo case studies"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Selected Work & Case Studies | Hiver Technology",
+      "description": "Explore Hiver Technology projects across websites, web applications, ecommerce and growth systems. Publish only client-approved project details and verified outcomes.",
+      "eyebrow": "Selected work and case studies",
+      "h1": "Work that explains the problem, the delivery and what changed.",
+      "intro": "A portfolio should help potential clients understand the kind of challenge Hiver solved, the approach taken, the scope delivered and the evidence available after launch.",
+      "primaryCta": "Discuss a Similar Project",
+      "secondaryCta": "Explore Services",
+      "problem": {
+        "heading": "A gallery without context does not create confidence",
+        "body": "Buyers need more than a visual preview. They want to see the business situation, objective, delivery approach, relevant expertise and verified impact."
+      },
+      "approach": {
+        "heading": "Turn approved projects into trust and decision-supporting content",
+        "body": "Each case study should connect a real customer problem to the services, technology decisions, delivery work and outcome that can be shown honestly."
+      },
+      "included": [
+        "Project summary and business context",
+        "Challenge and objectives",
+        "Strategy, design and development approach",
+        "Approved visuals and technology information",
+        "Verified results, testimonial and related services"
+      ],
+      "steps": [
+        "Select an approved project",
+        "Confirm permissions and facts",
+        "Document the problem and approach",
+        "Add evidence and visuals",
+        "Link to relevant services",
+        "Invite a comparable project discussion"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver publish work if a client requires confidentiality?",
+          "a": "Yes, only with an approved anonymized description or without publishing the work. Confidentiality requirements take priority over portfolio visibility."
+        },
+        {
+          "q": "What results should a case study include?",
+          "a": "Include only metrics that the client and Hiver can verify, with context on what was measured and when. Never infer or invent results."
+        },
+        {
+          "q": "How many case studies are needed at launch?",
+          "a": "Three to five strong, approved, detailed cases are more valuable than a large unverified gallery."
+        }
+      ],
+      "related": [
+        "/services/",
+        "/services/web-application-development/",
+        "/services/shopify-development/",
+        "/services/seo/",
+        "/about-us/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss a Similar Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "About Hiver",
+      "deckPath": "/about/",
+      "path": "/about-us/",
+      "priority": "P0",
+      "primaryKeyword": "Hiver Technology",
+      "secondaryKeywords": [
+        "technology company Nepal",
+        "software development company Nepal",
+        "international remote technology partner"
+      ],
+      "intent": "Navigational / Nepal; international delivery",
+      "title": "About Hiver Technology | Software, Ecommerce & Growth",
+      "description": "Learn how Hiver Technology approaches websites, web applications, ecommerce and growth systems for businesses in Nepal and international markets.",
+      "eyebrow": "About Hiver Technology",
+      "h1": "A practical technology partner for work that needs to keep moving.",
+      "intro": "Hiver Technology helps businesses plan and improve the digital systems that support customer growth and day-to-day operations. We combine product thinking with clear delivery across websites, applications, ecommerce, SEO and automation.",
+      "primaryCta": "Meet Hiver",
+      "secondaryCta": "Discuss Your Project",
+      "problem": {
+        "heading": "A credible partner should make its way of working easy to understand",
+        "body": "Buyers need to know who will do the work, how decisions are made, where the team is based, what communication looks like and what evidence supports the company’s expertise."
+      },
+      "approach": {
+        "heading": "Show the people, process and standards behind the work",
+        "body": "This page should explain Hiver’s delivery approach in plain language and link to real work, team information, policies and contact routes."
+      },
+      "included": [
+        "Verified company and contact information",
+        "Team and expertise profiles",
+        "Delivery process and communication model",
+        "Approved work and client evidence",
+        "Policies, privacy and commercial terms"
+      ],
+      "steps": [
+        "Introduce the company clearly",
+        "Explain the client fit",
+        "Show the delivery model",
+        "Surface verifiable proof",
+        "Link to work and people",
+        "Offer a direct conversation"
+      ],
+      "faqs": [
+        {
+          "q": "Where is Hiver Technology based?",
+          "a": "Publish Hiver’s verified legal and business location. The current public website shows Imadole, Lalitpur; confirm this is current before launch."
+        },
+        {
+          "q": "Does Hiver serve international clients?",
+          "a": "Hiver can position itself as a remote delivery partner for international clients without claiming overseas offices unless those offices are verified."
+        },
+        {
+          "q": "What should the About page prove?",
+          "a": "It should show real people, real company details, real work, the delivery process and the policies that help a buyer assess trust."
+        }
+      ],
+      "related": [
+        "/team/",
+        "/portfolio/",
+        "/services/",
+        "/contact/",
+        "/privacy/",
+        "/terms/"
+      ],
+      "finalCta": {
+        "heading": "Meet Hiver",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Contact",
+      "deckPath": "/contact/",
+      "path": "/contact/",
+      "priority": "P0",
+      "primaryKeyword": "contact Hiver Technology",
+      "secondaryKeywords": [
+        "request a web development proposal",
+        "book a discovery call",
+        "technology project enquiry"
+      ],
+      "intent": "Navigational / transactional / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Discuss Your Project | Hiver Technology",
+      "description": "Tell Hiver Technology what you need to build, improve, migrate or automate. Share your goal, timeline and existing systems to start a focused conversation.",
+      "eyebrow": "Project enquiry",
+      "h1": "Tell us what needs to work better.",
+      "intro": "Share the business problem, current system, project goal, timeline and budget range. Hiver will use the information to decide whether a discovery conversation or a focused proposal is the right next step.",
+      "primaryCta": "Send Project Enquiry",
+      "secondaryCta": "View Services",
+      "problem": {
+        "heading": "A useful enquiry gives both sides enough context to make the first conversation worthwhile",
+        "body": "The form should help a prospect explain their need without becoming a long questionnaire. It should also help Hiver qualify scope, urgency and decision process."
+      },
+      "approach": {
+        "heading": "Ask only for the information needed to recommend the next step",
+        "body": "Use clear service options and a free-text project description. Explain how the details will be used and link to the privacy policy."
+      },
+      "included": [
+        "Name and work email",
+        "Company and website",
+        "Country and preferred contact method",
+        "Service or problem area",
+        "Project description and existing system",
+        "Budget range and desired timeline"
+      ],
+      "steps": [
+        "Select the service area",
+        "Describe the problem and desired outcome",
+        "Provide project context",
+        "Review privacy information",
+        "Submit enquiry",
+        "Receive the agreed next step"
+      ],
+      "faqs": [
+        {
+          "q": "What should I include in a project enquiry?",
+          "a": "Include the business goal, current website or system, required service, timeline, budget range, team involved and any constraints such as integrations or migration needs."
+        },
+        {
+          "q": "Does submitting a form commit us to a project?",
+          "a": "No. The first conversation should clarify fit, scope and the next useful step before either party commits to a project."
+        },
+        {
+          "q": "How should Hiver handle enquiry data?",
+          "a": "The form should link to a current privacy policy and explain who receives the data, why it is collected and how prospects can contact Hiver about it."
+        }
+      ],
+      "related": [
+        "/services/",
+        "/portfolio/",
+        "/about-us/",
+        "/privacy/",
+        "/terms/"
+      ],
+      "finalCta": {
+        "heading": "Send Project Enquiry",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Insights",
+      "deckPath": "/insights/",
+      "path": "/insights/",
+      "priority": "P0",
+      "primaryKeyword": "technology insights",
+      "secondaryKeywords": [
+        "web development insights",
+        "shopify guides",
+        "seo resources"
+      ],
+      "intent": "Informational / commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Insights on Websites, Ecommerce, SEO & Automation | Hiver Technology",
+      "description": "Read Hiver Technology insights that help business leaders make better decisions about websites, web applications, Shopify, SEO and customer-growth systems.",
+      "eyebrow": "Guides, explainers and decision support",
+      "h1": "Practical guidance for the decisions that shape your digital systems.",
+      "intro": "Hiver Insights should answer the questions buyers ask before they choose a technology, start a project or change a process. Every article should be written or reviewed by someone who can explain the subject honestly.",
+      "primaryCta": "Discuss Your Project",
+      "secondaryCta": "Explore Services",
+      "problem": {
+        "heading": "Generic publishing does not build trust or qualified demand",
+        "body": "Insight content should help a specific audience make a specific decision, with real examples, clear limitations and links to the service or case study that can help next."
+      },
+      "approach": {
+        "heading": "Build topic clusters around buyer questions and delivery expertise",
+        "body": "Hiver should publish a manageable set of decision-supporting articles across applications, ecommerce, SEO and automation, then update them as project experience deepens."
+      },
+      "included": [
+        "Commercial decision guides",
+        "Cost and scope explainers",
+        "Migration and implementation checklists",
+        "Comparison content",
+        "Technical explainers",
+        "Case-study companion articles"
+      ],
+      "steps": [
+        "Choose a buyer question",
+        "Confirm expertise and evidence",
+        "Create an original outline",
+        "Write or review with a named expert",
+        "Link to relevant services",
+        "Refresh based on search and customer feedback"
+      ],
+      "faqs": [
+        {
+          "q": "Who should write Hiver Insights?",
+          "a": "Articles should be written or substantively reviewed by people who understand the work, with a clear author profile and source disclosure where appropriate."
+        },
+        {
+          "q": "How often should Hiver publish?",
+          "a": "Publish at a pace that allows original research, verification, expert review and useful updates. Quality and topical relevance matter more than volume."
+        },
+        {
+          "q": "Should every article target a commercial keyword?",
+          "a": "No. A balanced strategy includes commercial, comparison, cost, problem-solving and expertise content, all linked to a relevant next step."
+        }
+      ],
+      "related": [
+        "/services/",
+        "/portfolio/",
+        "/about-us/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss Your Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Ecommerce",
+      "deckPath": "/industries/ecommerce/",
+      "path": "/industries/ecommerce/",
+      "priority": "P1",
+      "primaryKeyword": "ecommerce development agency",
+      "secondaryKeywords": [
+        "shopify development for ecommerce",
+        "ecommerce seo services",
+        "ecommerce marketing automation"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Ecommerce Development, SEO & Automation | Hiver Technology",
+      "description": "Hiver Technology helps ecommerce businesses improve storefront journeys, Shopify systems, search visibility and lifecycle follow-up.",
+      "eyebrow": "Ecommerce industry solutions",
+      "h1": "Ecommerce systems for clearer product journeys and stronger customer follow-up.",
+      "intro": "Hiver helps ecommerce businesses connect the storefront, search foundation and post-purchase journey so that growth is not limited to the moment a customer first discovers a product.",
+      "primaryCta": "Discuss an Ecommerce Project",
+      "secondaryCta": "Explore Ecommerce Services",
+      "problem": {
+        "heading": "Ecommerce growth depends on more than traffic",
+        "body": "The store must help shoppers understand the product, trust the buying process and receive relevant follow-up after the first visit or purchase."
+      },
+      "approach": {
+        "heading": "Connect the storefront to the complete customer journey",
+        "body": "Hiver can combine Shopify development, UX, SEO, lifecycle email and automation according to the constraint that most affects growth."
+      },
+      "included": [
+        "Shopify development and improvement",
+        "Ecommerce UX and product-information design",
+        "Shopify SEO foundation",
+        "Lifecycle email and automation planning",
+        "Customer journey measurement"
+      ],
+      "steps": [
+        "Review the buying journey",
+        "Prioritize the largest friction point",
+        "Plan the right services",
+        "Build and test improvements",
+        "Measure customer behavior",
+        "Iterate"
+      ],
+      "faqs": [
+        {
+          "q": "Which ecommerce issue should we address first?",
+          "a": "Start with evidence: conversion path, product discovery, technical performance, traffic quality, checkout friction or post-purchase follow-up."
+        },
+        {
+          "q": "Can Hiver work on both the store and marketing system?",
+          "a": "Yes, where the project goal benefits from connecting the storefront, search, landing experience and customer follow-up."
+        },
+        {
+          "q": "What evidence should an ecommerce case study show?",
+          "a": "Show the challenge, scope, decision, approved implementation details and only verified results with measurement context."
+        }
+      ],
+      "related": [
+        "/services/ecommerce-development/",
+        "/services/shopify-development/",
+        "/services/shopify-seo/",
+        "/services/marketing-automation/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss an Ecommerce Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Education",
+      "deckPath": "/industries/education/",
+      "path": "/industries/education/",
+      "priority": "P1",
+      "primaryKeyword": "education software development",
+      "secondaryKeywords": [
+        "education web application development",
+        "school management software development",
+        "education website development"
+      ],
+      "intent": "Commercial investigation / Nepal; selected international opportunities",
+      "title": "Education Websites, Applications & Automation | Hiver Technology",
+      "description": "Hiver Technology helps education organizations plan websites, portals, workflow systems and communication journeys that make information and follow-up easier to manage.",
+      "eyebrow": "Education technology and communications",
+      "h1": "Digital systems that make education journeys clearer for learners and teams.",
+      "intro": "Hiver helps education organizations improve the way prospective learners find information, submit enquiries, access updates and move through important administrative processes.",
+      "primaryCta": "Discuss an Education Project",
+      "secondaryCta": "Explore Software Applications",
+      "problem": {
+        "heading": "Information, admissions and follow-up often sit in separate places",
+        "body": "Learners and parents need clear information; teams need a reliable way to manage enquiries, documents, applications and communication."
+      },
+      "approach": {
+        "heading": "Design the experience for learners, families and operational teams",
+        "body": "Hiver can plan websites, portals, CRM workflows and automated communication around the real stages of an education journey."
+      },
+      "included": [
+        "Education website and content journeys",
+        "Enquiry and admissions workflow planning",
+        "Portals and internal web applications",
+        "CRM and communication automation",
+        "Measurement and improvement planning"
+      ],
+      "steps": [
+        "Map the learner or parent journey",
+        "Identify team workflow bottlenecks",
+        "Choose the right digital scope",
+        "Design and build",
+        "Test accessibility and clarity",
+        "Launch and improve"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver build an education portal?",
+          "a": "Hiver can assess portal needs such as content access, requests, documents, messages and user roles before recommending a solution."
+        },
+        {
+          "q": "Can enquiry follow-up be improved?",
+          "a": "Yes. Hiver can map the enquiry process, lead ownership, data and messages to design a more consistent follow-up journey."
+        },
+        {
+          "q": "What should education organizations prepare before a project?",
+          "a": "Prepare the key audiences, existing systems, content owners, privacy requirements, process maps and the most important outcomes to improve."
+        }
+      ],
+      "related": [
+        "group:software",
+        "/services/crm-web-applications/",
+        "/services/website-design-development/",
+        "/services/marketing-automation/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss an Education Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Healthcare",
+      "deckPath": "/industries/healthcare/",
+      "path": "/industries/healthcare/",
+      "priority": "P1",
+      "primaryKeyword": "healthcare web development",
+      "secondaryKeywords": [
+        "healthcare website development",
+        "healthcare patient portal development",
+        "healthcare digital marketing"
+      ],
+      "intent": "Commercial investigation / Nepal; selected international opportunities",
+      "title": "Healthcare Websites, Workflows & Patient Journeys | Hiver Technology",
+      "description": "Hiver Technology can help healthcare organizations plan clearer digital experiences for information, enquiries and approved operational workflows.",
+      "eyebrow": "Healthcare digital experiences",
+      "h1": "Digital experiences that help people find the right information and next step.",
+      "intro": "Hiver can help healthcare organizations improve websites, enquiry journeys, internal workflows and approved digital touchpoints. Every project must define its privacy, accessibility and compliance requirements before scope is finalized.",
+      "primaryCta": "Discuss a Healthcare Project",
+      "secondaryCta": "Explore Web Applications",
+      "problem": {
+        "heading": "Healthcare information needs clarity, trust and careful handling",
+        "body": "Patients and staff may need a simpler path to understand services, request information, access guidance or manage a defined non-clinical workflow."
+      },
+      "approach": {
+        "heading": "Design around safe, clear and appropriately governed interactions",
+        "body": "Hiver can map the user experience and technical needs with the organization’s specialists. Compliance, clinical workflows and sensitive-data requirements require client and qualified professional input."
+      },
+      "included": [
+        "Healthcare website and information architecture",
+        "Non-clinical portal and workflow discovery",
+        "Accessibility and content clarity review",
+        "Enquiry and communication journey planning",
+        "Project governance and requirement mapping"
+      ],
+      "steps": [
+        "Confirm scope and governance",
+        "Map the user journey",
+        "Identify sensitive data boundaries",
+        "Design and test clear flows",
+        "Implement approved requirements",
+        "Review and improve"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver build healthcare software?",
+          "a": "Hiver can discuss digital product and workflow needs. Any project involving health information, clinical decisions or regulated data must define jurisdiction-specific legal, privacy, security and clinical requirements with qualified stakeholders."
+        },
+        {
+          "q": "Can a healthcare website improve patient enquiries?",
+          "a": "A website can make service information, contact options and next steps clearer. It should not replace appropriate clinical advice or emergency instructions."
+        },
+        {
+          "q": "What must be confirmed before launch?",
+          "a": "Confirm the organization’s legal, privacy, accessibility, security, content-approval and operational requirements before publishing or processing sensitive information."
+        }
+      ],
+      "related": [
+        "/services/website-design-development/",
+        "/services/web-application-development/",
+        "/services/ui-ux-design/",
+        "/about-us/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss a Healthcare Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Logistics",
+      "deckPath": "/industries/logistics/",
+      "path": "/industries/logistics/",
+      "priority": "P1",
+      "primaryKeyword": "logistics software development",
+      "secondaryKeywords": [
+        "logistics web application development",
+        "logistics crm development",
+        "logistics workflow automation"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Logistics Websites, Applications & Workflow Automation | Hiver Technology",
+      "description": "Hiver Technology helps logistics businesses plan web applications, portals, websites and workflow automation around the movement of information between teams and customers.",
+      "eyebrow": "Logistics systems and customer communication",
+      "h1": "Better digital handoffs for operations that cannot afford unnecessary delay.",
+      "intro": "Hiver helps logistics organizations plan the digital systems that make information easier to capture, update, route and communicate across customers, operations teams and business partners.",
+      "primaryCta": "Discuss a Logistics Project",
+      "secondaryCta": "Explore Software Applications",
+      "problem": {
+        "heading": "Operational work slows when information is delayed, duplicated or hard to find",
+        "body": "Teams may be working across messages, spreadsheets and separate systems while customers need timely, accurate updates."
+      },
+      "approach": {
+        "heading": "Make the next operational action clearer for every role",
+        "body": "Hiver can map the process, roles, decisions and data that matter, then plan a portal, dashboard, CRM workflow or automation sequence around it."
+      },
+      "included": [
+        "Operations workflow discovery",
+        "Customer or partner portal planning",
+        "CRM and data workflow design",
+        "Website and service-information experience",
+        "Automation and reporting requirements"
+      ],
+      "steps": [
+        "Map the current operational journey",
+        "Identify delay and handoff points",
+        "Prioritize the first workflow",
+        "Design user roles and screens",
+        "Build, test and launch",
+        "Measure operational adoption"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver connect logistics workflows with existing systems?",
+          "a": "Integration options depend on the systems, data access and business rules involved. Hiver can document the requirements during discovery."
+        },
+        {
+          "q": "What should a logistics portal include?",
+          "a": "The scope should follow the user role. It may include requests, status information, documents, notifications, tasks or reporting where appropriate."
+        },
+        {
+          "q": "Can automation reduce manual updates?",
+          "a": "Automation can help with defined, repeatable updates and handoffs. The workflow should be tested carefully to avoid creating inaccurate communication."
+        }
+      ],
+      "related": [
+        "/services/web-application-development/",
+        "/services/crm-web-applications/",
+        "/services/marketing-automation/",
+        "/portfolio/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss a Logistics Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    },
+    {
+      "name": "Manufacturing",
+      "deckPath": "/industries/manufacturing/",
+      "path": "/industries/manufacturing/",
+      "priority": "P1",
+      "primaryKeyword": "manufacturing software development",
+      "secondaryKeywords": [
+        "manufacturing web application development",
+        "manufacturing workflow automation",
+        "manufacturing website development"
+      ],
+      "intent": "Commercial investigation / United States; Australia; United Kingdom; selected English-speaking markets",
+      "title": "Manufacturing Websites, Applications & Workflow Systems | Hiver Technology",
+      "description": "Hiver Technology helps manufacturers plan digital systems that make information, enquiries, customer communication and defined operational workflows easier to manage.",
+      "eyebrow": "Manufacturing digital systems",
+      "h1": "Digital systems that bring clearer information to complex operations.",
+      "intro": "Hiver can help manufacturing businesses improve the digital experience for customers, sales teams and defined internal workflows—from service websites and enquiry paths to portals and process-supporting applications.",
+      "primaryCta": "Discuss a Manufacturing Project",
+      "secondaryCta": "Explore Software Applications",
+      "problem": {
+        "heading": "Complex products and processes need a clearer digital layer",
+        "body": "When product information, enquiries, documentation and operational steps are hard to navigate, both prospective customers and teams lose time."
+      },
+      "approach": {
+        "heading": "Design the information and workflow around the people who use it",
+        "body": "Hiver maps the key user roles and decisions so that the website, application or automation plan supports the moments that create the most friction today."
+      },
+      "included": [
+        "Manufacturing website and product-information strategy",
+        "Customer portal and document workflow discovery",
+        "CRM and enquiry management planning",
+        "Internal web application scope",
+        "Automation and reporting opportunities"
+      ],
+      "steps": [
+        "Identify users and key decisions",
+        "Map information and workflow gaps",
+        "Prioritize the smallest valuable change",
+        "Design and build",
+        "Test with real scenarios",
+        "Improve with team feedback"
+      ],
+      "faqs": [
+        {
+          "q": "Can Hiver build a portal for manufacturing customers?",
+          "a": "Hiver can assess whether a portal is useful for documents, requests, status information or account workflows, then define the scope and integrations required."
+        },
+        {
+          "q": "Can Hiver improve manufacturing lead generation?",
+          "a": "A clearer website, product information structure, enquiry process and follow-up workflow can improve the path from interest to qualified conversation."
+        },
+        {
+          "q": "How do we start a manufacturing digital project?",
+          "a": "Start by identifying the business objective, users, current systems, information bottlenecks, process owners and success measures."
+        }
+      ],
+      "related": [
+        "/services/website-design-development/",
+        "/services/web-application-development/",
+        "/services/crm-web-applications/",
+        "/services/marketing-automation/",
+        "/contact/"
+      ],
+      "finalCta": {
+        "heading": "Discuss a Manufacturing Project",
+        "body": "Share the problem you need to solve, the current system or website, the desired outcome, your timeline and any constraints. Hiver can recommend the most useful next step."
+      }
+    }
+  ]
+}

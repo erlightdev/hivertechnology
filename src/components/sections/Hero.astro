@@ -1,0 +1,63 @@
+---
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import HeroShowcase from './HeroShowcase.astro';
+import { Image } from 'astro:assets';
+import { site } from '@/config/site';
+import { honeycombTextures } from '@/data/honeycomb';
+
+const dots = honeycombTextures.slice(0, 4);
+---
+
+<section data-line class="relative overflow-hidden">
+  <div
+    class="bg-dots pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_55%_45%_at_50%_0%,#000_15%,transparent_80%)]"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="container-page relative z-[1] flex flex-col items-center pt-12 text-center lg:pt-16">
+    <p
+      class="hero-in inline-flex items-center gap-2.5 rounded-full bg-background-secondary py-1 pr-3.5 pl-1.5 text-[13px] text-foreground-secondary ring-1 ring-border-primary ring-inset"
+    >
+      <span class="flex -space-x-1.5" aria-hidden="true">
+        {
+          dots.map((src) => (
+            <Image {src} alt="" width={20} height={20} densities={[1, 2]} loading="eager" class="size-5 rounded-full object-cover ring-2 ring-background-secondary" />
+          ))
+        }
+      </span>
+      Software team in {site.address.region}, {site.address.countryName}
+    </p>
+
+    <h1
+      class="mt-6 max-w-3xl text-[2.25rem]/[2.5rem] font-medium tracking-[-1.2px] sm:text-[3rem]/[3.25rem] lg:text-[3.5rem]/[3.75rem] lg:tracking-[-1.8px]"
+    >
+      Technology that turns a defined business need
+      <span class="block text-foreground-muted">into a usable digital product.</span>
+    </h1>
+
+    <p class="hero-in mt-5 max-w-lg text-base/7 text-foreground-secondary [animation-delay:120ms]">
+      We build software, websites and apps for businesses. A clear plan, regular progress updates, and you
+      own everything we make.
+    </p>
+
+    <div class="hero-in mt-7 flex flex-wrap justify-center gap-3 [animation-delay:180ms]">
+      <ButtonLink href="/contact/">Discuss a project</ButtonLink>
+      <ButtonLink href="/services/" variant="secondary">Explore services</ButtonLink>
+    </div>
+  </div>
+
+  <HeroShowcase />
+</section>
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-in {
+      animation: hero-in 600ms var(--ease-out-expo) both;
+    }
+  }
+  @keyframes hero-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+</style>

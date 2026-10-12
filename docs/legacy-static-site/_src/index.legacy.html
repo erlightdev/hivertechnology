@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiver Technology | Software & Digital Solutions from Nepal</title>
+  <meta name="description" content="Nepal-based software and digital delivery for organizations with a defined product, workflow or website need. Review our confirmed capabilities and discuss your project.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hiver.com.np/">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/webp" href="assets/hiver.webp">
+  <link rel="apple-touch-icon" href="assets/hiver.webp">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hiver.com.np/">
+  <meta property="og:title" content="Hiver Technology | Software & Digital Solutions from Nepal">
+  <meta property="og:description" content="Nepal-based software and digital delivery for organizations with a defined product, workflow or website need.">
+  <meta property="og:image" content="assets/hiver.webp">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hiver Technology | Software & Digital Solutions from Nepal">
+  <meta name="twitter:description" content="Nepal-based software and digital delivery for organizations with a defined product, workflow or website need.">
+  <meta name="twitter:image" content="assets/hiver.webp">
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            border: 'hsl(var(--border))',
+            input: 'hsl(var(--input))',
+            ring: 'hsl(var(--ring))',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: {
+              DEFAULT: 'hsl(var(--primary))',
+              foreground: 'hsl(var(--primary-foreground))',
+            },
+            secondary: {
+              DEFAULT: 'hsl(var(--secondary))',
+              foreground: 'hsl(var(--secondary-foreground))',
+            },
+            destructive: {
+              DEFAULT: 'hsl(var(--destructive))',
+              foreground: 'hsl(var(--destructive-foreground))',
+            },
+            muted: {
+              DEFAULT: 'hsl(var(--muted))',
+              foreground: 'hsl(var(--muted-foreground))',
+            },
+            accent: {
+              DEFAULT: 'hsl(var(--accent))',
+              foreground: 'hsl(var(--accent-foreground))',
+            },
+            card: {
+              DEFAULT: 'hsl(var(--card))',
+              foreground: 'hsl(var(--card-foreground))',
+            },
+          },
+          borderRadius: {
+            lg: 'var(--radius)',
+            md: 'calc(var(--radius) - 2px)',
+            sm: 'calc(var(--radius) - 4px)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- shadcn CSS Variables -->
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 3.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 240 10% 3.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+      --primary: 240 5.9% 10%;
+      --primary-foreground: 0 0% 98%;
+      --secondary: 240 4.8% 95.9%;
+      --secondary-foreground: 240 5.9% 10%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 46.1%;
+      --accent: 240 4.8% 95.9%;
+      --accent-foreground: 240 5.9% 10%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 240 5.9% 10%;
+      --radius: 0.625rem;
+    }
+
+    .dark {
+      --background: 240 10% 3.9%;
+      --foreground: 0 0% 98%;
+      --card: 240 10% 3.9%;
+      --card-foreground: 0 0% 98%;
+      --popover: 240 10% 3.9%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 0 0% 98%;
+      --primary-foreground: 240 5.9% 10%;
+      --secondary: 240 3.7% 15.9%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 240 3.7% 15.9%;
+      --muted-foreground: 240 5% 64.9%;
+      --accent: 240 3.7% 15.9%;
+      --accent-foreground: 0 0% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 3.7% 15.9%;
+      --input: 240 3.7% 15.9%;
+      --ring: 240 4.9% 83.9%;
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://hiver.com.np/#organization",
+        "name": "Hiver Technology",
+        "url": "https://hiver.com.np/",
+        "logo": "https://hiver.com.np/assets/hiver.webp",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+977-9862537264",
+          "contactType": "sales",
+          "email": ["admin@hiver.com.np", "hivertechnology@gmail.com"],
+          "areaServed": ["NP", "International"],
+          "availableLanguage": ["English", "Nepali"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Imadole",
+          "addressLocality": "Lalitpur",
+          "addressCountry": "NP"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hiver.com.np/#website",
+        "url": "https://hiver.com.np/",
+        "name": "Hiver Technology",
+        "publisher": {
+          "@id": "https://hiver.com.np/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-background text-foreground min-h-screen antialiased selection:bg-primary selection:text-primary-foreground font-sans">
+
+  <!-- Header / Navigation (shadcn Navbar pattern) -->
+  <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="/" class="flex items-center gap-2.5 font-bold tracking-tight text-foreground transition-opacity hover:opacity-90">
+        <img src="assets/hiver.webp" alt="Hiver Technology Logo" class="h-8 w-8 rounded-lg object-contain shadow-sm border border-border/40 bg-card">
+        <div class="flex flex-col">
+          <span class="text-base font-semibold leading-none">Hiver Technology</span>
+          <span class="text-[10px] font-medium tracking-wide text-muted-foreground uppercase">Software & Digital Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="/about-us/" class="text-muted-foreground transition-colors hover:text-foreground">About Us</a>
+        <a href="/services/" class="text-muted-foreground transition-colors hover:text-foreground">Services</a>
+        <a href="/products/" class="text-muted-foreground transition-colors hover:text-foreground">Products</a>
+        <a href="/insights/" class="text-muted-foreground transition-colors hover:text-foreground">Insights</a>
+        <a href="/contact/" class="text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+      </nav>
+
+      <!-- Right Action Toolbar -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" type="button" aria-label="Toggle Theme" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors">
+          <i data-lucide="sun" class="h-4 w-4 dark:hidden"></i>
+          <i data-lucide="moon" class="h-4 w-4 hidden dark:block"></i>
+        </button>
+
+        <!-- CTA Button (shadcn button default) -->
+        <a href="/contact/" class="hidden sm:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+          Discuss a Project
+        </a>
+
+        <!-- Mobile Menu Trigger Button -->
+        <button id="mobile-menu-toggle" type="button" aria-label="Open Navigation Menu" class="inline-flex md:hidden h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer / Sheet (shadcn Sheet pattern) -->
+    <div id="mobile-sheet" class="fixed inset-0 z-50 hidden bg-background/80 backdrop-blur-sm md:hidden" aria-modal="true">
+      <div class="fixed inset-y-0 right-0 z-50 w-full max-w-xs border-l border-border bg-background p-6 shadow-lg transition-transform">
+        <div class="flex items-center justify-between pb-6 border-b border-border">
+          <div class="flex items-center gap-2.5">
+            <img src="assets/hiver.webp" alt="Hiver Technology Logo" class="h-7 w-7 rounded-md object-contain border border-border/40 bg-card">
+            <span class="font-semibold text-sm">Hiver Technology</span>
+          </div>
+          <button id="mobile-sheet-close" class="rounded-sm opacity-70 hover:opacity-100 p-1">
+            <i data-lucide="x" class="h-4 w-4"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-4 py-6 text-base font-medium">
+          <a href="/about-us/" class="hover:text-primary transition-colors">About Us</a>
+          <a href="/services/" class="hover:text-primary transition-colors">Services</a>
+          <a href="/products/" class="hover:text-primary transition-colors">Products</a>
+          <a href="/insights/" class="hover:text-primary transition-colors">Insights</a>
+          <a href="/contact/" class="hover:text-primary transition-colors">Contact</a>
+        </nav>
+        <div class="pt-6 border-t border-border flex flex-col gap-3">
+          <a href="/contact/" class="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow">
+            Discuss a Project
+          </a>
+          <div class="text-xs text-muted-foreground space-y-1 pt-2">
+            <p>📍 Imadole, Lalitpur, Nepal</p>
+            <p>📞 +977-9862537264</p>
+            <p>✉️ <a href="mailto:admin@hiver.com.np" class="hover:underline">admin@hiver.com.np</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (P01 Spec) -->
+    <section class="relative overflow-hidden border-b border-border/50 py-20 md:py-32">
+      <!-- Background subtle grid pattern -->
+      <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        <div class="mx-auto max-w-3xl text-center space-y-6">
+          
+          <!-- Pill Badge (shadcn Badge pattern) -->
+          <div class="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1 text-xs font-semibold text-secondary-foreground backdrop-blur-sm">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span>Nepal-Based Engineering • Verified Capabilities</span>
+          </div>
+
+          <!-- Hero Headline (H1 exactly matching v3 specification) -->
+          <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl md:text-6xl text-foreground text-balance">
+            Technology that turns a defined business need into a usable digital product.
+          </h1>
+
+          <!-- Hero Supporting Copy -->
+          <p class="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Nepal-based software and digital delivery for organizations with a defined product, workflow, or web application requirement. We build custom software with clear contracts, clean code, and zero vanity claims.
+          </p>
+
+          <!-- Action Buttons Group -->
+          <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+            <a href="/contact/" class="inline-flex h-11 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              Discuss a Project
+              <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+            </a>
+            <a href="#services" class="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              Explore Capabilities
+            </a>
+          </div>
+
+          <!-- Verification / Trust Sub-bar -->
+          <div class="pt-8 border-t border-border/60 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-muted-foreground text-left max-w-2xl mx-auto">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0"></i>
+              <span>Registered Entity in Nepal</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0"></i>
+              <span>Production Code Ownership</span>
+            </div>
+            <div class="flex items-center gap-2 col-span-2 sm:col-span-1">
+              <i data-lucide="check-circle-2" class="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0"></i>
+              <span>Direct Technical Leads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE BUYER PROBLEM -->
+    <section class="py-16 md:py-24 border-b border-border/50 bg-muted/30">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        <div class="max-w-2xl mb-12">
+          <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Problem Statement</div>
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Software delivery fails when expectations are vague and claims are overstated.</h2>
+          <p class="mt-3 text-muted-foreground">Most businesses do not need speculative promises or 70 templated service tiers. They need engineers who understand their workflow and deliver reliable software on time.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-destructive/10 text-destructive mb-4">
+              <i data-lucide="alert-triangle" class="h-5 w-5"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Scope & Estimation Drift</h3>
+            <p class="text-sm text-muted-foreground">Projects stalled by ill-defined feature lists and agencies that inflate billable hours instead of locking down core technical milestones.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-destructive/10 text-destructive mb-4">
+              <i data-lucide="layers" class="h-5 w-5"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Unmaintainable Codebases</h3>
+            <p class="text-sm text-muted-foreground">Fragile themes or hurried offshore builds without automated tests, database migrations, or structured documentation for your internal team.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-destructive/10 text-destructive mb-4">
+              <i data-lucide="shield-alert" class="h-5 w-5"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Agency Middlemen</h3>
+            <p class="text-sm text-muted-foreground">Sales reps making technical promises that developers cannot deliver. You deserve direct, transparent engineering communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONFIRMED SERVICES (P05 Spec - Capability Cards) -->
+    <section id="services" class="py-16 md:py-24 border-b border-border/50">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div class="max-w-2xl">
+            <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Capabilities</div>
+            <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Confirmed engineering services for defined digital problems.</h2>
+            <p class="mt-3 text-muted-foreground">Every service listed here is backed by our direct technical capabilities, active development stacks, and transparent delivery processes.</p>
+          </div>
+          <a href="/services/" class="inline-flex items-center text-sm font-semibold hover:underline text-primary gap-1">
+            View All Services Specification <i data-lucide="chevron-right" class="h-4 w-4"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Service Card: Web Applications (P06) -->
+          <div class="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <i data-lucide="code-2" class="h-5 w-5"></i>
+              </div>
+              <span class="inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">P1 Route</span>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight mb-2">Custom Web Application Development</h3>
+            <p class="text-sm text-muted-foreground mb-4">Bespoke SaaS products, role-based client portals, and data dashboards engineered with modern component architectures, APIs, and relational databases.</p>
+            <div class="pt-4 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/tech/react.svg" alt="React" class="h-3.5 w-3.5">
+                <img src="assets/tech/nextjs.svg" alt="Next.js" class="h-3.5 w-3.5 dark:invert">
+                <img src="assets/tech/nodejs.svg" alt="Node.js" class="h-3.5 w-3.5">
+                <img src="assets/tech/postgresql.svg" alt="PostgreSQL" class="h-3.5 w-3.5">
+                <span class="text-[11px] ml-1">React, Next, Node, Postgres</span>
+              </div>
+              <a href="/services/web-application-development/" class="font-medium text-foreground hover:underline inline-flex items-center gap-1">
+                Details <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card: CRM Web Applications (P07) -->
+          <div class="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <i data-lucide="database" class="h-5 w-5"></i>
+              </div>
+              <span class="inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">P1 Route</span>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight mb-2">CRM & Workflow Applications</h3>
+            <p class="text-sm text-muted-foreground mb-4">Tailored operational systems for sales tracking, client onboarding, dispatch, and internal reporting where off-the-shelf SaaS fails to fit your exact pipeline.</p>
+            <div class="pt-4 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/tech/typescript.svg" alt="TypeScript" class="h-3.5 w-3.5">
+                <img src="assets/tech/postgresql.svg" alt="PostgreSQL" class="h-3.5 w-3.5">
+                <img src="assets/tech/docker.svg" alt="Docker" class="h-3.5 w-3.5">
+                <span class="text-[11px] ml-1">Role Auth & Workflows</span>
+              </div>
+              <a href="/services/crm-web-applications/" class="font-medium text-foreground hover:underline inline-flex items-center gap-1">
+                Details <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card: Business Website Design & Dev (P08) -->
+          <div class="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <i data-lucide="layout" class="h-5 w-5"></i>
+              </div>
+              <span class="inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">P1 Route</span>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight mb-2">Business Website Design & Development</h3>
+            <p class="text-sm text-muted-foreground mb-4">High-performance corporate websites with sub-second page loads, accessible UI systems, structured metadata, and strict Core Web Vitals optimization.</p>
+            <div class="pt-4 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/tech/nextjs.svg" alt="Next.js" class="h-3.5 w-3.5 dark:invert">
+                <img src="assets/tech/tailwindcss.svg" alt="Tailwind CSS" class="h-3.5 w-3.5">
+                <span class="text-[11px] ml-1">Sub-second CWV & SEO</span>
+              </div>
+              <a href="/services/website-design-development/" class="font-medium text-foreground hover:underline inline-flex items-center gap-1">
+                Details <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card: Mobile App Development (P09) -->
+          <div class="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <i data-lucide="smartphone" class="h-5 w-5"></i>
+              </div>
+              <span class="inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">P2 Route</span>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight mb-2">Mobile Application Development</h3>
+            <p class="text-sm text-muted-foreground mb-4">Cross-platform iOS and Android applications developed with unified codebases, offline sync, biometric security, and clean cloud backend integrations.</p>
+            <div class="pt-4 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/tech/flutter.svg" alt="Flutter" class="h-3.5 w-3.5">
+                <img src="assets/tech/react.svg" alt="React Native" class="h-3.5 w-3.5">
+                <span class="text-[11px] ml-1">iOS & Android Builds</span>
+              </div>
+              <a href="/services/mobile-app-development/" class="font-medium text-foreground hover:underline inline-flex items-center gap-1">
+                Details <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card: UI/UX Design (P10) -->
+          <div class="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <i data-lucide="palette" class="h-5 w-5"></i>
+              </div>
+              <span class="inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">P2 Route</span>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight mb-2">UI/UX Design for Web & Mobile</h3>
+            <p class="text-sm text-muted-foreground mb-4">User research, interactive Figma prototypes, design tokens, and design-system handoffs optimized for frictionless developer implementation.</p>
+            <div class="pt-4 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/tech/figma.svg" alt="Figma" class="h-3.5 w-3.5">
+                <span class="text-[11px] ml-1">Figma Tokens & Hand-off</span>
+              </div>
+              <a href="/services/ui-ux-design/" class="font-medium text-foreground hover:underline inline-flex items-center gap-1">
+                Details <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- What Hiver Does Not Do (Honest Gate Card) -->
+          <div class="rounded-xl border border-dashed border-border bg-muted/20 p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+                <i data-lucide="shield-check" class="h-4 w-4"></i>
+                <span>Scope Boundary Gate</span>
+              </div>
+              <h3 class="text-base font-semibold mb-2">What We Deliberately Do Not Do</h3>
+              <p class="text-xs text-muted-foreground leading-relaxed">
+                We do not sell pre-packaged bulk low-cost templates, black-hat SEO schemes, or take on unvalidated scopes without a written engineering discovery phase. Quality requires discipline.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border/50 text-xs font-medium text-muted-foreground">
+              Guaranteed direct access to your lead engineer.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TECH STACK SHOWCASE (from thesvg.org & lucide.dev) -->
+    <section class="py-16 md:py-24 border-b border-border/50 bg-background">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+              <i data-lucide="cpu" class="h-3.5 w-3.5"></i>
+              <span>Engineering Foundations</span>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Technologies we build, deploy, and support with.</h2>
+            <p class="mt-3 text-muted-foreground">Every component, database, and infrastructure tool is chosen for system stability, developer ergonomics, and multi-year maintainability.</p>
+          </div>
+          <div class="text-xs text-muted-foreground flex items-center gap-2">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span>Production-tested stacks only</span>
+          </div>
+        </div>
+
+        <!-- Tech Stack Grid (shadcn Cards) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          
+          <!-- React -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/react.svg" alt="React" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">React</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Frontend UI</span>
+          </div>
+
+          <!-- Next.js -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/nextjs.svg" alt="Next.js" class="h-6 w-6 object-contain dark:invert">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Next.js</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">SSR & Full-stack</span>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/typescript.svg" alt="TypeScript" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">TypeScript</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Type Safety</span>
+          </div>
+
+          <!-- Node.js -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/nodejs.svg" alt="Node.js" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Node.js</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Backend Runtime</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/postgresql.svg" alt="PostgreSQL" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">PostgreSQL</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Relational DB</span>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/tailwindcss.svg" alt="Tailwind CSS" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Tailwind CSS</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Design Tokens</span>
+          </div>
+
+          <!-- Flutter -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/flutter.svg" alt="Flutter" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Flutter</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Mobile Apps</span>
+          </div>
+
+          <!-- Python -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/python.svg" alt="Python" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Python</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Data & APIs</span>
+          </div>
+
+          <!-- Docker -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/docker.svg" alt="Docker" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Docker</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Containers</span>
+          </div>
+
+          <!-- Figma -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/figma.svg" alt="Figma" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Figma</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">UI/UX Systems</span>
+          </div>
+
+          <!-- AWS -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/aws.svg" alt="AWS" class="h-6 w-6 object-contain dark:invert">
+            </div>
+            <span class="text-sm font-semibold text-foreground">AWS</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Cloud Infra</span>
+          </div>
+
+          <!-- Git -->
+          <div class="group rounded-xl border border-border bg-card p-4 transition-all hover:border-primary/50 hover:shadow-sm flex flex-col items-center text-center">
+            <div class="h-10 w-10 flex items-center justify-center rounded-lg bg-muted/40 mb-3 group-hover:scale-105 transition-transform">
+              <img src="assets/tech/git.svg" alt="Git" class="h-6 w-6 object-contain">
+            </div>
+            <span class="text-sm font-semibold text-foreground">Git & CI/CD</span>
+            <span class="text-[11px] text-muted-foreground mt-0.5">Version Control</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: HOW WORK IS APPROACHED (DELIVERY PRINCIPLES) -->
+    <section class="py-16 md:py-24 border-b border-border/50 bg-muted/20">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        
+        <div class="max-w-2xl mb-12">
+          <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Delivery Model</div>
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Transparent process from technical brief to production.</h2>
+          <p class="mt-3 text-muted-foreground">Our delivery lifecycle is structured to eliminate assumptions early and provide weekly demonstrable progress.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="text-2xl font-black text-muted-foreground/40 mb-3">01</div>
+            <h3 class="font-semibold text-base mb-2">Technical Discovery</h3>
+            <p class="text-xs text-muted-foreground leading-relaxed">We audit your workflows, user roles, security needs, and existing database models. A concrete specification is defined before coding begins.</p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="text-2xl font-black text-muted-foreground/40 mb-3">02</div>
+            <h3 class="font-semibold text-base mb-2">Sprint Architecture</h3>
+            <p class="text-xs text-muted-foreground leading-relaxed">Interactive wireframes, data schema designs, and modular component construction executed in two-week iterative sprints.</p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="text-2xl font-black text-muted-foreground/40 mb-3">03</div>
+            <h3 class="font-semibold text-base mb-2">Rigorous QA & Testing</h3>
+            <p class="text-xs text-muted-foreground leading-relaxed">Automated unit and integration checks, cross-device layout verification, security review, and Core Web Vitals stress tests.</p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <div class="text-2xl font-black text-muted-foreground/40 mb-3">04</div>
+            <h3 class="font-semibold text-base mb-2">Deployment & Handoff</h3>
+            <p class="text-xs text-muted-foreground leading-relaxed">Zero-downtime deployment, DNS configuration, staging environments, complete Git repository transfer, and operational training.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: PRODUCTS HUB (Validated Beachhead Solutions) -->
+    <section class="py-16 md:py-24 border-b border-border/50">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        
+        <div class="max-w-2xl mb-12">
+          <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Software Solutions</div>
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Domain-specific operational software.</h2>
+          <p class="mt-3 text-muted-foreground">Configurable management platforms built to handle institutional administration, billing, and scheduling in local compliance frameworks.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Product 1: School Management -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-400">Nepal Market Ready</span>
+                <i data-lucide="graduation-cap" class="h-5 w-5 text-muted-foreground"></i>
+              </div>
+              <h3 class="text-lg font-semibold tracking-tight mb-2">School Management Software</h3>
+              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Complete academic administration: student enrollment, attendance tracking, fee receipts, examination report cards, and parent notification system.</p>
+            </div>
+            <a href="/products/school-management-software/" class="inline-flex items-center text-xs font-semibold text-primary hover:underline gap-1">
+              Request Platform Demo <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+            </a>
+          </div>
+
+          <!-- Product 2: Clinic & Dental -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center rounded-full bg-blue-500/10 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:text-blue-400">Healthcare Solution</span>
+                <i data-lucide="stethoscope" class="h-5 w-5 text-muted-foreground"></i>
+              </div>
+              <h3 class="text-lg font-semibold tracking-tight mb-2">Clinic & Dental Practice ERP</h3>
+              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Patient medical histories, appointment scheduling, inventory for prescription medications, treatment plans, and digital invoicing.</p>
+            </div>
+            <a href="/products/clinic-management-software/" class="inline-flex items-center text-xs font-semibold text-primary hover:underline gap-1">
+              Explore Healthcare Suite <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+            </a>
+          </div>
+
+          <!-- Product 3: HR & Employee Management -->
+          <div class="rounded-xl border border-border bg-card p-6 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center rounded-full bg-purple-500/10 px-2.5 py-0.5 text-xs font-medium text-purple-700 dark:text-purple-400">Enterprise Operations</span>
+                <i data-lucide="users-2" class="h-5 w-5 text-muted-foreground"></i>
+              </div>
+              <h3 class="text-lg font-semibold tracking-tight mb-2">HR & Payroll Software</h3>
+              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Biometric attendance sync, leave management, automated tax and payroll calculation according to Nepal labor regulations.</p>
+            </div>
+            <a href="/products/hr-software/" class="inline-flex items-center text-xs font-semibold text-primary hover:underline gap-1">
+              View HR System Details <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: QUESTIONS BUYERS ASK (Interactive shadcn Accordion) -->
+    <section class="py-16 md:py-24 border-b border-border/50 bg-muted/10">
+      <div class="container mx-auto max-w-4xl px-4 sm:px-8">
+        
+        <div class="text-center mb-12">
+          <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Transparency & FAQ</div>
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Questions buyers ask before partnering with us.</h2>
+          <p class="mt-3 text-muted-foreground">Clear answers on our location, team structure, IP rights, and working models.</p>
+        </div>
+
+        <div class="space-y-4" id="faq-accordion">
+          
+          <!-- FAQ Item 1 -->
+          <div class="border border-border rounded-xl bg-card overflow-hidden">
+            <button type="button" class="faq-trigger flex w-full items-center justify-between p-5 text-left text-sm font-semibold hover:bg-accent/50 transition-colors" aria-expanded="false">
+              <span>Where is Hiver Technology physically based and legally registered?</span>
+              <i data-lucide="chevron-down" class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-3">
+              We are headquartered and legally registered in Nepal, with our core engineering operations based in Imadole, Lalitpur. We do not use proxy entities or pretend to be an offshore agency in other jurisdictions without genuine local presence.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border border-border rounded-xl bg-card overflow-hidden">
+            <button type="button" class="faq-trigger flex w-full items-center justify-between p-5 text-left text-sm font-semibold hover:bg-accent/50 transition-colors" aria-expanded="false">
+              <span>Who owns the code and intellectual property once the project is finished?</span>
+              <i data-lucide="chevron-down" class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-3">
+              You own 100% of the code, designs, and intellectual property. Upon completion of milestone payments, all repository access, documentation, and cloud architecture credentials are unconditionally transferred to your organization.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border border-border rounded-xl bg-card overflow-hidden">
+            <button type="button" class="faq-trigger flex w-full items-center justify-between p-5 text-left text-sm font-semibold hover:bg-accent/50 transition-colors" aria-expanded="false">
+              <span>How does Hiver handle communication across international time zones?</span>
+              <i data-lucide="chevron-down" class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-3">
+              We provide overlapping working windows with clients across Asia, Australia, the UK, and Europe. Daily standup notes are published via Slack/Teams, and weekly demo video recordings are shared for asynchronous review.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-border rounded-xl bg-card overflow-hidden">
+            <button type="button" class="faq-trigger flex w-full items-center justify-between p-5 text-left text-sm font-semibold hover:bg-accent/50 transition-colors" aria-expanded="false">
+              <span>Can Hiver modernize or fix an existing legacy codebase?</span>
+              <i data-lucide="chevron-down" class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-3">
+              Yes. We perform a paid technical audit to analyze system architecture, database performance, security vulnerabilities, and code quality before suggesting either incremental refactoring or an isolated rewrite.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT & PROJECT INQUIRY (shadcn Form pattern) -->
+    <section id="contact" class="py-16 md:py-24">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Column: Contact Information -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Get in touch</div>
+            <h2 class="text-3xl font-bold tracking-tight">Discuss your project with our engineering leads.</h2>
+            <p class="text-muted-foreground leading-relaxed">
+              Tell us about your application, software challenges, or timeline. You will receive an initial technical reply directly from our team within 24 business hours.
+            </p>
+
+            <div class="space-y-4 pt-4">
+              <div class="flex items-start gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary text-foreground shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="h-4 w-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-muted-foreground">Office Location</div>
+                  <div class="text-sm font-semibold">Imadole, Lalitpur, Nepal</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary text-foreground shrink-0 mt-0.5">
+                  <i data-lucide="phone" class="h-4 w-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-muted-foreground">Direct Telephone</div>
+                  <a href="tel:+9779862537264" class="text-sm font-semibold hover:underline">+977-9862537264</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary text-foreground shrink-0 mt-0.5">
+                  <i data-lucide="mail" class="h-4 w-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-muted-foreground">Official Email</div>
+                  <div class="flex flex-col gap-0.5">
+                    <a href="mailto:admin@hiver.com.np" class="text-sm font-semibold hover:underline">admin@hiver.com.np</a>
+                    <a href="mailto:hivertechnology@gmail.com" class="text-xs text-muted-foreground hover:underline">hivertechnology@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Principles Box -->
+            <div class="rounded-xl border border-border bg-card p-5 text-xs text-muted-foreground space-y-2">
+              <div class="font-semibold text-foreground flex items-center gap-1.5">
+                <i data-lucide="shield" class="h-3.5 w-3.5"></i>
+                Privacy & NDA Commitment
+              </div>
+              <p>We respect your intellectual property and are glad to execute a mutual Non-Disclosure Agreement (NDA) before detailed product review.</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Form (shadcn Card + Input + Textarea) -->
+          <div class="lg:col-span-7">
+            <div class="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm">
+              <form id="project-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry recorded. Our engineering team will review your specifications.');">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1.5">
+                    <label for="name" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Full Name *</label>
+                    <input id="name" required placeholder="Sujan Shrestha" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="email" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Business Email *</label>
+                    <input id="email" type="email" required placeholder="sujan@company.com" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1.5">
+                    <label for="phone" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Phone / WhatsApp</label>
+                    <input id="phone" placeholder="+977-98..." class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="service-type" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Project Scope *</label>
+                    <select id="service-type" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option value="">Select Primary Focus</option>
+                      <option value="web-app">Custom Web Application</option>
+                      <option value="crm">CRM / Operational Workflow</option>
+                      <option value="website">Business Website Redesign</option>
+                      <option value="mobile-app">Mobile App (iOS/Android)</option>
+                      <option value="product">School / Healthcare Software</option>
+                      <option value="audit">Code Audit / Modernization</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="budget" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Estimated Timeline / Stage</label>
+                  <select id="budget" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                    <option value="planning">Concept / Planning Stage (Ready in 1–3 months)</option>
+                    <option value="active-rfp">Active RFP / Project Starting Immediately</option>
+                    <option value="existing-codebase">Existing System Needs Maintenance / Modernization</option>
+                  </select>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="message" class="text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Project Summary & Core Requirements *</label>
+                  <textarea id="message" rows="4" required placeholder="Describe your software goals, key integrations, and any critical deadlines..." class="flex min-h-[100px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                </div>
+
+                <button type="submit" class="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                  Send Project Inquiry
+                  <i data-lucide="send" class="ml-2 h-4 w-4"></i>
+                </button>
+                
+                <p class="text-[11px] text-muted-foreground text-center">
+                  Protected by standard confidentiality. No spam or unsolicited marketing.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Preserving Canonical Architecture Routes) -->
+  <footer class="border-t border-border bg-background py-12 md:py-16 text-sm">
+    <div class="container mx-auto max-w-7xl px-4 sm:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Company Identity Column -->
+        <div class="col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <img src="assets/hiver.webp" alt="Hiver Technology Logo" class="h-7 w-7 rounded-md object-contain border border-border/40 bg-card">
+            <span class="font-bold tracking-tight">Hiver Technology</span>
+          </div>
+          <p class="text-xs text-muted-foreground max-w-sm leading-relaxed">
+            Nepal-based software and digital solutions. Structured web applications, enterprise management platforms, and high-performance digital delivery.
+          </p>
+          <div class="text-xs text-muted-foreground space-y-1">
+            <p><strong>Entity:</strong> Hiver Technology</p>
+            <p><strong>Location:</strong> Imadole, Lalitpur, Nepal</p>
+            <p><strong>Contact:</strong> +977-9862537264 | <a href="mailto:admin@hiver.com.np" class="hover:underline">admin@hiver.com.np</a> | <a href="mailto:hivertechnology@gmail.com" class="hover:underline">hivertechnology@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Navigation: Company -->
+        <div class="space-y-3">
+          <div class="text-xs font-semibold tracking-wider uppercase text-foreground">Company</div>
+          <ul class="space-y-2 text-xs text-muted-foreground">
+            <li><a href="/about-us/" class="hover:text-foreground transition-colors">About Us</a></li>
+            <li><a href="/team/" class="hover:text-foreground transition-colors">Team</a></li>
+            <li><a href="/career/" class="hover:text-foreground transition-colors">Careers</a></li>
+            <li><a href="/portfolio/" class="hover:text-foreground transition-colors">Portfolio</a></li>
+            <li><a href="/contact/" class="hover:text-foreground transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation: Services -->
+        <div class="space-y-3">
+          <div class="text-xs font-semibold tracking-wider uppercase text-foreground">Services</div>
+          <ul class="space-y-2 text-xs text-muted-foreground">
+            <li><a href="/services/web-application-development/" class="hover:text-foreground transition-colors">Web Applications</a></li>
+            <li><a href="/services/crm-web-applications/" class="hover:text-foreground transition-colors">CRM Applications</a></li>
+            <li><a href="/services/website-design-development/" class="hover:text-foreground transition-colors">Business Websites</a></li>
+            <li><a href="/services/mobile-app-development/" class="hover:text-foreground transition-colors">Mobile App Dev</a></li>
+            <li><a href="/services/ui-ux-design/" class="hover:text-foreground transition-colors">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation: Products & Insights -->
+        <div class="space-y-3">
+          <div class="text-xs font-semibold tracking-wider uppercase text-foreground">Solutions & Guides</div>
+          <ul class="space-y-2 text-xs text-muted-foreground">
+            <li><a href="/products/school-management-software/" class="hover:text-foreground transition-colors">School Software</a></li>
+            <li><a href="/products/clinic-management-software/" class="hover:text-foreground transition-colors">Clinic Management</a></li>
+            <li><a href="/products/hr-software/" class="hover:text-foreground transition-colors">HR & Payroll Suite</a></li>
+            <li><a href="/insights/" class="hover:text-foreground transition-colors">Insights & Articles</a></li>
+            <li><a href="/insights/custom-crm-vs-off-the-shelf/" class="hover:text-foreground transition-colors">CRM Decision Guide</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal Policies -->
+      <div class="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div>
+          &copy; <span id="current-year"></span> Hiver Technology. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy/" class="hover:text-foreground transition-colors">Privacy Policy</a>
+          <a href="/terms-of-service/" class="hover:text-foreground transition-colors">Terms of Service</a>
+          <a href="/cookie-policy/" class="hover:text-foreground transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for shadcn interactions -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Year update
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Theme Toggle Functionality
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
+
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Mobile Sheet Drawer
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileSheet = document.getElementById('mobile-sheet');
+    const mobileSheetClose = document.getElementById('mobile-sheet-close');
+
+    if (mobileMenuToggle && mobileSheet && mobileSheetClose) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileSheet.classList.remove('hidden');
+      });
+      mobileSheetClose.addEventListener('click', () => {
+        mobileSheet.classList.add('hidden');
+      });
+      mobileSheet.addEventListener('click', (e) => {
+        if (e.target === mobileSheet) {
+          mobileSheet.classList.add('hidden');
+        }
+      });
+    }
+
+    // Accordion Interaction (shadcn Accordion behavior)
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling;
+        const icon = trigger.querySelector('.faq-icon');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all items
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+        document.querySelectorAll('.faq-trigger').forEach(t => t.setAttribute('aria-expanded', 'false'));
+
+        // Toggle current item
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

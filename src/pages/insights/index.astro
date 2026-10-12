@@ -1,0 +1,56 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import Section from '@/components/common/Section.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { BookOpen } from 'lucide-react';
+import { deckPage } from '@/data/deck';
+import InsightCard from '@/components/insights/InsightCard.astro';
+import { pageMeta } from '@/config/pages';
+import { getInsights } from '@/lib/insights';
+import { breadcrumbs, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/insights/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Insights', path: '/insights/' },
+];
+const entries = await getInsights();
+const deck = deckPage('/insights/');
+const jsonLd = graph({ ...webPage(meta.path, meta.title, meta.description), '@type': 'CollectionPage' }, breadcrumbs(crumbs));
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="Insights"
+    title="Useful guidance for better digital decisions."
+    intro="Practical, original guides for choosing, planning and improving software, websites and digital workflows — written from delivery experience, without the sales pitch."
+  />
+  <Section id="latest" eyebrow="Latest" title="Guides and explainers">
+    <div class="grid gap-4 md:grid-cols-2">
+      {entries.map((entry) => <InsightCard {entry} />)}
+    </div>
+  </Section>
+
+  <Section
+    id="what-we-publish"
+    tone="secondary"
+    eyebrow="What we publish"
+    title="Written to help one reader"
+    titleMuted="make one decision."
+    intro="Every guide answers a question buyers ask before they choose a technology, start a project or change a process — with real examples, clear limitations and a link to the next useful step."
+  >
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        deck.included.map((item) => (
+          <li class="reveal flex items-center gap-3 rounded-[6px] bg-base-default p-5 text-[15px] font-medium tracking-[-0.2px] shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-primary">
+            <BookOpen className="size-4 shrink-0 text-brand-base" aria-hidden="true" />
+            {item}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+  <CtaBand />
+</BaseLayout>

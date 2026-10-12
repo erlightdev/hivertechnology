@@ -1,0 +1,44 @@
+---
+import { ArrowRight } from 'lucide-react';
+import type { HTMLAttributes } from 'astro/types';
+
+export interface Props extends HTMLAttributes<'a'> {
+  href: string;
+  variant?: 'brand' | 'secondary' | 'invert' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  /** CTAs are pills; compact utility buttons use the 4px button radius. */
+  shape?: 'pill' | 'square';
+  arrow?: boolean;
+}
+
+const { href, variant = 'brand', size = 'md', shape = 'pill', arrow = false, class: className, ...rest } = Astro.props;
+
+const variants = {
+  brand: 'bg-honey text-base-black shadow-button-sm ring-1 ring-border-secondary ring-inset hover:brightness-105',
+  secondary:
+    'bg-base-default text-foreground-primary shadow-button-sm ring-1 ring-border-secondary ring-inset hover:bg-background-secondary',
+  invert: 'bg-base-invert text-foreground-invert shadow-button-sm hover:opacity-90',
+  ghost: 'text-foreground-secondary hover:bg-background-secondary hover:text-foreground-primary',
+};
+const sizes = { sm: 'h-8 px-3.5 text-[13px]', md: 'h-10 px-5 text-sm', lg: 'h-12 px-6 text-[15px]' };
+---
+
+<a
+  href={href}
+  data-cta
+  class:list={[
+    'group inline-flex items-center justify-center gap-2 font-medium whitespace-nowrap transition-[background-color,opacity,color,filter] duration-200 ease-out-soft',
+    shape === 'pill' ? 'rounded-full' : 'rounded-[4px]',
+    variants[variant],
+    sizes[size],
+    className,
+  ]}
+  {...rest}
+>
+  <slot />
+  {
+    arrow && (
+      <ArrowRight className="size-4 transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5" aria-hidden="true" />
+    )
+  }
+</a>

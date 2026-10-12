@@ -1,0 +1,71 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import Faq from '@/components/common/Faq.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { products, type Product } from '@/data/products';
+import { breadcrumbs, faqPage, graph, softwareApplication, webPage } from '@/lib/schema';
+
+export const getStaticPaths = (() =>
+  products.map((product) => ({ params: { slug: product.slug }, props: { product } }))) satisfies GetStaticPaths;
+
+interface Props {
+  product: Product;
+}
+const { product } = Astro.props;
+const path = `/products/${product.slug}/`;
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Products', path: '/products/' },
+  { name: product.name, path },
+];
+const jsonLd = graph(
+  webPage(path, product.title, product.description),
+  softwareApplication(path, product.name, product.description, product.label),
+  breadcrumbs(crumbs),
+  faqPage(product.faqs),
+);
+---
+
+<BaseLayout title={product.title} description={product.description} {path} indexable={product.indexable} {jsonLd}>
+  <PageHero {crumbs} eyebrow={`${product.label} · ${product.name}`} title={product.h1} intro={product.intro}>
+    <ButtonLink href="/contact/" arrow>Request a walkthrough</ButtonLink>
+    <ButtonLink href="#modules" variant="secondary">See modules</ButtonLink>
+  </PageHero>
+
+  <Section id="modules" eyebrow="Modules" title="What the platform covers." intro={`Built for ${product.audience.toLowerCase()}.`}>
+    <dl class="grid gap-px overflow-hidden rounded-[6px] border bg-border-secondary sm:grid-cols-2 lg:grid-cols-3">
+      {
+        product.modules.map((m) => (
+          <div class="reveal space-y-2 bg-base-default p-7">
+            <dt class="font-medium">{m.title}</dt>
+            <dd class="text-sm leading-relaxed text-foreground-tertiary">{m.body}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </Section>
+
+  <Section id="implementation" tone="secondary" eyebrow="Implementation" title="From walkthrough to go-live.">
+    <ol class="grid gap-4 md:grid-cols-5">
+      {
+        product.implementation.map((step, i) => (
+          <li class="reveal rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset p-6">
+            <span class="font-mono text-xs text-foreground-tertiary">0{i + 1}</span>
+            <p class="mt-4 text-sm leading-relaxed">{step}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </Section>
+
+  <Faq faqs={product.faqs} />
+  <CtaBand
+    title={`Request a ${product.name.toLowerCase()} walkthrough.`}
+    body="Tell us about your organization and current process. We will show the relevant modules and outline configuration, data migration and support."
+    cta="Request a walkthrough"
+  />
+</BaseLayout>

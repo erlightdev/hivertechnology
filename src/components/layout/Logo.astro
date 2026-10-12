@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import mark from '@/assets/brand/hiver-mark.webp';
+import { site } from '@/config/site';
+---
+
+<a href="/" class="inline-flex items-center gap-2.5 rounded-[4px]" aria-label={`${site.name} home`}>
+  <Image src={mark} alt="" width={28} height={28} densities={[1, 2]} class="size-7 rounded-[6px]" loading="eager" />
+  <span class="text-[15px] font-medium tracking-[-0.3px] whitespace-nowrap">{site.name}</span>
+</a>

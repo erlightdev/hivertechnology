@@ -1,0 +1,169 @@
+---
+/**
+ * Decorative illustration of a Hiver product rollout: the School Management Software
+ * implementation tracker beside a project channel with the Hiver tech lead.
+ * Copy is drawn from src/data/products.ts so it matches the product page.
+ * Purely illustrative — hidden from assistive tech.
+ */
+import { Image } from 'astro:assets';
+import { ArrowUp, Check, GraduationCap } from 'lucide-react';
+import { StudioBackground } from '@/components/motion/studio-background';
+import mark from '@/assets/brand/hiver-mark.webp';
+import { getProduct } from '@/data/products';
+import { site } from '@/config/site';
+
+const product = getProduct('school-management-software')!;
+
+// The first four implementation steps of the product: three done, one in progress.
+const stepTitles = ['Process walkthrough', 'Configuration', 'Data import', 'Training & go-live'];
+const steps = product.implementation.slice(0, 4).map((detail, i) => ({
+  title: stepTitles[i],
+  detail,
+  state: i < 3 ? 'done' : 'active',
+  dot: i < 3 ? (i % 2 ? 'bg-brand-orange' : 'bg-brand-base') : 'bg-foreground-muted',
+}));
+
+const feeFaq = product.faqs.find((f) => f.q.toLowerCase().includes('fee'));
+
+const messages = [
+  { from: 'you', text: 'Can fee receipts follow our fee heads and sibling discounts?' },
+  { from: 'lead', text: feeFaq ? `Yes — ${feeFaq.a.split('.')[0].replace(/^Grading rules, /, '')}.` : 'Yes — fee heads and discounts are configured during onboarding.' },
+  { from: 'lead', text: 'Student records are imported to staging. Staff training is booked for Friday.' },
+];
+
+---
+
+<div class="container-page relative z-[1] mt-10 pb-12 lg:mt-12 lg:pb-16" aria-hidden="true">
+  <div
+    class="showcase relative mx-auto max-w-[920px] overflow-hidden rounded-[10px] p-3 shadow-feature-card sm:p-5 lg:p-6"
+  >
+    <!-- Animated honey "silk" shader (WebGL2). The panel's CSS gradient shows until it loads or if unsupported. -->
+    <StudioBackground client:visible />
+
+    <div class="relative grid gap-3 md:grid-cols-2 lg:gap-4">
+      <!-- Milestone tracker -->
+      <div class="frame">
+        <div class="card flex h-full flex-col p-4 sm:p-5">
+          <div class="flex items-center gap-3">
+            <span class="grid size-9 place-items-center rounded-full bg-background-secondary ring-1 ring-border-primary ring-inset">
+              <GraduationCap className="size-4 text-foreground-secondary" />
+            </span>
+            <div class="text-left">
+              <p class="text-[15px] font-medium tracking-[-0.2px]">{product.name}</p>
+              <p class="text-xs text-foreground-tertiary">Implementation · {site.address.region} school</p>
+            </div>
+          </div>
+
+          <p class="eyebrow mt-5 text-left">Delivery progress</p>
+          <ol class="mt-3 space-y-2.5 text-left">
+            {
+              steps.map((s, i) => (
+                <li class="step flex items-start gap-3" style={`--i:${i}`}>
+                  <span class:list={['mt-1.5 size-2 shrink-0 rounded-full', s.dot]} />
+                  <span class="min-w-0 flex-1">
+                    <span class="block text-sm text-foreground-primary">{s.title}</span>
+                    <span class="block text-xs text-foreground-tertiary">{s.detail}</span>
+                  </span>
+                  {s.state === 'done' ? (
+                    <span class="tick grid size-5 shrink-0 place-items-center rounded-full bg-honey text-base-black">
+                      <Check className="size-3" strokeWidth={3} />
+                    </span>
+                  ) : (
+                    <span class="spinner size-5 shrink-0 rounded-full border-2 border-border-tertiary border-t-brand-base" />
+                  )}
+                </li>
+              ))
+            }
+          </ol>
+
+          <div class="banner mt-5 flex items-center gap-2.5 rounded-[6px] bg-brand-8 px-3.5 py-2.5 text-left text-[13px] text-foreground-secondary ring-1 ring-brand-20 ring-inset">
+            <span class="grid size-4 place-items-center rounded-full bg-honey text-base-black">
+              <Check className="size-2.5" strokeWidth={3} />
+            </span>
+            Your data, configuration and credentials stay yours
+          </div>
+        </div>
+      </div>
+
+      <!-- Project channel (desktop and tablet only; keeps the mobile hero short) -->
+      <div class="frame hidden md:block">
+        <div class="card flex h-full flex-col p-4 sm:p-5">
+          <div class="flex items-center gap-3 border-b border-border-line pb-4">
+            <Image src={mark} alt="" width={36} height={36} densities={[1, 2]} class="size-9 rounded-full ring-1 ring-border-secondary" />
+            <div class="text-left">
+              <p class="text-[15px] font-medium tracking-[-0.2px]">{site.name}</p>
+              <p class="flex items-center gap-1.5 text-xs text-foreground-tertiary">
+                <span class="size-1.5 rounded-full bg-brand-base"></span>
+                Tech lead · replies within {site.responseTime}
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-1 flex-col gap-2.5 py-4">
+            {
+              messages.map((m, i) => (
+                <div class:list={['msg flex', m.from === 'you' ? 'justify-end' : 'justify-start']} style={`--i:${i}`}>
+                  <p
+                    class:list={[
+                      'max-w-[85%] rounded-[10px] px-3.5 py-2.5 text-left text-[13px]/5',
+                      m.from === 'you'
+                        ? 'bg-honey text-base-black'
+                        : 'bg-background-secondary text-foreground-secondary ring-1 ring-border-primary ring-inset',
+                    ]}
+                  >
+                    {m.text}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+
+          <div class="flex items-center gap-2 rounded-full bg-background-secondary py-1.5 pr-1.5 pl-4 ring-1 ring-border-secondary ring-inset">
+            <span class="flex-1 text-left text-[13px] text-foreground-muted">Message your Hiver tech lead…</span>
+            <span class="grid size-7 place-items-center rounded-full bg-base-invert text-foreground-invert">
+              <ArrowUp className="size-3.5" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .showcase {
+    background: linear-gradient(160deg, var(--brand-vivid), var(--brand-orange));
+  }
+  .frame {
+    border-radius: 12px;
+    padding: 6px;
+    background: color-mix(in oklab, var(--base-white) 22%, transparent);
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--base-white) 35%, transparent);
+  }
+  .card {
+    border-radius: 8px;
+    background: var(--base-default);
+    box-shadow:
+      inset 0 0 0 1px var(--border-primary),
+      var(--shadow-feature-card);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .step .tick,
+    .msg,
+    .banner {
+      animation: pop-in 450ms var(--ease-out-expo) both;
+    }
+    .step .tick { animation-delay: calc(600ms + var(--i) * 450ms); }
+    .msg { animation-delay: calc(500ms + var(--i) * 700ms); }
+    .banner { animation-delay: 2200ms; }
+    .spinner { animation: spin 900ms linear infinite; }
+  }
+  @keyframes pop-in {
+    from { opacity: 0; transform: translateY(6px) scale(0.96); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+</style>

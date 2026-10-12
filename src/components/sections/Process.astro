@@ -1,0 +1,90 @@
+---
+/**
+ * Delivery model as a four-step timeline: a connecting rail with numbered nodes,
+ * each step stating what we do and what the client gets.
+ */
+import { ClipboardList, Blocks, ShieldCheck, Rocket, Check } from 'lucide-react';
+import Section from '@/components/common/Section.astro';
+import { process } from '@/data/company';
+
+export interface Props {
+  tone?: 'default' | 'secondary';
+}
+const { tone = 'secondary' } = Astro.props;
+const icons = [ClipboardList, Blocks, ShieldCheck, Rocket];
+---
+
+<Section
+  id="process"
+  {tone}
+  eyebrow="How we work"
+  title="Four clear steps,"
+  titleMuted="no surprises."
+  intro="You always know what is happening, what it costs and what comes next."
+>
+  <ol class="relative grid gap-4 lg:grid-cols-4 lg:gap-5">
+    <!-- Connecting rail (desktop: horizontal through the nodes; mobile: vertical on the left) -->
+    <span
+      class="pointer-events-none absolute top-5 bottom-5 left-5 w-px bg-border-tertiary lg:top-5 lg:right-[12.5%] lg:bottom-auto lg:left-[12.5%] lg:h-px lg:w-auto"
+      aria-hidden="true"
+    >
+      <span class="rail-fill absolute inset-0 origin-top bg-honey lg:origin-left"></span>
+    </span>
+
+    {
+      process.map((p, i) => {
+        const Icon = icons[i];
+        return (
+          <li class="reveal relative grid grid-cols-[2.5rem_1fr] gap-4 lg:grid-cols-1 lg:gap-5">
+            <span class="relative z-[1] grid size-10 place-items-center rounded-full bg-honey font-paper text-sm font-medium text-base-black shadow-button-sm ring-4 ring-background-secondary lg:mx-auto">
+              {i + 1}
+            </span>
+
+            <div class="flex h-full flex-col rounded-[6px] bg-base-default p-5 shadow-drop-sm ring-1 ring-border-secondary ring-inset lg:p-6 dark:bg-background-primary">
+              <span class="grid size-9 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+                <Icon className="size-[18px]" aria-hidden="true" />
+              </span>
+              <h3 class="mt-5 text-[17px] font-medium tracking-[-0.3px]">{p.title}</h3>
+              <p class="mt-2 flex-1 text-sm/6 text-foreground-secondary">{p.body}</p>
+              <p class="mt-5 flex items-start gap-2 border-t border-border-line pt-4 text-[13px]/5">
+                <Check className="mt-0.5 size-4 shrink-0 text-brand-base" aria-hidden="true" />
+                <span>
+                  <span class="text-foreground-tertiary">You get: </span>
+                  <span class="font-medium text-foreground-primary">{p.outcome}</span>
+                </span>
+              </p>
+            </div>
+          </li>
+        );
+      })
+    }
+  </ol>
+</Section>
+
+<style>
+  .rail-fill {
+    transform: scale(1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .rail-fill {
+        animation: fill-y linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 55%;
+      }
+      @media (min-width: 1024px) {
+        .rail-fill {
+          animation-name: fill-x;
+        }
+      }
+    }
+  }
+  @keyframes fill-x {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  @keyframes fill-y {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+  }
+</style>

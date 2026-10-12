@@ -1,0 +1,73 @@
+---
+import '@/styles/global.css';
+import Seo from '@/components/seo/Seo.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import WhatsAppButton from '@/components/layout/WhatsAppButton.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  /** Route path with trailing slash, e.g. "/about-us/". */
+  path: string;
+  indexable?: boolean;
+  ogType?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description, path, indexable = true, ogType = 'website', jsonLd } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-pt-20">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Seo {title} {description} {path} {indexable} {ogType} {jsonLd} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#fefdfb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0b0f" media="(prefers-color-scheme: dark)" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Apply the stored or system theme before first paint to avoid a flash. -->
+    <script is:inline>
+      (() => {
+        let theme = null;
+        try { theme = localStorage.getItem('theme'); } catch {}
+        const dark = theme ? theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a
+      href="#main"
+      class="sr-only z-[100] rounded-md bg-foreground px-4 py-2 text-sm text-background focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >Skip to content</a
+    >
+    <Header currentPath={path} />
+    <main id="main" data-rail class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppButton />
+    <script>
+      import '@/scripts/measurement';
+    </script>
+    <script>
+      // Smooth page scroll (Lenis). Skipped entirely under reduced motion.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        import('lenis').then(({ default: Lenis }) => {
+          const lenis = new Lenis({ autoRaf: true, anchors: { offset: -72 } });
+          window.addEventListener('hiver:scroll-lock', (event) => {
+            if ((event as CustomEvent<boolean>).detail) lenis.stop();
+            else lenis.start();
+          });
+          window.addEventListener('pagehide', () => lenis.destroy(), { once: true });
+        });
+      }
+    </script>
+  </body>
+</html>

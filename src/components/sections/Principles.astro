@@ -1,0 +1,24 @@
+---
+import Section from '@/components/common/Section.astro';
+import { principles } from '@/data/company';
+
+export interface Props {
+  title?: string;
+  titleMuted?: string;
+  eyebrow?: string;
+}
+const { title = 'How we keep', titleMuted = 'projects honest.', eyebrow = 'Working principles' } = Astro.props;
+---
+
+<Section id="principles" {eyebrow} {title} {titleMuted}>
+  <dl class="grid gap-x-12 gap-y-10 sm:grid-cols-2">
+    {
+      principles.map((p) => (
+        <div class="reveal border-l-2 border-brand-base pl-6">
+          <dt class="text-[17px] font-medium tracking-[-0.3px]">{p.title}</dt>
+          <dd class="mt-2 text-sm/6 text-foreground-secondary">{p.body}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</Section>

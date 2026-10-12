@@ -1,0 +1,57 @@
+---
+import { ArrowUpRight } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { pageMeta } from '@/config/pages';
+import { industries } from '@/data/industries';
+import { breadcrumbs, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/industries/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Industries', path: '/industries/' },
+];
+const jsonLd = graph({ ...webPage(meta.path, meta.title, meta.description), '@type': 'CollectionPage' }, breadcrumbs(crumbs));
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="Industries"
+    title="The same delivery discipline,"
+    titleMuted="applied to your sector’s workflow."
+    intro="Every sector has its own customers, data, handoffs and constraints. We start from those, then decide which website, application or automation work is worth doing."
+  >
+    <ButtonLink href="/contact/" arrow data-cta-location="hero">Discuss your sector</ButtonLink>
+  </PageHero>
+
+  <Section>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        industries.map((ind) => {
+          const Icon = ind.icon;
+          return (
+            <article class="reveal group relative flex flex-col rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md lg:p-7 dark:bg-background-secondary">
+              <div class="flex items-center justify-between">
+                <span class="grid size-10 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+                  <Icon className="size-[18px]" aria-hidden="true" />
+                </span>
+                <ArrowUpRight className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+              </div>
+              <h2 class="mt-8 text-[17px] font-medium tracking-[-0.3px]">
+                <a href={ind.path} class="after:absolute after:inset-0 after:rounded-[6px]">{ind.name}</a>
+              </h2>
+              <p class="mt-2 text-sm font-medium text-foreground-primary">{ind.h1}</p>
+              <p class="mt-2 flex-1 text-sm/6 text-foreground-secondary">{ind.summary}</p>
+            </article>
+          );
+        })
+      }
+    </div>
+  </Section>
+
+  <CtaBand title="Don’t see your sector?" titleMuted="Describe the workflow instead." />
+</BaseLayout>

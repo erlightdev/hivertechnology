@@ -1,0 +1,17 @@
+---
+import Section from '@/components/common/Section.astro';
+import TechMarquee from './TechMarquee';
+import { techStack } from '@/data/company';
+
+const items = techStack.map((t) => ({ name: t.name, role: t.role, logo: t.logo.src }));
+---
+
+<Section
+  id="stack"
+  eyebrow="Engineering foundations"
+  title="Tools we use —"
+  titleMuted="proven and widely supported."
+  intro="We choose popular, well-supported technology so your software is easy to keep running and improve later."
+>
+  <TechMarquee {items} />
+</Section>

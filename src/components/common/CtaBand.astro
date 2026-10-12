@@ -1,0 +1,38 @@
+---
+import ButtonLink from './ButtonLink.astro';
+import { site } from '@/config/site';
+
+export interface Props {
+  title?: string;
+  titleMuted?: string;
+  body?: string;
+  cta?: string;
+  href?: string;
+}
+const {
+  title = 'Have a project in mind?',
+  titleMuted = 'Let’s talk.',
+  body = `Tell us what you want to build or fix. A developer replies within ${site.responseTime} — even if we are not the right fit.`,
+  cta = 'Discuss a project',
+  href = '/contact/',
+} = Astro.props;
+---
+
+<section data-line class="relative overflow-hidden">
+  <div
+    class="bg-dots pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_50%_80%_at_50%_100%,#000_10%,transparent_70%)]"
+    aria-hidden="true"
+  >
+  </div>
+  <div class="container-page relative z-[1] flex flex-col items-center py-24 text-center lg:py-32">
+    <h2 class="reveal section-heading max-w-xl">
+      {title}
+      <span class="block text-foreground-tertiary">{titleMuted}</span>
+    </h2>
+    <p class="reveal mt-5 max-w-lg text-base/7 text-foreground-secondary">{body}</p>
+    <div class="reveal mt-8 flex flex-wrap justify-center gap-3">
+      <ButtonLink href={href} size="lg" arrow>{cta}</ButtonLink>
+      <ButtonLink href={`mailto:${site.email}`} size="lg" variant="secondary">{site.email}</ButtonLink>
+    </div>
+  </div>
+</section>

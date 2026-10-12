@@ -1,0 +1,12 @@
+domain,rdap_status,availability_signal,registrar_or_status,source_url,retrieved_utc,note
+hivertechnology.com,200,registered_or_reserved,client transfer prohibited,https://rdap.verisign.com/com/v1/domain/hivertechnology.com,2026-08-14T03:18:00Z,Public RDAP indicates the name is registered/reserved; ownership and trademark rights are not assessed.
+hivertechnology.net,error,unknown,,https://rdap.verisign.com/net/v1/domain/hivertechnology.net,2026-08-14T03:18:27Z,"HTTPSConnectionPool(host='rdap.verisign.com', port=443): Read timed out."
+hivertechnology.org,400,unknown,,https://rdap.verisign.com/org/v1/domain/hivertechnology.org,2026-08-14T03:18:29Z,RDAP response unavailable or not definitive.
+hiver.tech,404,not_found_in_rdap_may_be_available,,https://rdap.org/domain/hiver.tech,2026-08-14T03:18:39Z,Not found in this RDAP service; verify at an accredited registrar because absence is not a purchase or trademark clearance.
+hiverhq.com,200,registered_or_reserved,client delete prohibited;client renew prohibited;client transfer prohibited;client update prohibited,https://rdap.verisign.com/com/v1/domain/hiverhq.com,2026-08-14T03:18:41Z,Public RDAP indicates the name is registered/reserved; ownership and trademark rights are not assessed.
+hiverhq.tech,404,not_found_in_rdap_may_be_available,,https://rdap.org/domain/hiverhq.tech,2026-08-14T03:18:46Z,Not found in this RDAP service; verify at an accredited registrar because absence is not a purchase or trademark clearance.
+hiverdigital.com,error,unknown,,https://rdap.verisign.com/com/v1/domain/hiverdigital.com,2026-08-14T03:19:17Z,"HTTPSConnectionPool(host='rdap.verisign.com', port=443): Read timed out."
+hiverlabs.com,200,registered_or_reserved,client transfer prohibited,https://rdap.verisign.com/com/v1/domain/hiverlabs.com,2026-08-14T03:19:20Z,Public RDAP indicates the name is registered/reserved; ownership and trademark rights are not assessed.
+hivertechnology.co,400,unknown,,https://rdap.verisign.com/co/v1/domain/hivertechnology.co,2026-08-14T03:19:23Z,RDAP response unavailable or not definitive.
+hivertechnology.au,404,not_found_in_rdap_may_be_available,,https://rdap.org/domain/hivertechnology.au,2026-08-14T03:19:32Z,Not found in this RDAP service; verify at an accredited registrar because absence is not a purchase or trademark clearance.
+hivertechnology.co.uk,404,not_found_in_rdap_may_be_available,,https://rdap.org/domain/hivertechnology.co.uk,2026-08-14T03:19:38Z,Not found in this RDAP service; verify at an accredited registrar because absence is not a purchase or trademark clearance.

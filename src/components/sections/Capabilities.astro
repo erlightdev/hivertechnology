@@ -1,0 +1,53 @@
+---
+import { ArrowRight, Ban } from 'lucide-react';
+import Section from '@/components/common/Section.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import { serviceGroups } from '@/data/services';
+
+---
+
+<Section
+  id="services"
+  eyebrow="Capabilities"
+  title="What we can build for you"
+  intro="Pick the area you need help with. We can combine them when a project needs more than one."
+>
+  <ButtonLink slot="aside" href="/services/" variant="secondary" arrow>All services</ButtonLink>
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      serviceGroups.map((g) => {
+        const Icon = g.services[0].icon;
+        return (
+          <article class="reveal flex h-full flex-col rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset lg:p-7 dark:bg-background-secondary">
+            <span class="grid size-10 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+              <Icon className="size-[18px]" aria-hidden="true" />
+            </span>
+            <h3 class="mt-8 text-[17px] font-medium tracking-[-0.3px]">
+              <a href={`/services/#${g.id}`} class="hover:text-brand-base">{g.name}</a>
+            </h3>
+            <p class="mt-2 text-sm/6 text-foreground-secondary">{g.short}</p>
+            <ul class="mt-5 flex-1 space-y-1 border-t border-border-line pt-4">
+              {g.services.map((s) => (
+                <li>
+                  <a href={s.path} class="group flex items-center justify-between gap-3 rounded-[4px] py-1 text-[13px] text-foreground-secondary transition-colors duration-150 hover:text-foreground-primary">
+                    {s.name}
+                    <ArrowRight className="size-3.5 shrink-0 text-foreground-muted transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </article>
+        );
+      })
+    }
+    <div class="reveal flex h-full flex-col rounded-[6px] border border-dashed border-border-tertiary p-6 lg:p-7">
+      <span class="grid size-10 place-items-center rounded-[6px] bg-background-secondary ring-1 ring-border-secondary ring-inset">
+        <Ban className="size-[18px] text-foreground-tertiary" aria-hidden="true" />
+      </span>
+      <h3 class="mt-8 text-[17px] font-medium tracking-[-0.3px]">What we don’t do</h3>
+      <p class="mt-2 text-sm/6 text-foreground-secondary">
+        Cheap template sites, shortcuts on Google, promised rankings, or projects without a clear plan.
+      </p>
+    </div>
+  </div>
+</Section>

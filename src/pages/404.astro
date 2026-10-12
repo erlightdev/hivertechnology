@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { NotFoundSpotlight } from '@/components/motion/not-found/spotlight';
+---
+
+<BaseLayout
+  title="Page not found | Hiver Technology"
+  description="The page you are looking for could not be found."
+  path="/404/"
+  indexable={false}
+>
+  <div class="container-page py-16">
+    <NotFoundSpotlight
+      client:idle
+      title="This page does not exist"
+      description="It may have moved during our site rebuild. Try the home page or browse our services."
+      homeHref="/"
+      homeLabel="Back home"
+      browseHref="/services/"
+      browseLabel="Browse services"
+    />
+  </div>
+</BaseLayout>

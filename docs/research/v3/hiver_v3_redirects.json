@@ -1,0 +1,74 @@
+[
+  {
+    "source": "/category/blog/",
+    "target": "/insights/",
+    "status": "CONDITIONAL",
+    "code": 301,
+    "reason": "Use only if GSC, links and content audit show archive should consolidate. Otherwise keep a useful canonical archive.",
+    "test": "curl -I; confirm one hop and target 200."
+  },
+  {
+    "source": "/about-us/",
+    "target": "/about-us/",
+    "status": "KEEP",
+    "code": "200",
+    "reason": "Preserve current Hiver route.",
+    "test": "Self-canonical, 200, indexable when content is ready."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/",
+    "status": "KEEP",
+    "code": "200",
+    "reason": "Preserve current Hiver route.",
+    "test": "200, indexable and linked from home."
+  },
+  {
+    "source": "/products/",
+    "target": "/products/",
+    "status": "KEEP_GATED",
+    "code": "200/noindex until ready",
+    "reason": "Preserve product hub path; content and indexing depend on product evidence.",
+    "test": "Noindex before gate; index after gate."
+  },
+  {
+    "source": "/portfolio/",
+    "target": "/portfolio/",
+    "status": "KEEP_GATED",
+    "code": "200/noindex until proof",
+    "reason": "Preserve current portfolio path; publish only approved work.",
+    "test": "Noindex before proof; index after proof."
+  },
+  {
+    "source": "/book-a-call/",
+    "target": "/contact/",
+    "status": "DISABLED_REFERENCE_ONLY",
+    "code": 301,
+    "reason": "This is a Nexly reference route, not a verified Hiver legacy route. Do not add this rule unless Hiver actually owned the path or campaigns use it.",
+    "test": "Keep disabled."
+  },
+  {
+    "source": "/project-enquiry/",
+    "target": "/contact/",
+    "status": "DISABLED_REFERENCE_ONLY",
+    "code": 301,
+    "reason": "This is a Nexly reference route, not a verified Hiver legacy route. Use one Hiver contact route unless a separate approved funnel exists.",
+    "test": "Keep disabled."
+  },
+  {
+    "source": "/about/",
+    "target": "/about-us/",
+    "status": "DISABLED_REFERENCE_ONLY",
+    "code": 301,
+    "reason": "Nexly reference route only; do not redirect Hiver traffic from a path not shown in Hiver legacy audit.",
+    "test": "Keep disabled."
+  },
+  {
+    "source": "/blog/",
+    "target": "/insights/",
+    "status": "DISABLED_REFERENCE_ONLY",
+    "code": 301,
+    "reason": "Nexly reference route only; Hiver current content uses /insights/ and root articles.",
+    "test": "Keep disabled."
+  }
+]

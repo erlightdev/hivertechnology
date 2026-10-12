@@ -1,0 +1,85 @@
+---
+import { Check, FileText, Handshake, Lock } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import Faq from '@/components/common/Faq.astro';
+import { deckPage } from '@/data/deck';
+import { pageMeta } from '@/config/pages';
+import { breadcrumbs, faqPage, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/portfolio/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Portfolio', path: '/portfolio/' },
+];
+const deck = deckPage('/portfolio/');
+const faqs = [
+  {
+    q: 'Can you share work if a client requires confidentiality?',
+    a: 'Only with the client’s approval, either as an anonymized description or in a private walkthrough. Confidentiality always takes priority over portfolio visibility.',
+  },
+  {
+    q: 'What results do your case studies include?',
+    a: 'Only metrics both the client and we can verify, with context on what was measured and when. We never infer or invent results.',
+  },
+];
+const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs), faqPage(faqs));
+
+const policy = [
+  { icon: Handshake, title: 'Published with permission', body: 'Case studies appear here only when the client has approved the content.' },
+  { icon: FileText, title: 'Accurate scope', body: 'Each study states what we built, what we did not, and the team involved.' },
+  { icon: Lock, title: 'References on request', body: 'Much of our work is internal software under NDA. We share relevant examples privately.' },
+];
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="Portfolio"
+    title="Selected work, explained clearly."
+    intro="We publish case studies only with client permission, accurate scope and measurable outcomes where they exist. Until a study is approved, we walk you through comparable work privately."
+  >
+    <ButtonLink href="/contact/" arrow data-cta-location="hero">Request relevant examples</ButtonLink>
+    <ButtonLink href="/services/" variant="secondary" data-cta-location="hero">Explore services</ButtonLink>
+  </PageHero>
+
+  <Section id="case-study" eyebrow="What a case study covers" title={deck.problem!.heading} intro={deck.problem!.body}>
+    <ul class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+      {
+        deck.included.map((item) => (
+          <li class="reveal flex gap-3 rounded-[6px] bg-base-default p-5 text-sm/6 shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary">
+            <Check className="mt-0.5 size-4 shrink-0 text-brand-base" aria-hidden="true" />
+            {item}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <Section eyebrow="How we present work" title="No placeholder logos, no invented results.">
+    <ul class="grid gap-4 md:grid-cols-3">
+      {
+        policy.map((p) => {
+          const Icon = p.icon;
+          return (
+            <li class="reveal rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary p-7">
+              <Icon className="size-5" aria-hidden="true" />
+              <h2 class="mt-6 text-lg font-medium">{p.title}</h2>
+              <p class="mt-2 text-sm leading-relaxed text-foreground-tertiary">{p.body}</p>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </Section>
+
+  <Faq {faqs} />
+  <CtaBand
+    title="Discuss a similar project."
+    body="Describe what you are planning. We will share the closest examples we can, explain our role in them and introduce the engineers involved."
+    cta="Discuss a similar project"
+  />
+</BaseLayout>

@@ -1,0 +1,59 @@
+{
+  "documentation": "v2 schema rules: use only accurate, visible and verified data. Placeholders are not publishable values.",
+  "organization_template": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DATA REQUIRED — approved legal / international brand name",
+    "url": "DATA REQUIRED — approved canonical domain",
+    "logo": "DATA REQUIRED — approved logo URL",
+    "sameAs": [
+      "DATA REQUIRED — verified LinkedIn",
+      "DATA REQUIRED — verified Facebook/other official profile"
+    ]
+  },
+  "localbusiness_nepal_only_template": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DATA REQUIRED — legal entity",
+    "url": "DATA REQUIRED — canonical domain",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "DATA REQUIRED",
+      "addressLocality": "Imadole, Lalitpur",
+      "addressCountry": "NP"
+    },
+    "telephone": "DATA REQUIRED",
+    "email": "DATA REQUIRED"
+  },
+  "service_template": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "DATA REQUIRED — confirmed service",
+    "description": "DATA REQUIRED — factual visible page description",
+    "provider": {
+      "@type": "Organization",
+      "name": "DATA REQUIRED — approved brand"
+    },
+    "areaServed": [
+      "Nepal",
+      "DATA REQUIRED — factual international markets"
+    ],
+    "url": "DATA REQUIRED — canonical URL"
+  },
+  "software_application_template": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DATA REQUIRED — confirmed product",
+    "applicationCategory": "DATA REQUIRED",
+    "operatingSystem": "DATA REQUIRED",
+    "description": "DATA REQUIRED — factual visible product description",
+    "offers": "DATA REQUIRED — current pricing/offer if public"
+  },
+  "rules": [
+    "Do not publish Review or AggregateRating schema for placeholder testimonials.",
+    "Do not use LocalBusiness for US/AU/UK without a factual local business presence.",
+    "Use FAQPage only for visible, helpful FAQs that reflect real buyer questions.",
+    "Use Person/Article only for real named authors and reviewers.",
+    "Validate structured data against the published page, not a content draft."
+  ]
+}

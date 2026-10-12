@@ -1,0 +1,315 @@
+---
+/**
+ * Industries bento grid. Each tile pairs the sector copy with a small decorative
+ * illustration of the workflow we design for (hidden from assistive tech).
+ */
+import { ArrowUpRight, Check, FileText, MapPin, Package, ShoppingBag, Star } from 'lucide-react';
+import Section from '@/components/common/Section.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import { getIndustry, type Industry } from '@/data/industries';
+
+const order = ['education', 'healthcare', 'ecommerce', 'logistics', 'manufacturing'] as const;
+const tiles = order.map((slug) => getIndustry(slug)).filter((i): i is Industry => Boolean(i));
+
+// 12-column bento: feature tile left, wide + two compact tiles right, full-width strip below.
+const span: Record<string, string> = {
+  education: 'lg:col-span-6 lg:row-span-2',
+  healthcare: 'sm:col-span-2 lg:col-span-6',
+  ecommerce: 'lg:col-span-3',
+  logistics: 'lg:col-span-3',
+  manufacturing: 'sm:col-span-2 lg:col-span-12 lg:flex-row',
+};
+
+const pipeline = [
+  { label: 'Enquiries', value: 86 },
+  { label: 'Applications', value: 58 },
+  { label: 'Interviews', value: 34 },
+  { label: 'Enrolled', value: 22 },
+];
+// 5 weekdays × 6 students; true = present.
+const attendance = [
+  [1, 1, 1, 1, 1, 1],
+  [1, 1, 0, 1, 1, 1],
+  [1, 1, 1, 1, 0, 1],
+  [1, 1, 1, 1, 1, 1],
+  [1, 0, 1, 1, 1, 1],
+];
+const slots = [
+  { t: '09:00', s: 'open' },
+  { t: '09:30', s: 'booked' },
+  { t: '10:00', s: 'booked' },
+  { t: '10:30', s: 'open' },
+  { t: '11:00', s: 'held' },
+  { t: '11:30', s: 'open' },
+];
+const stages = ['Quote', 'Order', 'Production', 'QA', 'Dispatch'];
+---
+
+<Section id="industries" eyebrow="Industries" title="Built around how" titleMuted="your industry works.">
+  <ButtonLink slot="aside" href="/industries/" variant="secondary" arrow>All industries</ButtonLink>
+
+  <div class="grid auto-rows-auto gap-3 sm:grid-cols-2 lg:grid-cols-12">
+    {
+      tiles.map((ind) => {
+        const Icon = ind.icon;
+        const feature = ind.slug === 'education';
+        const strip = ind.slug === 'manufacturing';
+        return (
+          <article
+            class:list={[
+              'reveal group relative flex flex-col overflow-hidden rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md dark:bg-background-secondary',
+              span[ind.slug],
+              feature && 'sm:col-span-2',
+            ]}
+          >
+            {/* Visual */}
+            <div
+              class:list={[
+                'tile-visual relative overflow-hidden border-b border-border-line bg-background-secondary',
+                feature ? 'h-64 lg:h-auto lg:flex-1' : 'h-40',
+                strip && 'lg:h-auto lg:min-h-44 lg:w-1/2 lg:border-r lg:border-b-0',
+              ]}
+              aria-hidden="true"
+            >
+              <div class="bg-dots absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_80%_80%_at_50%_40%,#000_30%,transparent_85%)]" />
+
+              {ind.slug === 'education' && (
+                <div class="relative grid h-full gap-3 p-5 sm:grid-cols-[1.3fr_1fr] lg:p-6">
+                  <div class="rounded-[6px] bg-base-default p-4 shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-medium">Admissions · 2026 intake</p>
+                      <span class="rounded-full bg-brand-10 px-2 py-0.5 font-paper text-[10px] text-brand-base">live</span>
+                    </div>
+                    <ul class="mt-4 space-y-2.5">
+                      {pipeline.map((p, i) => (
+                        <li class="grid grid-cols-[5.5rem_1fr_1.75rem] items-center gap-2 text-[11px] text-foreground-tertiary">
+                          <span>{p.label}</span>
+                          <span class="h-2 overflow-hidden rounded-full bg-background-tertiary/60 dark:bg-border-secondary">
+                            <span class="bar block h-full rounded-full bg-honey" style={`--w:${p.value}%; --i:${i}`} />
+                          </span>
+                          <span class="text-right font-paper text-foreground-secondary">{p.value}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="hidden flex-col gap-3 sm:flex">
+                    <div class="rounded-[6px] bg-base-default p-4 shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                      <p class="text-xs font-medium">Attendance · Grade 6</p>
+                      <div class="mt-3 grid grid-cols-6 gap-1.5">
+                        {attendance.flat().map((present, i) => (
+                          <span
+                            class:list={['cell aspect-square rounded-[3px]', present ? 'bg-brand-vivid/80' : 'bg-background-tertiary dark:bg-border-tertiary']}
+                            style={`--i:${i}`}
+                          />
+                        ))}
+                      </div>
+                      <p class="mt-2 font-paper text-[10px] text-foreground-tertiary">Mon – Fri</p>
+                    </div>
+                    <div class="flex items-center gap-2.5 rounded-[6px] bg-base-default px-3 py-2.5 text-[11px] shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                      <span class="grid size-5 place-items-center rounded-full bg-honey text-base-black"><Check className="size-3" strokeWidth={3} /></span>
+                      Term report cards sent to parents
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {ind.slug === 'healthcare' && (
+                <div class="relative flex h-full flex-col justify-between p-5">
+                  <div class="flex flex-wrap gap-1.5">
+                    {slots.map((s) => (
+                      <span
+                        class:list={[
+                          'rounded-full px-2.5 py-1 font-paper text-[10px] ring-1 ring-inset',
+                          s.s === 'booked' && 'bg-honey text-base-black ring-transparent',
+                          s.s === 'held' && 'bg-brand-10 text-brand-base ring-brand-20',
+                          s.s === 'open' && 'bg-base-default text-foreground-tertiary ring-border-secondary dark:bg-background-secondary',
+                        ]}
+                      >
+                        {s.t}
+                      </span>
+                    ))}
+                  </div>
+                  <svg viewBox="0 0 300 48" class="pulse h-12 w-full text-brand-base" fill="none" preserveAspectRatio="none">
+                    <path
+                      d="M0 30 H70 L80 30 L88 12 L98 44 L108 6 L118 30 H180 L188 30 L195 20 L202 36 L210 30 H300"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      pathLength="1"
+                    />
+                  </svg>
+                  <p class="flex items-center gap-2 text-[11px] text-foreground-tertiary">
+                    <span class="size-1.5 rounded-full bg-brand-base" />
+                    Reminder sent · Dr. appointment 10:00
+                  </p>
+                </div>
+              )}
+
+              {ind.slug === 'ecommerce' && (
+                <div class="relative flex h-full items-center justify-center gap-3 p-5">
+                  <div class="w-28 rounded-[6px] bg-base-default p-2 shadow-drop-md ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                    <div class="grid aspect-[4/3] place-items-center rounded-[4px] bg-gradient-to-br from-brand-10 to-brand-20">
+                      <ShoppingBag className="size-6 text-brand-base" />
+                    </div>
+                    <div class="mt-2 h-1.5 w-16 rounded-full bg-background-tertiary dark:bg-border-tertiary" />
+                    <div class="mt-1.5 flex items-center justify-between">
+                      <span class="font-paper text-[10px] text-foreground-secondary">$48</span>
+                      <span class="flex text-brand-vivid">{[0, 1, 2, 3].map(() => <Star className="size-2.5 fill-current" />)}</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="cart relative grid size-9 place-items-center rounded-full bg-base-default shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                      <ShoppingBag className="size-4 text-foreground-secondary" />
+                      <span class="badge absolute -top-1 -right-1 grid size-4 place-items-center rounded-full bg-honey font-paper text-[9px] text-base-black">2</span>
+                    </span>
+                    <div class="flex gap-1">
+                      {[0, 1, 2].map((i) => <span class="step h-1 w-5 rounded-full bg-honey" style={`--i:${i}`} />)}
+                    </div>
+                    <span class="font-paper text-[10px] text-foreground-tertiary">checkout</span>
+                  </div>
+                </div>
+              )}
+
+              {ind.slug === 'logistics' && (
+                <div class="relative h-full p-5">
+                  <svg viewBox="0 0 220 90" class="absolute inset-x-5 top-6 h-[calc(100%-3rem)] w-[calc(100%-2.5rem)]" fill="none" preserveAspectRatio="none">
+                    <path d="M10 70 C 60 70, 70 20, 110 20 S 170 60, 210 25" class="text-border-tertiary" stroke="currentColor" stroke-width="2" stroke-dasharray="4 5" />
+                    <circle r="5" class="truck fill-brand-vivid">
+                      <animateMotion dur="5s" repeatCount="indefinite" rotate="auto" path="M10 70 C 60 70, 70 20, 110 20 S 170 60, 210 25" />
+                    </circle>
+                  </svg>
+                  <span class="absolute bottom-5 left-5 flex items-center gap-1.5 rounded-full bg-base-default px-2 py-1 font-paper text-[10px] shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                    <Package className="size-3 text-foreground-tertiary" /> Pickup
+                  </span>
+                  <span class="absolute top-4 left-1/2 -translate-x-1/2 rounded-full bg-base-default px-2 py-1 font-paper text-[10px] shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">Hub</span>
+                  <span class="absolute top-4 right-5 flex items-center gap-1.5 rounded-full bg-honey px-2 py-1 font-paper text-[10px] text-base-black">
+                    <MapPin className="size-3" /> Delivered
+                  </span>
+                </div>
+              )}
+
+              {ind.slug === 'manufacturing' && (
+                <div class="relative flex h-full flex-col justify-center gap-3 p-5">
+                  <ol class="flex items-center">
+                    {stages.map((s, i) => (
+                      <li class="flex flex-1 items-center last:flex-none">
+                        <span
+                          class:list={[
+                            'stage grid size-6 shrink-0 place-items-center rounded-full font-paper text-[9px] ring-1 ring-inset',
+                            i < 3 ? 'bg-honey text-base-black ring-transparent' : 'bg-base-default text-foreground-tertiary ring-border-secondary dark:bg-background-secondary',
+                          ]}
+                          style={`--i:${i}`}
+                          title={s}
+                        >
+                          {i + 1}
+                        </span>
+                        {i < stages.length - 1 && <span class:list={['mx-1 h-px flex-1', i < 2 ? 'bg-brand-vivid' : 'bg-border-tertiary']} />}
+                      </li>
+                    ))}
+                  </ol>
+                  <div class="flex items-center gap-2.5 rounded-[6px] bg-base-default px-3 py-2.5 shadow-drop-sm ring-1 ring-border-primary ring-inset dark:bg-background-secondary">
+                    <FileText className="size-4 shrink-0 text-foreground-tertiary" />
+                    <span class="min-w-0 flex-1">
+                      <span class="block truncate text-[11px] font-medium">PO-2381 · Production</span>
+                      <span class="mt-1 block h-1 overflow-hidden rounded-full bg-background-tertiary dark:bg-border-secondary">
+                        <span class="bar block h-full rounded-full bg-honey" style="--w:62%; --i:1" />
+                      </span>
+                    </span>
+                    <span class="font-paper text-[10px] text-foreground-tertiary">62%</span>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Copy */}
+            <div class:list={['relative flex flex-col p-5', feature && 'lg:p-7', strip && 'lg:flex-1 lg:justify-center lg:p-7']}>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center gap-2.5">
+                  <span class="grid size-8 place-items-center rounded-[6px] bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+                    <Icon className="size-4" aria-hidden="true" />
+                  </span>
+                  <h3 class:list={['font-medium tracking-[-0.3px]', feature ? 'text-xl' : 'text-[17px]']}>
+                    <a href={ind.path} class="after:absolute after:inset-0 after:rounded-[6px]">{ind.name}</a>
+                  </h3>
+                </span>
+                <ArrowUpRight
+                  className="size-4 text-foreground-muted transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground-primary"
+                  aria-hidden="true"
+                />
+              </div>
+              <p class:list={['mt-3 text-foreground-secondary', feature ? 'text-[15px]/7' : 'text-sm/6']}>{ind.summary}</p>
+              {feature && (
+                <ul class="mt-4 flex flex-wrap gap-1.5">
+                  {ind.included.slice(0, 4).map((item) => (
+                    <li class="rounded-full bg-background-secondary px-2.5 py-1 text-[11px] text-foreground-secondary ring-1 ring-border-secondary ring-inset dark:bg-background-primary">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            {/* Edge ring on top: an inset ring on the article would be covered by the visual's background. */}
+            <span class="pointer-events-none absolute inset-0 rounded-[6px] ring-1 ring-border-secondary ring-inset" aria-hidden="true" />
+          </article>
+        );
+      })
+    }
+  </div>
+</Section>
+
+<style>
+  .bar {
+    width: var(--w);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    /* Bars grow and cells fill when the tile scrolls into view. */
+    @supports (animation-timeline: view()) {
+      .bar {
+        animation: grow linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 70%;
+      }
+      .cell,
+      .stage,
+      .step {
+        animation: pop linear both;
+        animation-timeline: view();
+        animation-range: entry calc(5% + var(--i) * 1%) entry calc(40% + var(--i) * 1%);
+      }
+    }
+    .pulse path {
+      stroke-dasharray: 1;
+      animation: trace 2.4s var(--ease-in-out-smooth) infinite;
+    }
+    .badge {
+      animation: bump 2.8s var(--ease-out-expo) infinite;
+    }
+    .group:hover .tile-visual > :last-child {
+      transform: translateY(-2px);
+    }
+    .tile-visual > :last-child {
+      transition: transform 250ms var(--ease-out-soft);
+    }
+  }
+  @keyframes grow {
+    from { width: 0; }
+    to { width: var(--w); }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: scale(0.6); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes trace {
+    0% { stroke-dashoffset: 1; }
+    60%, 100% { stroke-dashoffset: 0; }
+  }
+  @keyframes bump {
+    0%, 70%, 100% { transform: scale(1); }
+    80% { transform: scale(1.25); }
+  }
+  /* SMIL motion isn't covered by CSS animation rules; hide the moving dot under reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    .truck { display: none; }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+import { getImage } from 'astro:assets';
+import { createElement } from 'react';
+import Section from '@/components/common/Section.astro';
+import TestimonialMarquee, { type MarqueeCard } from './TestimonialMarquee';
+import { commitments, testimonials } from '@/data/testimonials';
+import { honeycombTextures } from '@/data/honeycomb';
+
+const hasQuotes = testimonials.length > 0;
+
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .map((part) => part.charAt(0))
+    .slice(0, 2)
+    .join('')
+    .toUpperCase();
+
+const cards: MarqueeCard[] = hasQuotes
+  ? await Promise.all(
+      testimonials.map(async (t) => ({
+        key: t.name,
+        body: t.quote,
+        quoted: true,
+        name: t.name,
+        meta: `${t.role}, ${t.company}`,
+        avatar: initials(t.name),
+        // 2× of the 36px avatar, converted to WebP at build.
+        photo: t.photo ? (await getImage({ src: t.photo, width: 72, height: 72, format: 'webp' })).src : undefined,
+      })),
+    )
+  : await Promise.all(
+      commitments.map(async (c, i) => ({
+        key: c.title,
+        body: c.statement,
+        quoted: false,
+        name: c.title,
+        meta: c.detail,
+        avatar: createElement(c.icon, { className: 'size-4', 'aria-hidden': true }),
+        photo: (await getImage({ src: honeycombTextures[i % honeycombTextures.length], width: 72, height: 72, format: 'webp' })).src,
+        overlay: true,
+      })),
+    );
+---
+
+<Section
+  id={hasQuotes ? 'testimonials' : 'commitments'}
+  align="center"
+  serif
+  title={hasQuotes ? 'What clients say about' : 'The software partner'}
+  titleMuted={hasQuotes ? 'working with Hiver.' : 'nobody has to chase.'}
+  intro={hasQuotes
+    ? 'Shared with permission by the teams we build for.'
+    : 'What you get on every project, from day one to handover.'}
+  class="overflow-hidden"
+>
+  <div class="reveal bleed [mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)]">
+    <TestimonialMarquee {cards} />
+  </div>
+</Section>

@@ -1,0 +1,20 @@
+---
+import Section from './Section.astro';
+import FaqAccordion from './FaqAccordion';
+import type { Faq } from '@/data/services';
+
+export interface Props {
+  faqs: Faq[];
+  title?: string;
+  titleMuted?: string;
+  intro?: string;
+  eyebrow?: string;
+}
+const { faqs, title = 'Questions buyers ask', titleMuted, intro, eyebrow = 'FAQ' } = Astro.props;
+---
+
+<Section id="faq" {eyebrow} {title} {titleMuted} {intro}>
+  <div class="mx-auto max-w-3xl">
+    <FaqAccordion client:visible {faqs} />
+  </div>
+</Section>

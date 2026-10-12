@@ -1,0 +1,247 @@
+{
+  "research_date": "14 August 2026",
+  "evidence": [
+    {
+      "id": "R1",
+      "source": "Hiver Technology current public homepage",
+      "url": "https://hiver.com.np/",
+      "finding": "Current homepage presents broad software/app/web positioning, a construction notice, generic service descriptions and a Nepal contact location.",
+      "use": "Current-site baseline and rewrite rationale",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R2",
+      "source": "Hiver Technology sitemap audit",
+      "url": "https://hiver.com.np/sitemap_index.xml",
+      "finding": "The public sitemap inventory included 58 URLs, mostly media, with no dedicated sitemap-discovered service pages for Shopify, SEO, automation, industry services or individual development offerings.",
+      "use": "Architecture gap assessment",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R3",
+      "source": "Nexly",
+      "url": "https://nexly.com.au/",
+      "finding": "Nexly organizes a Shopify-only offer around outcome-led service clusters, case studies, team visibility, FAQs and repeated project/audit CTAs.",
+      "use": "Shopify reference; do not copy content or proof",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R4",
+      "source": "Shopify official agency article",
+      "url": "https://www.shopify.com/blog/best-website-design-companies",
+      "finding": "Shopify presents agency needs across UX, sales funnels, revenue models, migration, conversion optimization, SEO, content marketing and mobile apps, and points buyers to the Partner Directory.",
+      "use": "Shopify buyer needs and credibility context",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R5",
+      "source": "Charle",
+      "url": "https://www.charle.co.uk/",
+      "finding": "Charle groups Shopify delivery around new stores, growth/support, SEO/GEO and email/SMS, with case studies and role-specific conversion routes.",
+      "use": "Lifecycle service taxonomy reference",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R6",
+      "source": "Netalico",
+      "url": "https://netalico.com/",
+      "finding": "Netalico exposes Shopify Plus development, migration, UX, lifecycle flows, case studies, industries, pricing and strategy calls.",
+      "use": "US ecommerce reference",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R7",
+      "source": "Lightflows",
+      "url": "https://www.lightflows.co.uk/web-application-development/",
+      "finding": "Lightflows differentiates web apps from websites and describes custom use cases including CRM, portals, SaaS, enterprise systems, support and product development.",
+      "use": "Custom application and CRM reference",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R8",
+      "source": "Semrush Agency Directory – Australia",
+      "url": "https://agencies.semrush.com/list/web-development/australia/",
+      "finding": "Public directory showed 103 web development agencies in Australia at the time of review.",
+      "use": "Competitive-density context",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R9",
+      "source": "Semrush Agency Directory – United States",
+      "url": "https://agencies.semrush.com/list/web-development/united-states/",
+      "finding": "Public directory showed 592 web development agencies in the United States at the time of review.",
+      "use": "Competitive-density context",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R10",
+      "source": "Semrush Agency Directory – United Kingdom",
+      "url": "https://agencies.semrush.com/list/web-development/united-kingdom/",
+      "finding": "Public directory showed 68 web development agencies in the United Kingdom at the time of review.",
+      "use": "Competitive-density context",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R11",
+      "source": "Google Search Central: Localized Versions",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "finding": "hreflang is for localized variants and reciprocal references; Google recommends appropriate generic fallback for localized language/region variants.",
+      "use": "International SEO and country-page decision",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R12",
+      "source": "Google Search Central: Helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "finding": "Google encourages people-first, original, useful content and warns against scaled search-engine-first content.",
+      "use": "Content quality and anti-thin-page rules",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R13",
+      "source": "Google Search Central: SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "finding": "Google states there are no secrets that automatically rank a site first; it advises descriptive URLs, unique helpful content, relevant links and good crawlability.",
+      "use": "Technical, content and expectation-setting guidance",
+      "evidence_type": "Verified public observation"
+    },
+    {
+      "id": "R14",
+      "source": "Google Trends public comparison",
+      "url": "https://trends.google.com/",
+      "finding": "Global 12-month relative interest comparison among five terms showed marketing automation with the highest mean/peak normalized value. Country requests were rate-limited.",
+      "use": "Relative demand signal only",
+      "evidence_type": "Google Trends relative signal"
+    },
+    {
+      "id": "R15",
+      "source": "Google Autocomplete public suggestions",
+      "url": "https://suggestqueries.google.com/",
+      "finding": "Country-specific suggestions were collected for seed terms; they supply query-language signals, not volume or ranking metrics.",
+      "use": "Keyword language and country modifier candidates",
+      "evidence_type": "Google Autocomplete signal"
+    },
+    {
+      "id": "R16",
+      "source": "Bing branded search snapshot",
+      "url": "https://www.bing.com/search?q=Hiver+Technology+Nepal+web+development",
+      "finding": "Hiver’s homepage was the first visible result for the researched branded query; no Google keyword ranking claims can be derived from this.",
+      "use": "Branded alternative-search baseline only",
+      "evidence_type": "Verified public observation"
+    }
+  ],
+  "direct_competitors": [
+    {
+      "Competitor": "Nexly",
+      "Country": "Australia",
+      "Domain": "https://nexly.com.au/",
+      "Services": "Shopify/Shopify Plus development, migration, B2B, integrations, CRO, SEO, support",
+      "Positioning": "Outcome-led Shopify specialist; build, migrate, integrate, grow and operate",
+      "Top pages or patterns": "Service clusters, case studies, team profiles, FAQs, audit and project CTAs",
+      "Strengths": "Focused niche, commercial detail, layered CTAs, named people, relevant service depth",
+      "Weaknesses / gap for Hiver": "Shopify-only model; Hiver can compete with a broader but still organized software + commerce + automation offer",
+      "Hiver opportunity": "Use Shopify as one proof-led pillar, while making web applications, CRM and automation distinct commercial routes.",
+      "Evidence": "Verified public observation"
+    },
+    {
+      "Competitor": "Charle",
+      "Country": "United Kingdom",
+      "Domain": "https://www.charle.co.uk/",
+      "Services": "Shopify design/development, migration, SEO/GEO, CRO, support, Email and SMS",
+      "Positioning": "Search-first Shopify agency for design, development, support and growth",
+      "Top pages or patterns": "Work, services, migration, CRO, retainers, Email/SMS, comparison resources",
+      "Strengths": "Lifecycle grouping, case studies, industry coverage, conversion-focused messaging",
+      "Weaknesses / gap for Hiver": "Strong ecommerce specialization rather than custom applications/CRM",
+      "Hiver opportunity": "Adopt outcome-led clusters; avoid imitating awards, partner claims or client proof without verification.",
+      "Evidence": "Verified public observation"
+    },
+    {
+      "Competitor": "Netalico",
+      "Country": "United States",
+      "Domain": "https://netalico.com/",
+      "Services": "Shopify Plus development, UX, migration, lifecycle flows, retainers",
+      "Positioning": "Ecommerce growth through migration, conversion improvement and ongoing support",
+      "Top pages or patterns": "Pricing, case studies, industries, partners, FAQ, strategy call CTA",
+      "Strengths": "Clear buyer jobs, vertical relevance, conversion routes, proof surface area",
+      "Weaknesses / gap for Hiver": "Primarily Shopify Plus/ecommerce",
+      "Hiver opportunity": "Map pages to customer jobs such as launch, migrate, automate, acquire and scale.",
+      "Evidence": "Verified public observation"
+    },
+    {
+      "Competitor": "Lightflows",
+      "Country": "United Kingdom",
+      "Domain": "https://www.lightflows.co.uk/web-application-development/",
+      "Services": "Web apps, CRM, SaaS, customer portals, MVPs, mobile apps, UX/UI",
+      "Positioning": "Custom web-application development for products and business systems",
+      "Top pages or patterns": "Use-case blocks, technology links, work, startup section, FAQs, project CTA",
+      "Strengths": "Clear differentiation between websites and applications; concrete use cases",
+      "Weaknesses / gap for Hiver": "Uses local experience claims that Hiver cannot replicate without evidence",
+      "Hiver opportunity": "Make web applications and CRM systems a core pillar with use-case depth rather than generic software language.",
+      "Evidence": "Verified public observation"
+    }
+  ],
+  "current_site_baseline": [
+    {
+      "area": "Current content and positioning",
+      "observation": "Homepage presents broad AI-powered software/app/web language but has a visible construction notice and generic service copy.",
+      "impact": "Weak commercial relevance and trust for international buyers.",
+      "recommended_action": "Replace with outcome-led homepage and service landing pages in the P0 plan.",
+      "evidence": "R1"
+    },
+    {
+      "area": "Service architecture",
+      "observation": "Current navigation lists high-level services but public sitemap inventory lacks dedicated commercial pages for individual high-value services.",
+      "impact": "Limited ability to map commercial intent to one canonical target page.",
+      "recommended_action": "Implement the P0/P1 service taxonomy and keyword-to-URL map.",
+      "evidence": "R2"
+    },
+    {
+      "area": "International positioning",
+      "observation": "Current public contact information indicates Lalitpur, Nepal.",
+      "impact": "International service positioning needs to be clear without claiming unverified overseas offices.",
+      "recommended_action": "Use a transparent remote international-delivery model and real working practices.",
+      "evidence": "R1"
+    },
+    {
+      "area": "Proof",
+      "observation": "Public site needs stronger project context, client permissions, verified results, author information and trust details.",
+      "impact": "Difficult for high-consideration buyers to validate expertise.",
+      "recommended_action": "Launch 3–5 approved case studies and complete About/team/legal surfaces.",
+      "evidence": "R1; R2"
+    },
+    {
+      "area": "Observable ranking baseline",
+      "observation": "Branded Bing visibility was observed; Google/Search Console impressions, positions, clicks, country data and non-brand rankings are unavailable.",
+      "impact": "No reliable baseline or forecast can be claimed.",
+      "recommended_action": "Verify Search Console and establish monthly baseline after the rebuilt site launches.",
+      "evidence": "R16"
+    }
+  ],
+  "signal_legend": [
+    {
+      "Label": "Verified public observation",
+      "Meaning": "Directly observed on a public page, public directory, sitemap, or public search-result snapshot during this research."
+    },
+    {
+      "Label": "Google Trends relative signal",
+      "Meaning": "A normalized 0–100 comparison index from Google Trends. It is not search volume, CPC, difficulty, traffic, or rankings."
+    },
+    {
+      "Label": "Google Autocomplete signal",
+      "Meaning": "A live public query suggestion. It indicates search language, not volume, ranking, or conversion potential."
+    },
+    {
+      "Label": "SERP-derived competitor signal",
+      "Meaning": "A public competitor/category observation that informs the recommendation. It is not an authority, traffic, backlink, or keyword-difficulty metric."
+    },
+    {
+      "Label": "Strategic recommendation",
+      "Meaning": "An informed recommendation based on Hiver’s current site, buyer intent, competitor patterns, and service fit."
+    },
+    {
+      "Label": "Data required from Hiver",
+      "Meaning": "A field that must be verified by Hiver before publishing, including proof, client names, credentials, office claims, technology claims, pricing, and performance results."
+    }
+  ],
+  "market_reference_agency_count": 451
+}

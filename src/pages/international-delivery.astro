@@ -1,0 +1,65 @@
+---
+import { Clock, FileCheck2, KeyRound, MessageSquare, ShieldCheck, Video } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import Faq from '@/components/common/Faq.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import { pageMeta } from '@/config/pages';
+import { breadcrumbs, faqPage, graph, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/international-delivery/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About us', path: '/about-us/' },
+  { name: 'International delivery', path: '/international-delivery/' },
+];
+
+const commitments = [
+  { icon: Clock, title: 'Overlapping hours', body: 'Nepal (UTC+5:45) overlaps with Asia-Pacific mornings and UK/European afternoons. We agree a daily window per client.' },
+  { icon: MessageSquare, title: 'Written updates', body: 'Progress notes in your Slack, Teams or email thread, so decisions are documented, not lost in calls.' },
+  { icon: Video, title: 'Recorded demos', body: 'Each sprint ends with a working demo, recorded for stakeholders in other time zones.' },
+  { icon: FileCheck2, title: 'Clear contracts', body: 'Scope, milestones, acceptance criteria and payment terms agreed in writing before work starts.' },
+  { icon: KeyRound, title: 'IP and access', body: 'Code lives in repositories you can own from day one. Credentials and IP transfer on milestone completion.' },
+  { icon: ShieldCheck, title: 'Data handling', body: 'Least-privilege access to your systems, NDAs on request and documented handling of any personal data.' },
+];
+
+const faqs = [
+  { q: 'Do you have offices outside Nepal?', a: 'No. Our team is based in Lalitpur, Nepal. We work remotely with international clients and do not present proxy addresses as local offices.' },
+  { q: 'How do payments and contracts work internationally?', a: 'We agree milestone-based payments in a written contract. Currency, invoicing and payment method are confirmed before the engagement starts.' },
+  { q: 'Can we start with a small engagement?', a: 'Yes. A paid discovery or technical audit is a low-risk way to test communication and quality before committing to a larger build.' },
+];
+const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs), faqPage(faqs));
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="International delivery"
+    title="A clear way to work across borders."
+    intro="We work with clients outside Nepal through written process, overlapping hours and full code ownership. Here is exactly what that looks like."
+  >
+    <ButtonLink href="/contact/" arrow>Discuss delivery fit</ButtonLink>
+  </PageHero>
+
+  <Section eyebrow="Commitments" title="What you can expect, in writing.">
+    <ul class="grid gap-px overflow-hidden rounded-[6px] border bg-border-secondary sm:grid-cols-2 lg:grid-cols-3">
+      {
+        commitments.map((c) => {
+          const Icon = c.icon;
+          return (
+            <li class="reveal space-y-3 bg-base-default p-7">
+              <Icon className="size-5" aria-hidden="true" />
+              <h2 class="font-medium">{c.title}</h2>
+              <p class="text-sm leading-relaxed text-foreground-tertiary">{c.body}</p>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </Section>
+
+  <Faq {faqs} />
+  <CtaBand />
+</BaseLayout>

@@ -1,0 +1,10 @@
+source,target,status,code,reason,test
+/category/blog/,/insights/,CONDITIONAL,301,"Use only if GSC, links and content audit show archive should consolidate. Otherwise keep a useful canonical archive.",curl -I; confirm one hop and target 200.
+/about-us/,/about-us/,KEEP,200,Preserve current Hiver route.,"Self-canonical, 200, indexable when content is ready."
+/services/,/services/,KEEP,200,Preserve current Hiver route.,"200, indexable and linked from home."
+/products/,/products/,KEEP_GATED,200/noindex until ready,Preserve product hub path; content and indexing depend on product evidence.,Noindex before gate; index after gate.
+/portfolio/,/portfolio/,KEEP_GATED,200/noindex until proof,Preserve current portfolio path; publish only approved work.,Noindex before proof; index after proof.
+/book-a-call/,/contact/,DISABLED_REFERENCE_ONLY,301,"This is a Nexly reference route, not a verified Hiver legacy route. Do not add this rule unless Hiver actually owned the path or campaigns use it.",Keep disabled.
+/project-enquiry/,/contact/,DISABLED_REFERENCE_ONLY,301,"This is a Nexly reference route, not a verified Hiver legacy route. Use one Hiver contact route unless a separate approved funnel exists.",Keep disabled.
+/about/,/about-us/,DISABLED_REFERENCE_ONLY,301,Nexly reference route only; do not redirect Hiver traffic from a path not shown in Hiver legacy audit.,Keep disabled.
+/blog/,/insights/,DISABLED_REFERENCE_ONLY,301,Nexly reference route only; Hiver current content uses /insights/ and root articles.,Keep disabled.

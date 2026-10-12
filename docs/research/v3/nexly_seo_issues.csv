@@ -1,0 +1,521 @@
+url,route_type,issue,current_value,recommendation
+https://nexly.com.au/,home,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/,about,Thin visible content under 300 words,213,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/aashish-adhikari/,about,Title under 30 characters,Aashish Adhikari - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/aashish-adhikari/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/aashish-adhikari/,about,Thin visible content under 300 words,119,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/aashish-adhikari/,about,Missing OG description,https://nexly.com.au/about/aashish-adhikari/,Add og:description for social sharing.
+https://nexly.com.au/about/aashish-adhikari/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/anu-katila/,about,Title under 30 characters,Anu Katila - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/anu-katila/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/anu-katila/,about,Thin visible content under 300 words,116,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/anu-katila/,about,Missing OG description,https://nexly.com.au/about/anu-katila/,Add og:description for social sharing.
+https://nexly.com.au/about/anu-katila/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/dan-ries/,about,Title under 30 characters,Dan Ries - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/dan-ries/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/dan-ries/,about,Thin visible content under 300 words,128,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/dan-ries/,about,Missing OG description,https://nexly.com.au/about/dan-ries/,Add og:description for social sharing.
+https://nexly.com.au/about/dan-ries/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/niraj-raut/,about,Title under 30 characters,Niraj Raut - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/niraj-raut/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/niraj-raut/,about,Thin visible content under 300 words,128,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/niraj-raut/,about,Missing OG description,https://nexly.com.au/about/niraj-raut/,Add og:description for social sharing.
+https://nexly.com.au/about/niraj-raut/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/prerana-maharjan/,about,Title under 30 characters,Prerana Maharjan - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/prerana-maharjan/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/prerana-maharjan/,about,Thin visible content under 300 words,122,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/prerana-maharjan/,about,Missing OG description,https://nexly.com.au/about/prerana-maharjan/,Add og:description for social sharing.
+https://nexly.com.au/about/prerana-maharjan/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/raj-shakya/,about,Title under 30 characters,Raj Shakya - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/raj-shakya/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/raj-shakya/,about,Thin visible content under 300 words,111,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/raj-shakya/,about,Missing OG description,https://nexly.com.au/about/raj-shakya/,Add og:description for social sharing.
+https://nexly.com.au/about/raj-shakya/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/about/vikas-lamichhane/,about,Title under 30 characters,Vikas Lamichhane - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/about/vikas-lamichhane/,about,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/about/vikas-lamichhane/,about,Thin visible content under 300 words,124,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/about/vikas-lamichhane/,about,Missing OG description,https://nexly.com.au/about/vikas-lamichhane/,Add og:description for social sharing.
+https://nexly.com.au/about/vikas-lamichhane/,about,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/,blog,Title under 30 characters,Blog - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/blog/,blog,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/blog/,blog,Missing OG description,https://nexly.com.au/blog/,Add og:description for social sharing.
+https://nexly.com.au/blog/,blog,Images missing alt text,16,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/best-payment-gateways-australian-shopify/,blog,Title over 60 characters,Best Payment Gateways for Australian Shopify Stores in 2026 - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/best-payment-gateways-australian-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/bigcommerce-to-shopify-migration-worth-it/,blog,Title over 60 characters,BigCommerce to Shopify Migration: Is It Worth the Switch? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/bigcommerce-to-shopify-migration-worth-it/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/build-vs-buy-on-shopify-a-decision-framework-for-merchants/,blog,Title over 60 characters,Build vs Buy on Shopify: A Decision Framework for Merchants - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/build-vs-buy-on-shopify-a-decision-framework-for-merchants/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/custom-shopify-app-development-cost-australia/,blog,Title over 60 characters,How Much Does Custom Shopify App Development Cost in Australia? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/custom-shopify-app-development-cost-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/google-ads-for-shopify-beginner-setup-guide/,blog,Title over 60 characters,Google Ads for Shopify: A Beginner's Setup Guide That Doesn't Waste Budget - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/google-ads-for-shopify-beginner-setup-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/headless-shopify-hydrogen-mid-market/,blog,Title over 60 characters,Headless Shopify with Hydrogen: Is It Worth It for Mid-Market Brands? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/headless-shopify-hydrogen-mid-market/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/how-long-does-shopify-migration-take/,blog,Title over 60 characters,How Long Does a Shopify Migration Take? A Realistic Timeline - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/how-long-does-shopify-migration-take/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/how-to-choose-a-shopify-subscription-app-for-your-business-model/,blog,Title over 60 characters,How to Choose a Shopify Subscription App for Your Business Model - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/how-to-choose-a-shopify-subscription-app-for-your-business-model/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/how-to-run-shopify-seo-audit/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/is-shopify-good-for-seo/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-flows-for-shopify/,blog,Title over 60 characters,The Klaviyo Flows Every Shopify Store Needs From Day One - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-flows-for-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-revenue-benchmark-shopify/,blog,Title over 60 characters,How Much Revenue Should Klaviyo Actually Drive for a Shopify Store? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-revenue-benchmark-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-segmentation-shopify/,blog,Title over 60 characters,"Klaviyo Segmentation for Shopify: Beyond ""Everyone Who Bought"" - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-segmentation-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-setup-for-shopify-guide/,blog,Title over 60 characters,Klaviyo Setup for Shopify: A Step-by-Step Implementation Guide - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-setup-for-shopify-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-vs-shopify-email/,blog,Title over 60 characters,Klaviyo vs Shopify Email: Which Should Your Store Actually Use? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-vs-shopify-email/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/klaviyo-welcome-series-shopify-5-email-build-out/,blog,Title over 60 characters,Shopify Welcome Series in Klaviyo: A 5-Email Build-Out - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/klaviyo-welcome-series-shopify-5-email-build-out/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/magento-to-shopify-migration-losses-gains/,blog,Title over 60 characters,Magento to Shopify Migration: What You'll Lose (and Gain) - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/magento-to-shopify-migration-losses-gains/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/migrate-customer-data-to-shopify-what-actually-transfers/,blog,Title over 60 characters,Migrating Customer Accounts and Order History to Shopify: What Actually Transfers - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/migrate-customer-data-to-shopify-what-actually-transfers/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/migrating-b2b-store-to-shopify/,blog,Title over 60 characters,Migrating a B2B Store to Shopify: What's Different From B2C - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/migrating-b2b-store-to-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/neto-to-shopify-migration-guide/,blog,Title over 60 characters,Neto to Shopify Migration: A Guide for Australian Merchants - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/neto-to-shopify-migration-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/performance-max-for-shopify-stores-how-it-works/,blog,Title over 60 characters,Performance Max for Shopify Stores: How It Actually Works - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/performance-max-for-shopify-stores-how-it-works/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/prestashop-to-shopify-migration-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/questions-to-ask-before-hiring-shopify-agency/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/salesforce-commerce-cloud-to-shopify/,blog,Title over 60 characters,Salesforce Commerce Cloud to Shopify: Is Downsizing Actually a Downgrade? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/salesforce-commerce-cloud-to-shopify/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/sessions-up-sales-down-shopify-conversion-problem/,blog,Title over 60 characters,"Sessions Up, Sales Down: Diagnosing a Shopify Conversion Problem - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/sessions-up-sales-down-shopify-conversion-problem/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/setting-up-b2b-on-shopify-plus-guide/,blog,Title over 60 characters,Setting Up B2B on Shopify Plus: A Practical Guide for Wholesale Brands - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/setting-up-b2b-on-shopify-plus-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-ab-testing-guide-plus-vs-standard/,blog,Title over 60 characters,Shopify A/B Testing: What You Can (and Can't) Test on Shopify vs Shopify Plus - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-ab-testing-guide-plus-vs-standard/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-accessibility-wcag-checklist/,blog,Title over 60 characters,Shopify Accessibility Basics: A Practical WCAG Checklist for Australian Store Owners - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-accessibility-wcag-checklist/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-afterpay-bnpl-margins/,blog,Title over 60 characters,Shopify and Afterpay: Setting Up BNPL Without Hurting Margins - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-afterpay-bnpl-margins/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-ai-chatbot-customer-service/,blog,Title over 60 characters,"AI Customer Service on Shopify: Chatbots, Shopify Inbox and What They Can't Replace - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-ai-chatbot-customer-service/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-and-xero-setting-up-clean-accounting-sync/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-api-integration-without-custom-development/,blog,Title over 60 characters,Shopify API Integration: What's Possible Without Custom Development - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-api-integration-without-custom-development/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-app-conflicts-diagnose-broken-store/,blog,Title over 60 characters,Shopify App Conflicts: How to Diagnose a Broken Store After an Update - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-app-conflicts-diagnose-broken-store/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-app-performance-free-apps-slow-you-down/,blog,Title over 60 characters,Shopify Theme Performance: How Much Do 'Free' Apps Really Slow You Down? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-app-performance-free-apps-slow-you-down/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-australia-post-integration/,blog,Title over 60 characters,Shopify and Australia Post: Getting Shipping Integration Right - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-australia-post-integration/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-australia-post-rates-not-working/,blog,Title over 60 characters,Shopify Australia Post Rates Not Showing at Checkout: Common Causes and Fixes - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-australia-post-rates-not-working/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-b2b-net-terms/,blog,Title over 60 characters,Shopify B2B Net Payment Terms: How Net 30 and Net 60 Actually Work at Checkout - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-b2b-net-terms/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-b2b-vs-dedicated-wholesale-app/,blog,Title over 60 characters,Shopify B2B vs a Dedicated Wholesale App: Which Should You Choose? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-b2b-vs-dedicated-wholesale-app/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-b2b-wholesale-brands/,blog,Title over 60 characters,Shopify for B2B Wholesale Brands: A Different Kind of Store - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-b2b-wholesale-brands/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-beauty-skincare-compliance-subscriptions/,blog,Title over 60 characters,Shopify for Beauty & Skincare Brands: Compliance and Subscription Considerations - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-beauty-skincare-compliance-subscriptions/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-canonical-tags-explained-collection-filters/,blog,Title over 60 characters,Shopify Canonical Tags Explained: Fixing Collection Filter SEO Issues - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-canonical-tags-explained-collection-filters/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-cart-abandonment-checkout-fixes/,blog,Title over 60 characters,Shopify Cart Abandonment: Why Checkouts Break and How to Fix Them - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-cart-abandonment-checkout-fixes/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-checkout-extensibility-conversion-rate/,blog,Title over 60 characters,Shopify Checkout Extensibility: What It Means for Your Conversion Rate - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-checkout-extensibility-conversion-rate/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-collection-page-seo/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-company-accounts-explained/,blog,Title over 60 characters,Shopify Company Accounts Explained: How B2B Buyers Actually Order - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-company-accounts-explained/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-conversion-rate-benchmarks-australia/,blog,Title over 60 characters,Shopify Conversion Rate Benchmarks for Australian Ecommerce (2026) - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-conversion-rate-benchmarks-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-conversion-rate-declining-what-to-check/,blog,Title over 60 characters,Why Is Your Shopify Conversion Rate Declining? 7 Things to Check First - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-conversion-rate-declining-what-to-check/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-core-web-vitals-why-your-store-fails/,blog,Title over 60 characters,Shopify Core Web Vitals: Why Your Store Fails Google's Speed Test - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-core-web-vitals-why-your-store-fails/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-dawn-theme-vs-custom-theme/,blog,Title over 60 characters,Dawn Theme vs Custom Shopify Theme: What's Right for Your Brand? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-dawn-theme-vs-custom-theme/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-developer-cost-australia/,blog,Title over 60 characters,How Much Does It Cost to Hire a Shopify Developer in Australia (2026)? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-developer-cost-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-duplicate-content-fix/,blog,Title over 60 characters,Shopify Duplicate Content: Why It Happens and How to Fix It - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-duplicate-content-fix/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-dynamic-facebook-ads-product-feed-setup/,blog,Title over 60 characters,Meta Ads for Shopify: Setting Up Dynamic Product Ads Correctly - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-dynamic-facebook-ads-product-feed-setup/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-email-marketing-abandoned-cart-recovery/,blog,Title over 60 characters,Shopify Email Marketing: Best Practices for Abandoned Cart Recovery - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-email-marketing-abandoned-cart-recovery/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-erp-integration-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-flow-explained-automations-for-shopify-plus/,blog,Title over 60 characters,Shopify Flow Explained: Automations Every Shopify Plus Store Should Set Up - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-flow-explained-automations-for-shopify-plus/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-for-australian-business-whats-different/,blog,Title over 60 characters,Shopify for Australian Businesses: What's Different From the US Setup - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-for-australian-business-whats-different/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-for-fashion-brands-merchandising/,blog,Title over 60 characters,Shopify for Fashion Brands: The Merchandising Features You Actually Need - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-for-fashion-brands-merchandising/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-freelancer-vs-agency/,blog,Title over 60 characters,Shopify Freelancer vs Agency: Which Is Right for Your Store? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-freelancer-vs-agency/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-functions-explained/,blog,Title over 60 characters,Shopify Functions Explained: What Merchants Can Now Customise Natively - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-functions-explained/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-google-ads-conversion-tracking-audit/,blog,Title over 60 characters,Shopify Google Ads Conversion Tracking: Why Your Numbers Are Probably Wrong - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-google-ads-conversion-tracking-audit/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-google-shopping-feed-approval/,blog,Title over 60 characters,Google Shopping for Shopify: Getting Your Product Feed Approved - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-google-shopping-feed-approval/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-gst-setup-australia/,blog,Title over 60 characters,Shopify GST Setup for Australian Merchants: A Straightforward Guide - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-gst-setup-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-image-optimization-cut-load-times/,blog,Title over 60 characters,Shopify Image Optimization: The Fastest Way to Cut Load Times - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-image-optimization-cut-load-times/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-inventory-management-native-tools-vs-third-party-apps/,blog,Title over 60 characters,Shopify Inventory Management: Native Tools vs Third-Party Apps - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-inventory-management-native-tools-vs-third-party-apps/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-lcp-hero-image/,blog,Title over 60 characters,Largest Contentful Paint on Shopify: Why Your Hero Image Is Wrecking Your LCP Score - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-lcp-hero-image/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-maintenance-mode-when-and-how/,blog,Title over 60 characters,Shopify Maintenance Mode: When and How to Use It Properly - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-maintenance-mode-when-and-how/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-migration-cost-australia/,blog,Title over 60 characters,How Much Does a Shopify Migration Really Cost in Australia? (2026 Breakdown) - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-migration-cost-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-migration-mistakes-organic-traffic/,blog,Title over 60 characters,Shopify Migration Mistakes That Tank Your Organic Traffic (And How to Avoid Them) - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-migration-mistakes-organic-traffic/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-migration-seo-checklist/,blog,Title over 60 characters,The Shopify Migration SEO Checklist: How to Migrate Without Losing Rankings - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-migration-seo-checklist/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-migration-urls-rankings-seo/,blog,Title over 60 characters,What Happens to Your URLs and Rankings When You Migrate to Shopify? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-migration-urls-rankings-seo/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-mobile-optimisation-why-most-themes-fail-on-mobile-checkout/,blog,Title over 60 characters,Shopify Mobile Optimisation: Why Most Themes Fail on Mobile Checkout - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-mobile-optimisation-why-most-themes-fail-on-mobile-checkout/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-myob-integration-guide-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-page-speed-optimization-developer-checklist/,blog,Title over 60 characters,Shopify Page Speed Optimization: A Developer's Checklist - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-page-speed-optimization-developer-checklist/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-plus-pricing-australia/,blog,Title over 60 characters,Shopify Plus Pricing in Australia: What You Actually Pay in 2026 - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-plus-pricing-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-plus-vs-shopify-is-it-worth-it/,blog,Title over 60 characters,Shopify Plus vs Shopify: Is the Upgrade Actually Worth It? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-plus-vs-shopify-is-it-worth-it/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-pos-australia-cost/,blog,Title over 60 characters,Shopify POS for Australian Retailers: What It Actually Costs and Does - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-pos-australia-cost/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-pos-inventory-sync-online-store/,blog,Title over 60 characters,Does Shopify POS Sync Inventory With Your Online Store in Real Time? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-pos-inventory-sync-online-store/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-ppc-agency-vs-diy/,blog,Title over 60 characters,Shopify PPC Agency vs DIY: When Paid Media Needs a Specialist - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-ppc-agency-vs-diy/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-product-page-seo/,blog,Title over 60 characters,Shopify Product Page SEO: How to Rank Without Duplicate Content - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-product-page-seo/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-product-page-thumb-zone-mobile-ux/,blog,Title over 60 characters,Designing Shopify Product Pages for the Thumb Zone: A Mobile UX Guide - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-product-page-thumb-zone-mobile-ux/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-public-app-vs-custom-app/,blog,Title over 60 characters,Shopify Public App vs Custom App: What's the Difference? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-public-app-vs-custom-app/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-redesign-refresh-vs-rebuild/,blog,Title over 60 characters,Shopify Redesign: When to Refresh vs. Rebuild From Scratch - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-redesign-refresh-vs-rebuild/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-replatforming-enterprise-brands/,blog,Title over 60 characters,Shopify Replatforming for Enterprise Brands: When Shopify Plus Makes Sense - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-replatforming-enterprise-brands/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-retainer-vs-one-off-projects/,blog,Title over 60 characters,Shopify Support Retainer vs. One-Off Projects: Which Saves You More? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-retainer-vs-one-off-projects/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-schema-markup-guide/,blog,Title over 60 characters,"The Complete Guide to Shopify Schema Markup: Product, FAQ, Breadcrumb and Review Schema Explained - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-schema-markup-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-seo-checklist/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-seo-for-australian-stores/,blog,Title over 60 characters,Shopify SEO for Australian Stores: How to Actually Rank on Google - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-seo-for-australian-stores/,blog,Meta description over 160 characters,"Shopify makes some SEO decisions for you, and gets a few of them wrong. Here is how we set up Australian Shopify stores to rank, from store architecture to the technical fixes most themes miss.",Shorten to reduce likely truncation.
+https://nexly.com.au/blog/shopify-seo-for-australian-stores/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-seo-settings-australian-store-owners/,blog,Title over 60 characters,Shopify SEO Settings: 15 Things Every Australian Store Owner Should Configure - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-seo-settings-australian-store-owners/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-seo-tips/,blog,Title over 60 characters,Shopify SEO Tips That Actually Move the Needle in 2026 - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-seo-tips/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-shipping-australia-setup/,blog,Title over 60 characters,"Shopify Shipping in Australia: Rates, Zones and Carrier Setup - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-shipping-australia-setup/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-site-search-optimisation/,blog,Title over 60 characters,Shopify Site Search: Why Bad On-Site Search Is Killing Your Conversions - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-site-search-optimisation/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-size-charts-variants-apparel-australia/,blog,Title over 60 characters,Shopify Size Charts and Variants: Getting Apparel Sizing Right for Australian Fashion Stores - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-size-charts-variants-apparel-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-speed-conversion-rate/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-speed-optimization-apps-vs-custom-development/,blog,Title over 60 characters,Shopify Speed Optimisation: Apps vs. Custom Development - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-speed-optimization-apps-vs-custom-development/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-store-setup-checklist/,blog,Title over 60 characters,Shopify Store Setup: A Complete Checklist Before You Launch - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-store-setup-checklist/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-subscription-apps-compared/,blog,Title over 60 characters,Shopify Subscription Apps Compared: Which One Fits Your Business Model? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-subscription-apps-compared/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-subscription-churn-why-customers-cancel/,blog,Title over 60 characters,Shopify Subscription Churn: Why Customers Cancel and How to Reduce It - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-subscription-churn-why-customers-cancel/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-subscription-commerce-launch-planning/,blog,Title over 60 characters,Building a Subscription Model on Shopify: What to Plan For Before Launch - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-subscription-commerce-launch-planning/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-support-retainer-whats-included/,blog,Title over 60 characters,Shopify Support Retainer: What's Included and What's Not - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-support-retainer-whats-included/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-theme-custom-build-vs-customised-template/,blog,Title over 60 characters,Shopify Theme Development: Custom Build vs. Customised Template - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-theme-custom-build-vs-customised-template/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-theme-customisation-editor-vs-custom-code/,blog,Title over 60 characters,Shopify Theme Customisation: How Far Can You Go Without Custom Code? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-theme-customisation-editor-vs-custom-code/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-to-shopify-plus-migration-when-to-upgrade/,blog,Title over 60 characters,Shopify to Shopify Plus Migration: When (and Why) to Upgrade - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-to-shopify-plus-migration-when-to-upgrade/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-trust-signals-cart-abandonment/,blog,Title over 60 characters,Shopify Trust Signals: What Actually Reduces Cart Abandonment - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-trust-signals-cart-abandonment/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-ux-mistakes-that-quietly-cost-you-sales/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-bigcommerce-real-differences/,blog,Title over 60 characters,Shopify vs BigCommerce: The Real Differences That Matter - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-bigcommerce-real-differences/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-custom-ecommerce-build/,blog,Title over 60 characters,Shopify vs Custom Ecommerce Build: When Off-the-Shelf Isn't Enough - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-custom-ecommerce-build/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-magento-australian-merchants/,blog,Title over 60 characters,Shopify vs Magento: A Practical Comparison for Australian Merchants - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-magento-australian-merchants/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-shopify-plus-decision-framework/,blog,Title over 60 characters,"Shopify vs Shopify Plus: A Decision Framework, Not a Feature List - Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-shopify-plus-decision-framework/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-wix-which-actually-scales/,blog,Title over 60 characters,Shopify vs Wix: Which Actually Scales for a Growing Australian Store - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-wix-which-actually-scales/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-vs-woocommerce-growing-store/,blog,Title over 60 characters,Shopify vs WooCommerce: Which Is Actually Right for a Growing Store? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-vs-woocommerce-growing-store/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-website-maintenance-what-actually-needs-ongoing-attention/,blog,Title over 60 characters,Shopify Website Maintenance: What Actually Needs Ongoing Attention? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-website-maintenance-what-actually-needs-ongoing-attention/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/shopify-wholesale-pricing-tiered-pricing-guide/,blog,Title over 60 characters,Shopify Wholesale Pricing: How to Set Tiered Pricing Without Breaking Your Catalogue - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/shopify-wholesale-pricing-tiered-pricing-guide/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/signs-shopify-store-outgrown-developer/,blog,Title over 60 characters,Signs Your Shopify Store Has Outgrown Its Current Developer - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/signs-shopify-store-outgrown-developer/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/what-does-a-shopify-agency-do/,blog,Title over 60 characters,What Does a Shopify Agency Actually Do? A Plain-English Breakdown - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/what-does-a-shopify-agency-do/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/what-does-a-shopify-audit-actually-check/,blog,Title over 60 characters,What Does a Proper Shopify Store Audit Actually Check? - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/what-does-a-shopify-audit-actually-check/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/when-does-a-shopify-store-need-a-custom-app/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/why-is-your-shopify-store-so-slow-10-common-causes/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/blog/woocommerce-to-shopify-migration-guide-australia/,blog,Title over 60 characters,WooCommerce to Shopify Migration: A Step-by-Step Guide for Australian Stores - Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/blog/woocommerce-to-shopify-migration-guide-australia/,blog,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/book-a-call/,book-a-call,Thin visible content under 300 words,60,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/book-a-call/,book-a-call,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/,case-studies,Meta description under 70 characters,Selected Shopify work and results.,Consider expanding value proposition and call to action.
+https://nexly.com.au/case-studies/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/ezydog-au/,case-studies,Title under 30 characters,"EzyDog, Australia - Nexly",Consider expanding the title for clarity and search intent.
+https://nexly.com.au/case-studies/ezydog-au/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/ezydog-au/,case-studies,Missing OG description,https://nexly.com.au/case-studies/ezydog-au/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/ezydog-au/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/ezydog-eu/,case-studies,Title under 30 characters,"EzyDog, Europe - Nexly",Consider expanding the title for clarity and search intent.
+https://nexly.com.au/case-studies/ezydog-eu/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/ezydog-eu/,case-studies,Missing OG description,https://nexly.com.au/case-studies/ezydog-eu/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/ezydog-eu/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/ezydog-nz/,case-studies,Title under 30 characters,"EzyDog, New Zealand - Nexly",Consider expanding the title for clarity and search intent.
+https://nexly.com.au/case-studies/ezydog-nz/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/ezydog-nz/,case-studies,Missing OG description,https://nexly.com.au/case-studies/ezydog-nz/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/ezydog-nz/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/ezydog-uk/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/ezydog-uk/,case-studies,Missing OG description,https://nexly.com.au/case-studies/ezydog-uk/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/ezydog-uk/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/ezydog-usa/,case-studies,Title under 30 characters,"EzyDog, United States - Nexly",Consider expanding the title for clarity and search intent.
+https://nexly.com.au/case-studies/ezydog-usa/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/ezydog-usa/,case-studies,Missing OG description,https://nexly.com.au/case-studies/ezydog-usa/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/ezydog-usa/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/case-studies/town-and-country-covers/,case-studies,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/case-studies/town-and-country-covers/,case-studies,Missing OG description,https://nexly.com.au/case-studies/town-and-country-covers/,Add og:description for social sharing.
+https://nexly.com.au/case-studies/town-and-country-covers/,case-studies,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/app-plus-dev/,category,Title under 30 characters,App & Plus Dev - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/app-plus-dev/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/app-plus-dev/,category,Thin visible content under 300 words,292,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/app-plus-dev/,category,Missing OG description,https://nexly.com.au/category/app-plus-dev/,Add og:description for social sharing.
+https://nexly.com.au/category/app-plus-dev/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/australia-specific/,category,Title under 30 characters,Australia-Specific - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/australia-specific/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/australia-specific/,category,Thin visible content under 300 words,213,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/australia-specific/,category,Missing OG description,https://nexly.com.au/category/australia-specific/,Add og:description for social sharing.
+https://nexly.com.au/category/australia-specific/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/b2b-wholesale/,category,Title under 30 characters,B2B & Wholesale - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/b2b-wholesale/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/b2b-wholesale/,category,Thin visible content under 300 words,226,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/b2b-wholesale/,category,Missing OG description,https://nexly.com.au/category/b2b-wholesale/,Add og:description for social sharing.
+https://nexly.com.au/category/b2b-wholesale/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/comparisons/,category,Title under 30 characters,Comparisons - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/comparisons/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/comparisons/,category,Thin visible content under 300 words,251,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/comparisons/,category,Missing OG description,https://nexly.com.au/category/comparisons/,Add og:description for social sharing.
+https://nexly.com.au/category/comparisons/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/cro/,category,Title under 30 characters,CRO - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/cro/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/cro/,category,Missing OG description,https://nexly.com.au/category/cro/,Add og:description for social sharing.
+https://nexly.com.au/category/cro/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/hiring-cost/,category,Title under 30 characters,Hiring & Cost - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/hiring-cost/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/hiring-cost/,category,Missing OG description,https://nexly.com.au/category/hiring-cost/,Add og:description for social sharing.
+https://nexly.com.au/category/hiring-cost/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/industry-playbooks/,category,Title under 30 characters,Industry Playbooks - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/industry-playbooks/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/industry-playbooks/,category,Thin visible content under 300 words,180,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/industry-playbooks/,category,Missing OG description,https://nexly.com.au/category/industry-playbooks/,Add og:description for social sharing.
+https://nexly.com.au/category/industry-playbooks/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/integrations/,category,Title under 30 characters,Integrations - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/integrations/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/integrations/,category,Thin visible content under 300 words,244,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/integrations/,category,Missing OG description,https://nexly.com.au/category/integrations/,Add og:description for social sharing.
+https://nexly.com.au/category/integrations/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/klaviyo-email/,category,Title under 30 characters,Klaviyo & Email - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/klaviyo-email/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/klaviyo-email/,category,Thin visible content under 300 words,251,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/klaviyo-email/,category,Missing OG description,https://nexly.com.au/category/klaviyo-email/,Add og:description for social sharing.
+https://nexly.com.au/category/klaviyo-email/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/maintenance-support/,category,Title under 30 characters,Maintenance & Support - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/maintenance-support/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/maintenance-support/,category,Thin visible content under 300 words,187,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/maintenance-support/,category,Missing OG description,https://nexly.com.au/category/maintenance-support/,Add og:description for social sharing.
+https://nexly.com.au/category/maintenance-support/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/migration/,category,Title under 30 characters,Migration - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/migration/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/migration/,category,Missing OG description,https://nexly.com.au/category/migration/,Add og:description for social sharing.
+https://nexly.com.au/category/migration/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/paid-media/,category,Title under 30 characters,Paid Media - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/paid-media/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/paid-media/,category,Thin visible content under 300 words,222,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/paid-media/,category,Missing OG description,https://nexly.com.au/category/paid-media/,Add og:description for social sharing.
+https://nexly.com.au/category/paid-media/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/seo/,category,Title under 30 characters,SEO - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/seo/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/seo/,category,Missing OG description,https://nexly.com.au/category/seo/,Add og:description for social sharing.
+https://nexly.com.au/category/seo/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/speed-performance/,category,Title under 30 characters,Speed & Performance - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/speed-performance/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/speed-performance/,category,Thin visible content under 300 words,257,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/speed-performance/,category,Missing OG description,https://nexly.com.au/category/speed-performance/,Add og:description for social sharing.
+https://nexly.com.au/category/speed-performance/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/store-setup-design/,category,Title under 30 characters,Store Setup & Design - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/store-setup-design/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/store-setup-design/,category,Thin visible content under 300 words,258,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/store-setup-design/,category,Missing OG description,https://nexly.com.au/category/store-setup-design/,Add og:description for social sharing.
+https://nexly.com.au/category/store-setup-design/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/category/subscriptions/,category,Title under 30 characters,Subscriptions - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/category/subscriptions/,category,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/category/subscriptions/,category,Thin visible content under 300 words,142,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/category/subscriptions/,category,Missing OG description,https://nexly.com.au/category/subscriptions/,Add og:description for social sharing.
+https://nexly.com.au/category/subscriptions/,category,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/contact/,contact,Thin visible content under 300 words,122,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/contact/,contact,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/cookie-policy/,cookie-policy,Title under 30 characters,Cookie Policy - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/cookie-policy/,cookie-policy,Thin visible content under 300 words,229,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/cookie-policy/,cookie-policy,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/,integrations,Title under 30 characters,Shopify Integrations - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/integrations/,integrations,Thin visible content under 300 words,61,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/integrations/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-3pl/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-akeneo/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-australia-post/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-cin7/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-hubspot/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-klaviyo/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-microsoft-dynamics/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-myob/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-netsuite/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-salesforce/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-sap/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-shippit/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-starshipit/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/integrations/shopify-xero/,integrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/,migrations,Title under 30 characters,Shopify Migrations - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/migrations/,migrations,Thin visible content under 300 words,63,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/migrations/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/adobe-commerce-to-shopify/,migrations,Meta description over 160 characters,"Migrate Adobe Commerce to Shopify with data, URLs and SEO mapped upfront. Structured replatforming for complex catalogues and integrations. Request an assessment.",Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/adobe-commerce-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/bigcommerce-to-shopify/,migrations,Title over 60 characters,BigCommerce to Shopify Migration | Data & SEO Planning | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/migrations/bigcommerce-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/custom-platform-to-shopify/,migrations,Meta description over 160 characters,Migrate a bespoke or custom platform to Shopify with data mapped and rebuilt cleanly. Reduce migration risk on non-standard data structures. Discuss your project.,Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/custom-platform-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/magento-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/opencart-to-shopify/,migrations,Meta description over 160 characters,"Migrate OpenCart to Shopify with data, revenue and search rankings planned from day one. Structured replatforming with URL and SEO mapping. Request an assessment.",Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/opencart-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/prestashop-to-shopify/,migrations,Title over 60 characters,PrestaShop to Shopify Migration | Data & SEO Planning | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/migrations/prestashop-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/salesforce-commerce-cloud-to-shopify/,migrations,Meta description over 160 characters,"Migrate Salesforce Commerce Cloud to Shopify with data, integrations and SEO planned early. Structured replatforming for enterprise stores. Request an assessment.",Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/salesforce-commerce-cloud-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/shopify-theme-migration/,migrations,Title over 60 characters,Legacy Theme to Shopify OS 2.0 Migration | Data & SEO Planning,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/migrations/shopify-theme-migration/,migrations,Meta description over 160 characters,"Migrate legacy Shopify themes to Online Store 2.0 with sections, metafields and speed rebuilt. SEO and structure planned through the rebuild. Review our process.",Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/shopify-theme-migration/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/shopify-to-shopify-plus/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/migrations/woocommerce-to-shopify/,migrations,Title over 60 characters,WooCommerce to Shopify Migration | Data & SEO Planning | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/migrations/woocommerce-to-shopify/,migrations,Meta description over 160 characters,"Migrate WooCommerce to Shopify with products, orders, customers and SEO mapped from the start. Structured replatforming for WordPress stores. Request an assessment.",Shorten to reduce likely truncation.
+https://nexly.com.au/migrations/woocommerce-to-shopify/,migrations,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/privacy-policy/,privacy-policy,Title under 30 characters,Privacy Policy - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/privacy-policy/,privacy-policy,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/project-enquiry/,project-enquiry,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/project-enquiry/thank-you/,project-enquiry,Title under 30 characters,Thank You - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/project-enquiry/thank-you/,project-enquiry,Missing meta description,,Add a unique meta description aligned with the page intent.
+https://nexly.com.au/project-enquiry/thank-you/,project-enquiry,Thin visible content under 300 words,103,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/project-enquiry/thank-you/,project-enquiry,Missing OG description,https://nexly.com.au/project-enquiry/thank-you/,Add og:description for social sharing.
+https://nexly.com.au/project-enquiry/thank-you/,project-enquiry,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/fractional-ecommerce-technology-lead/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/headless-shopify-development/,services,Meta description over 160 characters,"Headless Shopify development on Hydrogen for Australian brands needing fast, flexible storefronts. Custom front-ends with Shopify at the core. Discuss your build.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/headless-shopify-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/klaviyo-email-marketing/,services,Title over 60 characters,Shopify Klaviyo Email Marketing | Lifecycle Retention | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/klaviyo-email-marketing/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-ab-testing/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-accessibility/,services,Meta description over 160 characters,"WCAG 2.1 AA accessibility for Shopify stores, helping Australian brands meet compliance and improve usability. Audits and fixes. Request an accessibility review.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-accessibility/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-api-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-app-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-app-maintenance/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-apps-integrations/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-b2b-development/,services,Title over 60 characters,Shopify B2B Development Australia | Wholesale Commerce | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-b2b-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-b2b-enterprise/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-b2b-erp-integration/,services,Title over 60 characters,"Shopify B2B ERP Integration | Orders, Stock, Customers | Nexly",Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-b2b-erp-integration/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-cart-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-checkout-extensibility/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-checkout-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-click-and-collect/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-collection-page-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-company-portals/,services,Meta description over 160 characters,"Shopify company portals for Australian B2B buyers managing teams, orders and approvals. Role-based access and account-level pricing built in. Discuss your project.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-company-portals/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-content-strategy/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-conversion-rate-optimisation/,services,Title over 60 characters,Shopify Conversion Rate Optimisation | Revenue-Focused | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-conversion-rate-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-core-web-vitals/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-cro-retention/,services,Title over 60 characters,Shopify CRO & Retention Australia | Conversion Growth | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-cro-retention/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-cross-border-commerce/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-development-retainer/,services,Title over 60 characters,Shopify Development Retainer AU | Monthly Development | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-development-retainer/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-emergency-support/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-functions-development/,services,Title over 60 characters,Shopify Functions Development | Custom Discount Logic | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-functions-development/,services,Meta description over 160 characters,"Shopify Functions development for merchants needing custom discounts, delivery and payment logic at the backend. Built for performance. Discuss your requirements.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-functions-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-ga4-analytics/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-google-ads-management/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-growth-retainer/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-integration-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-international-expansion/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-landing-page-development/,services,Meta description over 160 characters,"Shopify landing page development for Australian campaigns and product launches. Fast, on-brand pages built to convert paid and organic traffic. Discuss your project.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-landing-page-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-loyalty-strategy/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-maintenance/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-markets/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-meta-ads-management/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-migration/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-multi-brand-commerce/,services,Meta description over 160 characters,Shopify Plus multi-brand commerce for Australian groups running several labels. Shared operations with brand-level storefronts and control. Discuss your project.,Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-multi-brand-commerce/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-multi-location-retail/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-multi-store-development/,services,Meta description over 160 characters,Shopify multi-store development for Australian brands expanding across markets. Localised storefronts with centralised operations and control. Discuss your project.,Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-multi-store-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-omnichannel-commerce/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-online-store-2-0/,services,Meta description over 160 characters,"Online Store 2.0 upgrades for Shopify merchants moving to flexible sections, metafields and modern theme architecture. Cleaner, editable stores. Review our process.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-online-store-2-0/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-paid-media/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-performance-optimisation/,services,Title over 60 characters,Shopify Performance Optimisation | Faster Storefronts | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-performance-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-plus-consulting/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-plus-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-pos-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-pos-international/,services,Title over 60 characters,Shopify POS & Omnichannel Australia | Retail Commerce | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-pos-international/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-product-configurator/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-product-feed-optimisation/,services,Meta description over 160 characters,"Shopify product feed optimisation for Australian stores advertising on Google and Meta. Clean titles, attributes and structured data for Shopping. Request a review.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-product-feed-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-product-page-optimisation/,services,Title over 60 characters,Shopify Product Page Optimisation | Conversion Growth | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-product-page-optimisation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-retail-integrations/,services,Title over 60 characters,Shopify Retail Integrations Australia | Orders & Stock | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-retail-integrations/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-sales-rep-portals/,services,Title over 60 characters,Shopify Sales-Rep Portals Australia | B2B Order Tools | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-sales-rep-portals/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-seo-audit/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-seo-migration/,services,Meta description over 160 characters,"Shopify SEO migration for Australian stores that protects visibility during replatforming. Redirect mapping, URL parity and index monitoring. Discuss your migration.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-seo-migration/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-seo-performance/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-seo/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-store-redesign/,services,Meta description over 160 characters,"Shopify store redesign for Australian brands wanting a cleaner, faster storefront. UX-led design mapped to your catalogue and conversion goals. Discuss your project.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-store-redesign/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-subscription-development/,services,Meta description over 160 characters,"Shopify subscription development for Australian DTC brands building recurring revenue. Custom subscribe flows, billing and retention logic. Discuss your project.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-subscription-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-subscription-growth/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-support-retainers/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-technical-seo/,services,Title over 60 characters,Shopify Technical SEO Australia | Crawl & Index Fixes | Nexly,Shorten to reduce likely truncation in search results.
+https://nexly.com.au/services/shopify-technical-seo/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-theme-development/,services,Meta description over 160 characters,"Custom Shopify theme development for Australian brands wanting a fast, on-brand storefront. Hand-built themes mapped to your catalogue and UX. Request a proposal.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-theme-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-tracking-implementation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-ux-audit/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-wholesale-development/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/services/shopify-workflow-automation/,services,Meta description over 160 characters,"Shopify workflow automation for lean Australian teams cutting manual admin across orders, fulfilment and customers. Built around your process. Review our approach.",Shorten to reduce likely truncation.
+https://nexly.com.au/services/shopify-workflow-automation/,services,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.
+https://nexly.com.au/terms-of-service/,terms-of-service,Title under 30 characters,Terms of Service - Nexly,Consider expanding the title for clarity and search intent.
+https://nexly.com.au/terms-of-service/,terms-of-service,Thin visible content under 300 words,277,Assess whether the page sufficiently answers its target intent.
+https://nexly.com.au/terms-of-service/,terms-of-service,Images missing alt text,4,Add descriptive alt text to meaningful images; use empty alt only for decorative images.

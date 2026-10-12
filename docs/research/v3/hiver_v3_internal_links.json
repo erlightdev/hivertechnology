@@ -1,0 +1,154 @@
+[
+  {
+    "source": "/",
+    "target": "/services/",
+    "anchor": "Explore confirmed services",
+    "type": "primary navigation",
+    "status": "BUILD",
+    "rule": "Link only to confirmed service pages."
+  },
+  {
+    "source": "/",
+    "target": "/products/",
+    "anchor": "Explore products",
+    "type": "primary navigation",
+    "status": "GATED",
+    "rule": "Show only when product evidence exists."
+  },
+  {
+    "source": "/",
+    "target": "/portfolio/",
+    "anchor": "See selected work",
+    "type": "trust route",
+    "status": "GATED",
+    "rule": "Show only with approved cases."
+  },
+  {
+    "source": "/",
+    "target": "/about-us/",
+    "anchor": "About Hiver Technology",
+    "type": "entity route",
+    "status": "BUILD",
+    "rule": "Use full brand phrase."
+  },
+  {
+    "source": "/",
+    "target": "/contact/",
+    "anchor": "Discuss a project",
+    "type": "conversion",
+    "status": "BUILD",
+    "rule": "Primary enquiry route."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/web-application-development/",
+    "anchor": "custom web application development",
+    "type": "service child",
+    "status": "GATED",
+    "rule": "Noindex until capability gate passes."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/crm-web-applications/",
+    "anchor": "CRM web applications",
+    "type": "service child",
+    "status": "GATED",
+    "rule": "Noindex until capability gate passes."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/website-design-development/",
+    "anchor": "business website design and development",
+    "type": "service child",
+    "status": "GATED",
+    "rule": "Noindex until capability gate passes."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/mobile-app-development/",
+    "anchor": "mobile app development",
+    "type": "service child",
+    "status": "GATED",
+    "rule": "Noindex until capability gate passes."
+  },
+  {
+    "source": "/services/",
+    "target": "/services/ui-ux-design/",
+    "anchor": "UX design for products",
+    "type": "service child",
+    "status": "GATED",
+    "rule": "Noindex until capability gate passes."
+  },
+  {
+    "source": "/products/",
+    "target": "/products/school-management-software/",
+    "anchor": "school management software",
+    "type": "product child",
+    "status": "GATED",
+    "rule": "Noindex until product gate passes."
+  },
+  {
+    "source": "/about-us/",
+    "target": "/team/",
+    "anchor": "Meet the team",
+    "type": "trust route",
+    "status": "GATED",
+    "rule": "Show only with real team profiles."
+  },
+  {
+    "source": "/about-us/",
+    "target": "/international-delivery/",
+    "anchor": "How international delivery works",
+    "type": "trust route",
+    "status": "GATED",
+    "rule": "Show only with real operating commitments."
+  },
+  {
+    "source": "/insights/",
+    "target": "/insights/custom-crm-vs-off-the-shelf/",
+    "anchor": "custom CRM decision guide",
+    "type": "content route",
+    "status": "GATED",
+    "rule": "Publish after authorship/capability gate."
+  },
+  {
+    "source": "/insights/",
+    "target": "/insights/web-application-development-cost/",
+    "anchor": "web application cost drivers",
+    "type": "content route",
+    "status": "GATED",
+    "rule": "No invented prices."
+  },
+  {
+    "source": "/insights/",
+    "target": "/insights/website-redesign-brief/",
+    "anchor": "website redesign brief",
+    "type": "content route",
+    "status": "GATED",
+    "rule": "Publish after authorship/capability gate."
+  },
+  {
+    "source": "/contact/",
+    "target": "/privacy-policy/",
+    "anchor": "Privacy Policy",
+    "type": "legal",
+    "status": "BUILD",
+    "rule": "Visible in form/footer."
+  },
+  {
+    "source": "/contact/",
+    "target": "/terms-of-service/",
+    "anchor": "Terms of Service",
+    "type": "legal",
+    "status": "BUILD",
+    "rule": "Visible in footer."
+  },
+  {
+    "source": "/contact/",
+    "target": "/cookie-policy/",
+    "anchor": "Cookie Policy",
+    "type": "legal",
+    "status": "BUILD",
+    "rule": "Visible in footer and consent tool."
+  }
+]

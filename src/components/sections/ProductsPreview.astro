@@ -1,0 +1,41 @@
+---
+import { ArrowRight } from 'lucide-react';
+import Section from '@/components/common/Section.astro';
+import { products } from '@/data/products';
+
+const featured = products.filter((p) => p.slug !== 'dental-management-software');
+---
+
+<Section
+  id="products"
+  eyebrow="Software products"
+  title="Ready-made software"
+  titleMuted="for schools, clinics and HR teams."
+  intro="Set up to match how you work, with training and support included."
+>
+  <div class="grid gap-4 md:grid-cols-3">
+    {
+      featured.map((p) => {
+        const Icon = p.icon;
+        return (
+          <article class="reveal group relative flex flex-col rounded-[6px] bg-base-default p-6 shadow-drop-sm ring-1 ring-border-secondary ring-inset transition-shadow duration-200 ease-out-soft hover:shadow-drop-md lg:p-7 dark:bg-background-secondary">
+            <div class="flex items-center justify-between">
+              <Icon className="size-[18px] text-foreground-secondary" aria-hidden="true" />
+              <span class="eyebrow">{p.label}</span>
+            </div>
+            <h3 class="mt-10 text-[17px] font-medium tracking-[-0.3px]">{p.name}</h3>
+            <p class="mt-2 flex-1 text-sm/6 text-foreground-secondary">{p.summary}</p>
+            <a
+              href={`/products/${p.slug}/`}
+              class="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand-base after:absolute after:inset-0 after:rounded-[6px]"
+            >
+              Request a walkthrough
+              <ArrowRight className="size-4 transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5" aria-hidden="true" />
+              <span class="sr-only">: {p.name}</span>
+            </a>
+          </article>
+        );
+      })
+    }
+  </div>
+</Section>

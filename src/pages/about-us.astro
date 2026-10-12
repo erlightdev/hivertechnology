@@ -1,0 +1,114 @@
+---
+import { Building2, Code2, MapPin, ShieldCheck } from 'lucide-react';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/common/PageHero.astro';
+import ButtonLink from '@/components/common/ButtonLink.astro';
+import Section from '@/components/common/Section.astro';
+import Principles from '@/components/sections/Principles.astro';
+import Process from '@/components/sections/Process.astro';
+import CtaBand from '@/components/common/CtaBand.astro';
+import Faq from '@/components/common/Faq.astro';
+import { deckPage } from '@/data/deck';
+import { pageMeta } from '@/config/pages';
+import { site } from '@/config/site';
+import { breadcrumbs, faqPage, graph, organization, webPage } from '@/lib/schema';
+
+const meta = pageMeta('/about-us/');
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About us', path: '/about-us/' },
+];
+const deck = deckPage('/about-us/');
+const faqs = [
+  {
+    q: 'Where is Hiver Technology based?',
+    a: `Hiver Technology is registered in Nepal, with our team in ${site.address.display}. We do not use proxy addresses or claim offices in other countries.`,
+  },
+  {
+    q: 'Does Hiver work with international clients?',
+    a: 'Yes, as a remote delivery partner. We agree overlapping hours, written updates, recorded demos, contracts and IP terms up front — see how international delivery works.',
+  },
+  {
+    q: 'Who will actually work on my project?',
+    a: 'A named technical lead stays with your project from discovery to handover. You meet the people doing the work before you sign and talk to them directly throughout delivery.',
+  },
+];
+const jsonLd = graph(organization(), webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs), faqPage(faqs));
+
+const facts = [
+  { icon: Building2, label: 'Entity', value: `${site.name}, registered in Nepal` },
+  { icon: MapPin, label: 'Office', value: site.address.display },
+  { icon: Code2, label: 'Focus', value: 'Applications, websites, ecommerce, SEO and automation' },
+  { icon: ShieldCheck, label: 'Ownership', value: 'Clients own their code, designs and credentials' },
+];
+---
+
+<BaseLayout {...meta} {jsonLd}>
+  <PageHero
+    {crumbs}
+    eyebrow="About Hiver Technology"
+    title="A Nepal-based technology team with a clear way of working."
+    intro={deck.intro}
+  >
+    <ButtonLink href="/contact/" arrow data-cta-location="hero">Talk to the team</ButtonLink>
+    <ButtonLink href="/services/" variant="secondary">What we deliver</ButtonLink>
+  </PageHero>
+
+  <Section id="company" eyebrow="The company" title={deck.problem!.heading} intro={deck.problem!.body}>
+    <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+      <div class="reveal space-y-5 text-base leading-relaxed text-foreground-tertiary sm:text-lg">
+        <p>
+          Hiver Technology is a software company headquartered in Imadole, Lalitpur. We work with
+          businesses, schools, clinics and institutions in Nepal and with international clients who
+          want a dependable engineering partner without the overhead of a large agency.
+        </p>
+        <p>
+          Our core is engineering: custom web applications, CRM and workflow tools, business websites,
+          cross-platform mobile apps and UI/UX design, alongside configurable products for schools,
+          clinics and HR teams. Around that core we plan ecommerce, SEO and automation work where a
+          project needs the whole customer journey to connect.
+        </p>
+        <p>
+          We do not claim offices we do not have, awards we have not won or results we cannot show.
+          When a project is not a good fit, we say so early.
+        </p>
+      </div>
+      <dl class="reveal grid content-start gap-px overflow-hidden rounded-[6px] border bg-border-secondary">
+        {
+          facts.map((f) => {
+            const Icon = f.icon;
+            return (
+              <div class="flex gap-4 bg-base-default p-5">
+                <Icon className="mt-0.5 size-5 shrink-0 text-foreground-tertiary" aria-hidden="true" />
+                <div>
+                  <dt class="eyebrow">{f.label}</dt>
+                  <dd class="mt-1 text-sm">{f.value}</dd>
+                </div>
+              </div>
+            );
+          })
+        }
+      </dl>
+    </div>
+  </Section>
+
+  <Principles />
+  <Process />
+
+  <Section id="team" eyebrow="The team" title="Engineers you speak to directly.">
+    <div class="reveal grid gap-8 rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary p-8 sm:p-10 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <p class="text-base leading-relaxed text-foreground-tertiary sm:text-lg">
+        Every engagement is led by a named technical lead who stays with the project from discovery to
+        handover. You will meet the people doing the work before you sign, and talk to them directly
+        throughout delivery — not through a sales layer.
+      </p>
+      <div class="flex flex-wrap gap-3 lg:justify-end">
+        <ButtonLink href="/contact/" arrow>Meet the team</ButtonLink>
+        <ButtonLink href="/career/" variant="secondary">Careers</ButtonLink>
+      </div>
+    </div>
+  </Section>
+
+  <Faq {faqs} />
+  <CtaBand title="Meet Hiver Technology." titleMuted="Start with a conversation." body={deck.finalCta!.body} cta="Talk to the team" />
+</BaseLayout>

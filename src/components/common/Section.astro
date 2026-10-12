@@ -1,0 +1,57 @@
+---
+export interface Props {
+  id?: string;
+  eyebrow?: string;
+  title?: string;
+  /** Optional muted second line of the heading. */
+  titleMuted?: string;
+  intro?: string;
+  tone?: 'default' | 'secondary';
+  align?: 'left' | 'center';
+  /** Use the editorial serif for the heading. */
+  serif?: boolean;
+  class?: string;
+}
+
+const { id, eyebrow, title, titleMuted, intro, tone = 'default', align = 'left', serif = false, class: className } = Astro.props;
+const headingId = id && title ? `${id}-title` : undefined;
+const hasHeader = Boolean(eyebrow || title || intro || Astro.slots.has('aside'));
+---
+
+<section
+  id={id}
+  aria-labelledby={headingId}
+  data-line
+  class:list={[tone === 'secondary' && 'bg-background-secondary', 'relative', className]}
+>
+  <div class="container-page relative z-[1] py-20 lg:py-28">
+    {
+      hasHeader && (
+        <div
+          class:list={[
+            'reveal mb-12 flex flex-col gap-6 lg:mb-16',
+            align === 'center' ? 'items-center text-center' : 'lg:flex-row lg:items-end lg:justify-between',
+          ]}
+        >
+          <div class:list={['max-w-2xl space-y-4', align === 'center' && 'mx-auto']}>
+            {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+            {title && (
+              <h2
+                id={headingId}
+                class:list={[
+                  serif ? 'font-serif text-[2rem]/[2.25rem] font-normal tracking-[-0.5px] lg:text-[2.75rem]/[3rem]' : 'section-heading',
+                ]}
+              >
+                {title}
+                {titleMuted && <span class="block text-foreground-tertiary">{titleMuted}</span>}
+              </h2>
+            )}
+            {intro && <p class:list={['text-base/7 text-foreground-secondary', align === 'center' && 'mx-auto max-w-xl']}>{intro}</p>}
+          </div>
+          <slot name="aside" />
+        </div>
+      )
+    }
+    <slot />
+  </div>
+</section>

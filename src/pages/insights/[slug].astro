@@ -1,0 +1,16 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Article from '@/components/insights/Article.astro';
+import { getInsights, type Insight } from '@/lib/insights';
+
+export const getStaticPaths = (async () =>
+  (await getInsights())
+    .filter((entry) => !entry.data.permalink)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }))) satisfies GetStaticPaths;
+
+interface Props {
+  entry: Insight;
+}
+---
+
+<Article entry={Astro.props.entry} />

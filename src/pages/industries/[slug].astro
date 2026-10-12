@@ -1,0 +1,25 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DeckPageView from '@/components/templates/DeckPageView.astro';
+import { industries, type Industry } from '@/data/industries';
+import { breadcrumbs, faqPage, graph, webPage } from '@/lib/schema';
+
+export const getStaticPaths = (() =>
+  industries.map((industry) => ({ params: { slug: industry.slug }, props: { industry } }))) satisfies GetStaticPaths;
+
+interface Props {
+  industry: Industry;
+}
+const { industry } = Astro.props;
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Industries', path: '/industries/' },
+  { name: industry.name, path: industry.path },
+];
+const jsonLd = graph(webPage(industry.path, industry.title, industry.description), breadcrumbs(crumbs), faqPage(industry.faqs));
+---
+
+<BaseLayout title={industry.title} description={industry.description} path={industry.path} indexable={industry.indexable} {jsonLd}>
+  <DeckPageView page={industry} {crumbs} extraRelated={industry.products.map((p) => `/products/${p}/`)} />
+</BaseLayout>
