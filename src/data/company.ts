@@ -14,6 +14,13 @@ import figma from '@/assets/tech/figma.svg';
 import aws from '@/assets/tech/amazon-web-services.svg';
 import awsDark from '@/assets/tech/amazon-web-services-dark.svg';
 import git from '@/assets/tech/git.svg';
+import astro from '@/assets/tech/astro.svg';
+import wordpress from '@/assets/tech/wordpress.svg';
+import shopify from '@/assets/tech/shopify.svg';
+import searchConsole from '@/assets/tech/google-search-console.svg';
+import analytics from '@/assets/tech/google-analytics.svg';
+import mailchimp from '@/assets/tech/mailchimp.svg';
+import zapier from '@/assets/tech/zapier.svg';
 
 export const problems = [
   {
@@ -119,5 +126,16 @@ export const techStack: Tech[] = [
   { name: 'Git', role: 'Version history', logo: git },
 ];
 
+/** Extra tools shown only in service card footers and stack lists (not the home tools grid). */
+export const extraTools: Tech[] = [
+  { name: 'Astro', role: 'Fast websites', logo: astro },
+  { name: 'WordPress', role: 'Websites', logo: wordpress },
+  { name: 'Shopify', role: 'Online stores', logo: shopify },
+  { name: 'Google Search Console', role: 'Search visibility', logo: searchConsole },
+  { name: 'Google Analytics', role: 'Measurement', logo: analytics },
+  { name: 'Mailchimp', role: 'Email', logo: mailchimp },
+  { name: 'Zapier', role: 'Automation', logo: zapier },
+];
+
 /** Look up a stack logo by technology name (as used in service `stack` lists). */
-export const techByName = (name: string) => techStack.find((t) => t.name === name);
+export const techByName = (name: string) => [...techStack, ...extraTools].find((t) => t.name === name);

@@ -8,30 +8,41 @@ export interface Props {
   stack?: string[];
   fallback?: string;
   label?: string;
+  /** Make the label a link (otherwise it is a visual cue inside a clickable card). */
+  href?: string;
 }
-const { stack = [], fallback, label = 'Details' } = Astro.props;
-const logos = stack.map(techByName).filter((t) => t !== undefined).slice(0, 4);
-const text = stack.length ? stack.slice(0, 4).join(', ') : fallback;
+const { stack = [], fallback, label = 'Details', href } = Astro.props;
+const Tag = href ? 'a' : 'span';
+const logos = stack.map(techByName).filter((t) => t !== undefined);
+const text = logos.length ? undefined : fallback;
 ---
 
 <div class="mt-5 flex items-center justify-between gap-3 border-t border-border-line pt-4">
-  <span class="flex min-w-0 items-center gap-2">
-    {
-      logos.length > 0 && (
-        <span class="flex shrink-0 items-center gap-1" aria-hidden="true">
-          {logos.map((t) => (
-            <>
-              <Image src={t.logo} alt="" width={16} height={16} class:list={['size-4 object-contain', t.logoDark && 'dark:hidden']} />
-              {t.logoDark && <Image src={t.logoDark} alt="" width={16} height={16} class="hidden size-4 object-contain dark:block" />}
-            </>
-          ))}
-        </span>
-      )
-    }
-    {text && <span class="truncate text-xs text-foreground-tertiary">{text}</span>}
-  </span>
-  <span class="inline-flex shrink-0 items-center gap-1 text-[13px] font-medium text-foreground-primary">
+  {
+    logos.length > 0 ? (
+      <span class="group/strip relative flex min-w-0 flex-1 overflow-hidden [--gap:0.75rem] [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]">
+        <span class="sr-only">Tools: {logos.map((t) => t.name).join(', ')}</span>
+        {[0, 1].map(() => (
+          <span
+            aria-hidden="true"
+            class="flex shrink-0 animate-marquee items-center gap-3 pr-3 [animation-duration:14s] group-hover/strip:[animation-play-state:paused]"
+          >
+            {logos.map((t) => (
+              <span class="flex items-center gap-1.5 whitespace-nowrap text-xs text-foreground-tertiary">
+                <Image src={t.logo} alt="" width={16} height={16} class:list={['size-4 object-contain', t.logoDark && 'dark:hidden']} />
+                {t.logoDark && <Image src={t.logoDark} alt="" width={16} height={16} class="hidden size-4 object-contain dark:block" />}
+                {t.name}
+              </span>
+            ))}
+          </span>
+        ))}
+      </span>
+    ) : (
+      <span class="min-w-0 truncate text-xs text-foreground-tertiary">{text}</span>
+    )
+  }
+  <Tag href={href} class="group/link inline-flex shrink-0 items-center gap-1 text-[13px] font-medium text-foreground-primary hover:text-brand-base">
     {label}
-    <ArrowUpRight className="size-3.5 transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
-  </span>
+    <ArrowUpRight className="size-3.5 transition-transform duration-200 ease-out-soft group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" aria-hidden="true" />
+  </Tag>
 </div>

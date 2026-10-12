@@ -2,7 +2,11 @@
 import { ArrowRight, Ban } from 'lucide-react';
 import Section from '@/components/common/Section.astro';
 import ButtonLink from '@/components/common/ButtonLink.astro';
+import StackFooter from '@/components/common/StackFooter.astro';
 import { serviceGroups } from '@/data/services';
+
+// Distinct tools used across each group's services, in order of first use.
+const groupStack = (g: (typeof serviceGroups)[number]) => [...new Set(g.services.flatMap((s) => s.stack ?? []))];
 
 ---
 
@@ -36,6 +40,7 @@ import { serviceGroups } from '@/data/services';
                 </li>
               ))}
             </ul>
+            <StackFooter stack={groupStack(g)} fallback={g.services[0].tag} label="View all" href={`/services/#${g.id}`} />
           </article>
         );
       })

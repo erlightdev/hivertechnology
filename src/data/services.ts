@@ -178,6 +178,7 @@ const extras: Record<string, Extras> = {
     tag: 'WordPress · Gutenberg · Performance',
     status: 'gated',
     indexable: false,
+    stack: ['WordPress', 'Tailwind CSS', 'Google Analytics'],
   },
   'ecommerce-development': {
     group: 'ecommerce',
@@ -186,6 +187,7 @@ const extras: Record<string, Extras> = {
     tag: 'Catalog · Checkout · Operations',
     status: 'gated',
     indexable: false,
+    stack: ['Shopify', 'Google Analytics', 'Mailchimp'],
   },
   'shopify-development': {
     group: 'ecommerce',
@@ -194,6 +196,7 @@ const extras: Record<string, Extras> = {
     tag: 'Shopify · Themes · Apps',
     status: 'gated',
     indexable: false,
+    stack: ['Shopify', 'Figma', 'Google Analytics'],
   },
   'shopify-migration': {
     group: 'ecommerce',
@@ -202,6 +205,7 @@ const extras: Record<string, Extras> = {
     tag: 'Data · Redirects · QA',
     status: 'gated',
     indexable: false,
+    stack: ['Shopify', 'Google Search Console', 'Google Analytics'],
   },
   'shopify-seo': {
     group: 'ecommerce',
@@ -210,6 +214,7 @@ const extras: Record<string, Extras> = {
     tag: 'Collections · Schema · Speed',
     status: 'gated',
     indexable: false,
+    stack: ['Shopify', 'Google Search Console', 'Google Analytics'],
   },
   seo: {
     group: 'seo',
@@ -218,6 +223,7 @@ const extras: Record<string, Extras> = {
     tag: 'Research · Content · Reporting',
     status: 'gated',
     indexable: false,
+    stack: ['Google Search Console', 'Google Analytics', 'WordPress'],
   },
   'technical-seo': {
     group: 'seo',
@@ -226,6 +232,7 @@ const extras: Record<string, Extras> = {
     tag: 'Crawl · Index · Vitals',
     status: 'gated',
     indexable: false,
+    stack: ['Google Search Console', 'Google Analytics', 'Astro', 'Next.js'],
   },
   'growth-marketing': {
     group: 'growth',
@@ -234,6 +241,7 @@ const extras: Record<string, Extras> = {
     tag: 'Acquisition · Conversion · Retention',
     status: 'gated',
     indexable: false,
+    stack: ['Google Analytics', 'Mailchimp', 'Zapier'],
   },
   'marketing-automation': {
     group: 'growth',
@@ -242,6 +250,7 @@ const extras: Record<string, Extras> = {
     tag: 'Workflows · CRM · Routing',
     status: 'gated',
     indexable: false,
+    stack: ['Zapier', 'Mailchimp', 'Google Analytics'],
   },
   'email-lifecycle-marketing': {
     group: 'growth',
@@ -250,6 +259,7 @@ const extras: Record<string, Extras> = {
     tag: 'Lifecycle · Segments · Consent',
     status: 'gated',
     indexable: false,
+    stack: ['Mailchimp', 'Zapier', 'Google Analytics'],
   },
   'digital-marketing': {
     group: 'growth',
@@ -258,6 +268,7 @@ const extras: Record<string, Extras> = {
     tag: 'Strategy · Channels · Measurement',
     status: 'live',
     indexable: false,
+    stack: ['Google Analytics', 'Google Search Console', 'Mailchimp'],
     title: 'Digital Marketing | Hiver Technology',
   },
 };
