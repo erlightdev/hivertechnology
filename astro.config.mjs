@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, envField } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import node from '@astrojs/node';
 import tailwindcss from '@tailwindcss/vite';
@@ -16,8 +16,7 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
 
-  // Every page is prerendered to static HTML. Only routes that opt out with
-  // `export const prerender = false` (the contact API) run on the Node server.
+  // Every page is prerendered to static HTML and served by server.mjs (Node).
   output: 'static',
   adapter: node({ mode: 'standalone' }),
 
@@ -40,17 +39,6 @@ export default defineConfig({
     checkOrigin: false,
   },
 
-  env: {
-    schema: {
-      SMTP_HOST: envField.string({ context: 'server', access: 'secret', optional: true }),
-      SMTP_PORT: envField.number({ context: 'server', access: 'secret', default: 465 }),
-      SMTP_SECURE: envField.boolean({ context: 'server', access: 'secret', default: true }),
-      SMTP_USER: envField.string({ context: 'server', access: 'secret', optional: true }),
-      SMTP_PASS: envField.string({ context: 'server', access: 'secret', optional: true }),
-      CONTACT_TO: envField.string({ context: 'server', access: 'secret', default: 'admin@hiver.com.np' }),
-      CONTACT_FROM: envField.string({ context: 'server', access: 'secret', optional: true }),
-    },
-  },
 
   prefetch: {
     prefetchAll: false,

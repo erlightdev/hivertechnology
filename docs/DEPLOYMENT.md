@@ -20,27 +20,10 @@ project **without** `node_modules/` and `dist/`.
 Hostinger injects `PORT`; the server binds `0.0.0.0` by default. Labels in hPanel can change —
 match the values above to whatever the current form calls them.
 
-## 2. Environment variables (optional)
+## 2. Environment variables
 
-The contact page currently uses email, phone and WhatsApp links only — no form — so **no SMTP
-settings are needed**. The form island (`src/components/contact/ContactForm.tsx`) and its API route
-(`src/pages/api/contact.ts`) remain in the codebase but are not used by any page. To bring the form
-back, render `<ContactForm client:load fallbackEmail={site.email} />` on the contact page and set:
-
-Set these in the app's environment settings (see `.env.example`):
-
-| Variable | Example | Notes |
-| --- | --- | --- |
-| `SMTP_HOST` | `smtp.hostinger.com` | Hostinger Email SMTP |
-| `SMTP_PORT` | `465` | |
-| `SMTP_SECURE` | `true` | SSL on 465 |
-| `SMTP_USER` | `website@hiver.com.np` | Create a dedicated mailbox |
-| `SMTP_PASS` | — | Mailbox password |
-| `CONTACT_TO` | `admin@hiver.com.np` | Enquiry recipient |
-| `CONTACT_FROM` | `Hiver Technology Website <website@hiver.com.np>` | Optional |
-
-Without SMTP variables the site still runs; the form returns a friendly message asking visitors to
-email directly, and the server logs `[contact] SMTP is not configured`.
+None are required. Optional: `CANONICAL_HOST` (default `hiver.com.np`) and `FORCE_HTTPS`
+(default `true`; set `false` if Hostinger already forces HTTPS and you see a redirect loop).
 
 ## 3. Domain
 

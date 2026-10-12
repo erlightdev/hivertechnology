@@ -70,11 +70,6 @@ export const pages = {
       'Tell Hiver Technology what you are trying to build, improve or manage. An engineering lead reviews every enquiry and replies within one business day.',
     indexable: true,
   },
-  '/contact/thank-you/': {
-    title: 'Enquiry received | Hiver Technology',
-    description: 'Thank you for contacting Hiver Technology.',
-    indexable: false,
-  },
   '/privacy-policy/': {
     title: 'Privacy Policy | Hiver Technology',
     description:
