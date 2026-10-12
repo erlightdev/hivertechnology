@@ -3,7 +3,8 @@ import { Image } from 'astro:assets';
 import Section from '@/components/common/Section.astro';
 import { extraTools, techStack } from '@/data/company';
 
-const tools = [...techStack, ...extraTools];
+// 18 tools = three full rows of six on desktop. Zapier appears only in service card footers.
+const tools = [...techStack, ...extraTools.filter((t) => t.name !== 'Zapier')];
 ---
 
 <Section
