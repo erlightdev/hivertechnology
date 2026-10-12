@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import node from '@astrojs/node';
 import tailwindcss from '@tailwindcss/vite';
 
 const SITE_URL = 'https://hiver.com.np';
@@ -16,9 +15,9 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
 
-  // Every page is prerendered to static HTML and served by server.mjs (Node).
+  // Pure static build: dist/ holds index.html and every page; public/.htaccess handles
+  // redirects, HTTPS, caching and headers on Hostinger (LiteSpeed/Apache).
   output: 'static',
-  adapter: node({ mode: 'standalone' }),
 
   integrations: [react()],
 

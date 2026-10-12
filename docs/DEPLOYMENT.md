@@ -1,35 +1,25 @@
-# Deploying to Hostinger (Node.js Web App)
+# Deploying to Hostinger
 
-The site is an Astro build with the `@astrojs/node` adapter. All pages are prerendered; `server.mjs`
-serves them, compresses responses and applies redirects and security
-headers.
+The site is a **pure static Astro build**. `npm run build` writes every page to `dist/`
+(with `dist/index.html` at the root). `public/.htaccess` is copied into `dist/` and handles HTTPS,
+www → hiver.com.np, legacy 301 redirects, the 404 page, caching, compression and security headers.
 
-## 1. Create the app
-
-In hPanel, add a **Node.js Web App** and connect this repository (GitHub) or upload a zip of the
-project **without** `node_modules/` and `dist/`.
+## Hostinger settings
 
 | Setting | Value |
 | --- | --- |
-| Node.js version | 22.x or newer (24.x tested locally) |
-| Install command | `npm ci` (or `npm install`) |
+| Framework preset | Astro |
+| Node version | 22.x |
+| Root directory | `./` |
 | Build command | `npm run build` |
-| Start command / entry file | `npm start` (entry file: `server.mjs`) |
-| Root directory | repository root |
+| Output directory | `dist` |
+| Environment variables | none |
 
-Hostinger injects `PORT`; the server binds `0.0.0.0` by default. Labels in hPanel can change —
-match the values above to whatever the current form calls them.
-
-## 2. Environment variables
-
-None are required. Optional: `CANONICAL_HOST` (default `hiver.com.np`) and `FORCE_HTTPS`
-(default `true`; set `false` if Hostinger already forces HTTPS and you see a redirect loop).
-
-## 3. Domain
+## Domain
 
 1. Point `hiver.com.np` and `www.hiver.com.np` to the app in hPanel and enable SSL.
-2. `server.mjs` 301-redirects `www` → apex and `http` → `https` (when the proxy sends
-   `X-Forwarded-Proto`). Set `FORCE_HTTPS=false` if Hostinger already forces HTTPS and you see a loop.
+2. `.htaccess` 301-redirects `www` → apex and `http` → `https`. If you see a redirect loop, remove the
+   HTTPS block from `public/.htaccess` and enable "Force HTTPS" in hPanel instead.
 
 ## 4. Launch checklist
 

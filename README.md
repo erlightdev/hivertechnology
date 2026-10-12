@@ -12,8 +12,8 @@ only the contact API runs on the Node server.
 | `npm run dev` | Dev server at http://localhost:4321 (`astro dev --background` for background mode) |
 | `npm run check` | Type-check Astro, TS and TSX files |
 | `npm run build` | Build to `dist/` (static pages in `dist/client`, server in `dist/server`) |
-| `npm start` | Run the production server (`server.mjs`) |
-| `npm run preview` | Build, then run the production server locally |
+| `npm start` | Preview the built site locally |
+| `npm run preview` | Build, then preview locally |
 
 ## Structure
 
