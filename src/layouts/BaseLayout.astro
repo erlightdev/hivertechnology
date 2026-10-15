@@ -35,6 +35,14 @@ const { title, description, path, indexable = true, ogType = 'website', jsonLd, 
     <meta name="theme-color" content="#fefdfb" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0a0b0f" media="(prefers-color-scheme: dark)" />
     <meta name="generator" content={Astro.generator} />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS2KZ7B2PZ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TS2KZ7B2PZ');
+    </script>
     <!-- Apply the stored or system theme before first paint to avoid a flash. -->
     <script is:inline>
       (() => {
