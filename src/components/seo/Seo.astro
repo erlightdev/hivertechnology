@@ -56,4 +56,11 @@ const robots = indexable ? 'index, follow, max-image-preview:large, max-snippet:
 
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
+<!-- Site verification -->
+{site.verification.google && <meta name="google-site-verification" content={site.verification.google} />}
+{site.verification.bing && <meta name="msvalidate.01" content={site.verification.bing} />}
+{site.verification.facebook && <meta name="facebook-domain-verification" content={site.verification.facebook} />}
+{site.verification.yandex && <meta name="yandex-verification" content={site.verification.yandex} />}
+{site.verification.pinterest && <meta name="p:domain_verify" content={site.verification.pinterest} />}
+
 {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}

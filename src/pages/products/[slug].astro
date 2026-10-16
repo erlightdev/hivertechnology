@@ -28,11 +28,17 @@ const jsonLd = graph(
   breadcrumbs(crumbs),
   faqPage(product.faqs),
 );
+
+const serializedProduct = JSON.stringify({
+  item_id: product.slug,
+  item_name: product.name,
+  item_category: product.label,
+});
 ---
 
 <BaseLayout title={product.title} description={product.description} {path} indexable={product.indexable} {jsonLd}>
   <PageHero {crumbs} eyebrow={`${product.label} · ${product.name}`} title={product.h1} intro={product.intro}>
-    <ButtonLink href="/contact/" arrow>Request a walkthrough</ButtonLink>
+    <ButtonLink href="/contact/" arrow data-product-cta="walkthrough">Request a walkthrough</ButtonLink>
     <ButtonLink href="#modules" variant="secondary">See modules</ButtonLink>
   </PageHero>
 
@@ -68,4 +74,23 @@ const jsonLd = graph(
     body="Tell us about your organization and current process. We will show the relevant modules and outline configuration, data migration and support."
     cta="Request a walkthrough"
   />
+
+  <div id="product-detail-data" class="hidden" data-product={serializedProduct} aria-hidden="true"></div>
+  <script>
+    import { trackViewItem, trackBeginCheckout } from '@/lib/analytics';
+    const el = document.getElementById('product-detail-data');
+    if (el?.dataset.product) {
+      try {
+        const item = JSON.parse(el.dataset.product);
+        trackViewItem({ items: [item] });
+
+        // Trigger begin_checkout on walkthrough / demo CTA clicks
+        document.querySelectorAll('a[data-product-cta="walkthrough"], [data-cta-location="cta-band"]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            trackBeginCheckout({ items: [item] });
+          });
+        });
+      } catch {}
+    }
+  </script>
 </BaseLayout>

@@ -43,9 +43,28 @@ const year = new Date().getFullYear();
   <div class="border-t border-border-line">
     <div class="container-page relative z-[1] flex flex-col gap-3 py-6 font-paper text-xs text-foreground-tertiary sm:flex-row sm:items-center sm:justify-between">
       <p>© {year} {site.name}. Registered in Nepal.</p>
-      <ul class="flex gap-5">
+      <ul class="flex flex-wrap gap-x-5 gap-y-2">
         {legalNav.map((item) => <li><a href={item.href} class="hover:text-foreground-primary">{item.label}</a></li>)}
+        <li>
+          <button
+            type="button"
+            id="footer-cookie-preferences-btn"
+            class="hover:text-foreground-primary cursor-pointer transition-colors"
+          >
+            Cookie Preferences
+          </button>
+        </li>
       </ul>
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  document.getElementById('footer-cookie-preferences-btn')?.addEventListener('click', function () {
+    if (typeof window.hiverOpenCookiePreferences === 'function') {
+      window.hiverOpenCookiePreferences();
+    } else {
+      window.dispatchEvent(new CustomEvent('hiver:open-cookie-preferences'));
+    }
+  });
+</script>

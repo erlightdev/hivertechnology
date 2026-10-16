@@ -3,13 +3,13 @@ import LegalLayout from '@/layouts/LegalLayout.astro';
 import { site } from '@/config/site';
 ---
 
-<LegalLayout path="/cookie-policy/" heading="Cookie Policy" updated={new Date('2026-10-12')}>
+<LegalLayout path="/cookie-policy/" heading="Cookie Policy" updated={new Date('2026-10-16')}>
   <p>
-    This policy explains how <a href="/">hiver.com.np</a> uses cookies and similar browser storage.
+    This policy explains how <a href="/">hiver.com.np</a> uses cookies and browser storage in compliance with GDPR, ePrivacy, and international privacy standards.
   </p>
 
   <h2>What we use</h2>
-  <p>The site currently sets <strong>no advertising or analytics cookies</strong>. We use:</p>
+  <p>We use strictly necessary storage to run the site, and optional analytics storage only when you give affirmative consent:</p>
   <table>
     <thead>
       <tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr>
@@ -19,27 +19,58 @@ import { site } from '@/config/site';
         <td><code>theme</code></td>
         <td>Local storage (strictly necessary)</td>
         <td>Remembers whether you chose the light or dark theme.</td>
-        <td>Until you clear it</td>
+        <td>Persistent until cleared</td>
+      </tr>
+      <tr>
+        <td><code>hiver_cookie_consent</code></td>
+        <td>Local storage & cookie (strictly necessary)</td>
+        <td>Remembers your consent decisions and Google Consent Mode v2 status.</td>
+        <td>1 year</td>
+      </tr>
+      <tr>
+        <td><code>_ga</code>, <code>_ga_TS2KZ7B2PZ</code></td>
+        <td>HTTP cookie (Google Analytics 4 — optional)</td>
+        <td>Measures page views, user engagement, and product interest with IP anonymization. Set only after explicit consent.</td>
+        <td>Up to 2 years</td>
       </tr>
     </tbody>
   </table>
+
+  <h2>Google Consent Mode v2 & Analytics</h2>
   <p>
-    Our hosting provider may record technical request data, such as IP address, in server logs to keep
-    the site secure. These logs are not used to track you across websites.
+    We implement Google Consent Mode v2 with default-denied states (<code>analytics_storage: 'denied'</code>, <code>ad_storage: 'denied'</code>). Google Analytics 4 (Measurement ID: <code>G-TS2KZ7B2PZ</code>) is completely blocked from loading or transmitting hits until you explicitly click "Accept All" or enable analytics in your cookie settings.
+  </p>
+  <p>
+    We do not set advertising or third-party marketing trackers.
   </p>
 
-  <h2>Analytics</h2>
+  <h2>Managing and updating your preferences</h2>
   <p>
-    If we add analytics in future, we will update this page before doing so and ask for your consent
-    where required.
+    You can review, change, or withdraw your cookie consent at any time:
   </p>
-
-  <h2>Managing storage</h2>
   <p>
-    You can clear or block cookies and local storage in your browser settings. The site will continue to
-    work; it will simply follow your system’s colour theme.
+    <button
+      type="button"
+      id="manage-consent-btn"
+      class="inline-flex items-center gap-2 rounded-md bg-brand-base px-4 py-2 text-sm font-medium text-brand-contrast transition-colors hover:bg-brand-hover cursor-pointer"
+    >
+      Change Cookie Preferences
+    </button>
+  </p>
+  <p>
+    You can also clear or block cookies and local storage through your browser settings.
   </p>
 
   <h2>Contact</h2>
-  <p>Questions: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+  <p>Questions about our privacy and cookie practices: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+
+  <script is:inline>
+    document.getElementById('manage-consent-btn')?.addEventListener('click', function () {
+      if (typeof window.hiverOpenCookiePreferences === 'function') {
+        window.hiverOpenCookiePreferences();
+      } else {
+        window.dispatchEvent(new CustomEvent('hiver:open-cookie-preferences'));
+      }
+    });
+  </script>
 </LegalLayout>

@@ -1,0 +1,226 @@
+---
+/**
+ * GDPR & ePrivacy Compliant Cookie Consent Banner.
+ * Integrates with Google Consent Mode v2 and blocks GA4 tracking until affirmative consent.
+ */
+import { Cookie, ShieldCheck, X } from 'lucide-react';
+---
+
+<div
+  id="cookie-consent-banner"
+  data-testid="consent-banner"
+  role="region"
+  aria-label="Cookie Consent"
+  class="fixed inset-x-4 bottom-4 z-50 mx-auto hidden max-w-xl animate-in fade-in slide-in-from-bottom-5 duration-300 sm:bottom-6"
+>
+  <div class="relative overflow-hidden rounded-xl border border-border-secondary bg-base-default/95 p-5 shadow-2xl backdrop-blur-md dark:bg-background-secondary/95 sm:p-6">
+    <!-- Main Banner View -->
+    <div id="consent-view-summary" class="space-y-4">
+      <div class="flex items-start gap-3.5">
+        <span class="grid size-9 shrink-0 place-items-center rounded-lg bg-brand-8 text-brand-base ring-1 ring-brand-20 ring-inset">
+          <Cookie className="size-4" aria-hidden="true" />
+        </span>
+        <div class="space-y-1">
+          <h2 id="cookie-banner-title" class="text-base font-medium tracking-tight text-foreground-primary">
+            Cookie & Privacy Preferences
+          </h2>
+          <p class="text-xs/5 text-foreground-secondary">
+            We use strictly necessary storage for theme preferences. With your consent, we use privacy-respecting analytics (Google Analytics 4 with Consent Mode v2) to measure site traffic and improve our services.
+            Review our <a href="/cookie-policy/" class="underline underline-offset-2 hover:text-foreground-primary">Cookie Policy</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2 pt-1 sm:justify-end">
+        <button
+          type="button"
+          id="consent-btn-customize"
+          class="rounded-md border border-border-secondary bg-transparent px-3 py-1.5 text-xs font-medium text-foreground-secondary transition-colors hover:bg-background-secondary hover:text-foreground-primary dark:hover:bg-background-primary"
+        >
+          Preferences
+        </button>
+        <button
+          type="button"
+          id="consent-btn-reject"
+          class="rounded-md border border-border-secondary bg-background-secondary px-3.5 py-1.5 text-xs font-medium text-foreground-primary transition-colors hover:bg-base-default dark:bg-background-primary dark:hover:bg-background-secondary"
+        >
+          Reject Non-Essential
+        </button>
+        <button
+          type="button"
+          id="consent-btn-accept"
+          class="rounded-md bg-brand-base px-4 py-1.5 text-xs font-medium text-brand-contrast transition-colors hover:bg-brand-hover"
+        >
+          Accept All
+        </button>
+      </div>
+    </div>
+
+    <!-- Granular Preferences View (Collapsible) -->
+    <div id="consent-view-details" class="hidden space-y-4">
+      <div class="flex items-center justify-between border-b border-border-line pb-3">
+        <div class="flex items-center gap-2">
+          <ShieldCheck className="size-4 text-brand-base" aria-hidden="true" />
+          <h3 class="text-sm font-medium text-foreground-primary">Manage Cookie Settings</h3>
+        </div>
+        <button
+          type="button"
+          id="consent-btn-back"
+          aria-label="Back to summary"
+          class="text-foreground-tertiary transition-colors hover:text-foreground-primary"
+        >
+          <X className="size-4" aria-hidden="true" />
+        </button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div class="flex items-start justify-between gap-3 rounded-lg border border-border-secondary bg-background-primary/40 p-3">
+          <div class="space-y-0.5">
+            <p class="font-medium text-foreground-primary">Strictly Necessary</p>
+            <p class="text-foreground-secondary">Theme preference and security tokens. Required for the website to function.</p>
+          </div>
+          <span class="rounded bg-background-secondary px-2 py-0.5 font-mono text-[10px] text-foreground-tertiary">Always active</span>
+        </div>
+
+        <div class="flex items-start justify-between gap-3 rounded-lg border border-border-secondary bg-background-primary/40 p-3">
+          <div class="space-y-0.5">
+            <label for="consent-check-analytics" class="cursor-pointer font-medium text-foreground-primary">Analytics & Performance</label>
+            <p class="text-foreground-secondary">Google Analytics 4 with IP anonymization to understand how visitors engage with pages and products.</p>
+          </div>
+          <input
+            type="checkbox"
+            id="consent-check-analytics"
+            class="mt-1 size-4 rounded border-border-secondary accent-brand-base focus:ring-brand-base cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-1 border-t border-border-line">
+        <button
+          type="button"
+          id="consent-btn-save-preferences"
+          class="rounded-md bg-brand-base px-4 py-1.5 text-xs font-medium text-brand-contrast transition-colors hover:bg-brand-hover"
+        >
+          Save My Preferences
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    const STORAGE_KEY = 'hiver_cookie_consent';
+    const banner = document.getElementById('cookie-consent-banner');
+    const viewSummary = document.getElementById('consent-view-summary');
+    const viewDetails = document.getElementById('consent-view-details');
+    const btnAccept = document.getElementById('consent-btn-accept');
+    const btnReject = document.getElementById('consent-btn-reject');
+    const btnCustomize = document.getElementById('consent-btn-customize');
+    const btnBack = document.getElementById('consent-btn-back');
+    const btnSave = document.getElementById('consent-btn-save-preferences');
+    const checkAnalytics = document.getElementById('consent-check-analytics');
+
+    function getSavedConsent() {
+      try {
+        const val = localStorage.getItem(STORAGE_KEY);
+        return val ? JSON.parse(val) : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function saveConsent(analyticsGranted) {
+      const payload = {
+        analytics: Boolean(analyticsGranted),
+        marketing: false,
+        timestamp: new Date().toISOString(),
+      };
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+        // Also set standard cookie so server/scanners can inspect
+        document.cookie = 'hiver_consent=' + (analyticsGranted ? 'granted' : 'denied') + '; SameSite=Lax; path=/; max-age=31536000';
+      } catch {}
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          analytics_storage: analyticsGranted ? 'granted' : 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+
+      if (analyticsGranted && typeof window.hiverLoadGA4 === 'function') {
+        window.hiverLoadGA4();
+      }
+
+      hideBanner();
+    }
+
+    function showBanner(showDetails = false) {
+      if (!banner) return;
+      banner.classList.remove('hidden');
+      if (showDetails) {
+        viewSummary?.classList.add('hidden');
+        viewDetails?.classList.remove('hidden');
+        const existing = getSavedConsent();
+        if (checkAnalytics) {
+          checkAnalytics.checked = Boolean(existing?.analytics);
+        }
+      } else {
+        viewSummary?.classList.remove('hidden');
+        viewDetails?.classList.add('hidden');
+      }
+    }
+
+    function hideBanner() {
+      if (!banner) return;
+      banner.classList.add('hidden');
+    }
+
+    // Event listeners
+    btnAccept?.addEventListener('click', function () {
+      saveConsent(true);
+    });
+
+    btnReject?.addEventListener('click', function () {
+      saveConsent(false);
+    });
+
+    btnCustomize?.addEventListener('click', function () {
+      viewSummary?.classList.add('hidden');
+      viewDetails?.classList.remove('hidden');
+      const existing = getSavedConsent();
+      if (checkAnalytics) {
+        checkAnalytics.checked = Boolean(existing?.analytics);
+      }
+    });
+
+    btnBack?.addEventListener('click', function () {
+      viewDetails?.classList.add('hidden');
+      viewSummary?.classList.remove('hidden');
+    });
+
+    btnSave?.addEventListener('click', function () {
+      saveConsent(checkAnalytics?.checked ?? false);
+    });
+
+    // Global hook for reopening preferences from footer or policy page
+    window.hiverOpenCookiePreferences = function () {
+      showBanner(true);
+    };
+
+    window.addEventListener('hiver:open-cookie-preferences', function () {
+      showBanner(true);
+    });
+
+    // Check on page load if user already made a choice
+    const saved = getSavedConsent();
+    if (!saved) {
+      // First visit: show banner
+      showBanner(false);
+    }
+  })();
+</script>

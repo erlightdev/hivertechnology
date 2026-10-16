@@ -15,6 +15,15 @@ const crumbs = [
   { name: 'Products', path: '/products/' },
 ];
 const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrumbs(crumbs));
+
+const serializedProducts = JSON.stringify(
+  products.map((p, idx) => ({
+    item_id: p.slug,
+    item_name: p.name,
+    item_category: p.label,
+    index: idx + 1,
+  }))
+);
 ---
 
 <BaseLayout {...meta} {jsonLd}>
@@ -33,9 +42,17 @@ const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrum
         products.map((p) => {
           const Icon = p.icon;
           return (
-            <a href={`/products/${p.slug}/`} class="reveal group flex flex-col rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary p-8 transition-shadow duration-200 ease-out-soft hover:shadow-drop-md">
+            <a
+              href={`/products/${p.slug}/`}
+              data-product-slug={p.slug}
+              data-product-name={p.name}
+              data-product-category={p.label}
+              class="reveal group flex flex-col rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset dark:bg-background-secondary p-8 transition-shadow duration-200 ease-out-soft hover:shadow-drop-md"
+            >
               <div class="flex items-center justify-between">
-                <span class="grid size-11 place-items-center rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset"><Icon className="size-5" aria-hidden="true" /></span>
+                <span class="grid size-11 place-items-center rounded-[6px] bg-base-default shadow-drop-sm ring-1 ring-border-secondary ring-inset">
+                  <Icon className="size-5" aria-hidden="true" />
+                </span>
                 <span class="eyebrow">{p.label}</span>
               </div>
               <h2 class="mt-10 text-2xl font-medium">{p.name}</h2>
@@ -56,4 +73,16 @@ const jsonLd = graph(webPage(meta.path, meta.title, meta.description), breadcrum
     body="Book a walkthrough. We will show the modules that matter to you and be clear about what needs configuration or custom work."
     cta="Request a walkthrough"
   />
+
+  <div id="products-catalog-data" class="hidden" data-products={serializedProducts} aria-hidden="true"></div>
+  <script>
+    import { trackViewItemList } from '@/lib/analytics';
+    const el = document.getElementById('products-catalog-data');
+    if (el?.dataset.products) {
+      try {
+        const items = JSON.parse(el.dataset.products);
+        trackViewItemList({ items });
+      } catch {}
+    }
+  </script>
 </BaseLayout>

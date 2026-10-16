@@ -26,6 +26,13 @@ export const site = {
     display: 'Imadole, Lalitpur, Nepal',
   },
   responseTime: 'one business day',
+  verification: {
+    google: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || 'IcV88mF-ownhOWRVFXeMi0bmzCZucd4xppoNG6iPnuU',
+    bing: import.meta.env.PUBLIC_BING_SITE_VERIFICATION || '',
+    facebook: import.meta.env.PUBLIC_FACEBOOK_DOMAIN_VERIFICATION || '',
+    yandex: import.meta.env.PUBLIC_YANDEX_VERIFICATION || '',
+    pinterest: import.meta.env.PUBLIC_PINTEREST_VERIFICATION || '',
+  },
 } as const;
 
 export type NavItem = { label: string; href: string };
